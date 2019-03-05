@@ -182,8 +182,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551818941938" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../scalacheck_2.12-1.14.0.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551819090376" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scalaDoc" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
