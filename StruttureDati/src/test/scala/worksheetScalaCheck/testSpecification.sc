@@ -1,0 +1,3 @@
+import specificheStruttureDati.StruttureDati_Specification
+
+StruttureDati_Specification.passed

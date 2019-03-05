@@ -1,0 +1,45 @@
+package struttureDati.sortable.BUMS
+
+/**
+  * Implementa una lista ordinata di elementi.
+  *
+  * @param seg la lista di elementi ordinati
+  * @tparam E indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.
+  */
+final case class Segment[E](seg: List[E]) {
+  /**
+    * Ritorna la stringa che rappresenta il segmento.
+    *
+    * @return la stringa che rappresenta il segmento.
+    */
+  override lazy val toString: String = {
+    def listToString(s: List[E]): String = s match {
+      case Nil => ""
+      case h +: Nil => h.toString
+      case h +: t => h + ", " + listToString(t)
+    }
+
+    "Segment(" + listToString(seg) + ")"
+  }
+}
+
+/**
+  * Companion Object del trait BinarySearchTree.
+  * Permette la creazione di segmenti.
+  */
+object Segment {
+  /**
+    * Permette la creazione di un segmento che contiene gli elementi passati come parametro.
+    *
+    * @param els l'elenco degli elementi da inserire nel segmento
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @tparam E è il tipo parametrico con cui viene parametrizzato il segmento.
+    * @return il segmento contenente gli elementi passati come parametro
+    * @throws IllegalArgumentException se il parametro ord è null
+    */
+  @throws(classOf[IllegalArgumentException])
+  final def apply[E](els: E*)(implicit ord: Ordering[E]): Segment[E] = {
+    require(!(ord eq null), "Il tipo deve essere ordinabile")
+    Segment(els.foldRight(List[E]())((x, y) => x :: y))
+  }
+}
