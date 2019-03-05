@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="44ca1c9a-81d0-4a1a-9e83-cb4b1bebc4a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../StruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/out/artifacts/StruttureDati_jar/StruttureDati.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/out/artifacts/StruttureDati_jar/StruttureDati.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/Color.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/Color.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Black.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Black.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Empty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Red.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Red.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,10 +89,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestStruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -220,7 +208,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
