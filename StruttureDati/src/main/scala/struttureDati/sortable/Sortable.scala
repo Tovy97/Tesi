@@ -3,6 +3,7 @@ package struttureDati.sortable
 /**
   * Rappresenta una collezione di dati ordinabili che devono essere trasformati in una lista
   * ordinata.
+  *
   * Prevede un parametro invariante.
   * Il tipo parametrico deve essere ordinabile.
   *
@@ -46,5 +47,5 @@ trait Sortable[E] {
     *
     * @return true se le proprietà della collezione sono rispettate, altrimenti false.
     */
-  def isCorrect:Boolean
+  def isCorrect: Boolean
 }

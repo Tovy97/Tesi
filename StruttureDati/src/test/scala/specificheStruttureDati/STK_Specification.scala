@@ -64,7 +64,7 @@ private object STK_Specification extends Properties("STK") {
     * un'eccezione, allora lo stack è vuoto.
     */
   property("pop.size") = forAll(genSTK) { stk: Stack[Int] =>
-    if(stk.isEmpty){
+    if (stk.isEmpty) {
       stk.pop.size == stk.size
     } else {
       stk.pop.size == stk.size - 1

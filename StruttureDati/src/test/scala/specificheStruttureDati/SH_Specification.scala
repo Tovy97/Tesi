@@ -37,14 +37,14 @@ private object SH_Specification extends Properties("SH") {
   /**
     * Proprietà: l'insert di un elemento E in uno SH genera uno SH corretto
     */
-  property("insert.isCorrect") =forAll(genHeap, Arbitrary.arbitrary[Int]) { (sh: SplayHeap[Int], e: Int) =>
+  property("insert.isCorrect") = forAll(genHeap, Arbitrary.arbitrary[Int]) { (sh: SplayHeap[Int], e: Int) =>
     sh.insert(e).isCorrect
   }
 
   /**
     * Proprietà: la deleteMin dell'elemento minore in uno SH genera uno SH corretto
     */
-  property("deleteMin.isCorrect") =forAll(genHeap) { sh: SplayHeap[Int] =>
+  property("deleteMin.isCorrect") = forAll(genHeap) { sh: SplayHeap[Int] =>
     sh.deleteMin.isCorrect
   }
 
