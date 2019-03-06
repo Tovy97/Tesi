@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ca1c9a-81d0-4a1a-9e83-cb4b1bebc4a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/BinarySearchTreeTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/BinarySearchTreeTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/BinarySearchTreeTest.sc">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            <state relative-caret-position="42">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -54,12 +53,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/StackTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FiniteMapTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/SplayHeapTest.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/LeftistHeapTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/PairingHeapTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/RedBlackTreeTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/BatchedQueueTest.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/BinarySearchTreeTest.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc" />
       </list>
     </option>
   </component>
@@ -241,12 +240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551869124357</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="BSTTest finiti">
+      <created>1551869841490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551869841490</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -285,7 +290,8 @@
     <MESSAGE value="inizio test RBT" />
     <MESSAGE value="inizio test" />
     <MESSAGE value="BQTest finiti" />
-    <option name="LAST_COMMIT_MESSAGE" value="BQTest finiti" />
+    <MESSAGE value="BSTTest finiti" />
+    <option name="LAST_COMMIT_MESSAGE" value="BSTTest finiti" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />
@@ -322,13 +328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -397,8 +396,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/BinarySearchTreeTest.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
+        <state relative-caret-position="315">
           <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/BinomialHeapTest.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
