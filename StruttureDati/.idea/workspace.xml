@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="6/3/19 jar" />
+    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="6/3/19 fine" />
     <list id="b2b9940e-c190-4426-a764-36088e2b4a5d" name="Revert: sistemata scaladoc" comment="">
       <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -26,17 +26,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,6 +100,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,33 +117,32 @@
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="worksheetScalaCheck" type="462c0819:PsiDirectoryNode" />
+              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551867192986" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documentazione" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -299,14 +289,20 @@
       <option name="project" value="LOCAL" />
       <updated>1551867737752</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="6/3/19 fine">
+      <created>1551867898774</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551867898774</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2118003" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +394,8 @@
     <MESSAGE value="sistemata scaladoc" />
     <MESSAGE value="6/3/19 test" />
     <MESSAGE value="6/3/19 jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="6/3/19 jar" />
+    <MESSAGE value="6/3/19 fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="6/3/19 fine" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />
@@ -556,16 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/MinHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="53" column="53" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <element signature="n#!!doc;n#MinHeap#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/Queue.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -578,58 +565,6 @@
             <element signature="e#803#1049#0" />
             <element signature="e#1110#1247#0" />
             <element signature="e#1272#1406#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="211" column="78" selection-start-line="211" selection-start-column="69" selection-end-line="211" selection-end-column="78" />
-          <folding>
-            <element signature="n#!!doc;n#BinomialHeap#0;n#!!top" />
-            <element signature="e#1199#1347#0" />
-            <element signature="e#1410#1561#0" />
-            <element signature="e#1618#1965#0" />
-            <element signature="e#2087#2651#0" />
-            <element signature="e#2087#2966#0" />
-            <element signature="e#2780#2966#0" />
-            <element signature="e#2970#3330#0" />
-            <element signature="e#3431#3763#0" />
-            <element signature="e#3431#4017#0" />
-            <element signature="e#4021#4373#0" />
-            <element signature="e#4021#4933#0" />
-            <element signature="e#4444#4763#0" />
-            <element signature="e#4552#4763#0" />
-            <element signature="e#4769#4929#0" />
-            <element signature="e#4937#5267#0" />
-            <element signature="e#5338#5472#0" />
-            <element signature="e#5512#5742#0" />
-            <element signature="e#5518#5689#0" />
-            <element signature="e#5571#5689#0" />
-            <element signature="e#5746#5998#0" />
-            <element signature="e#5746#6512#0" />
-            <element signature="e#6080#6512#0" />
-            <element signature="e#6257#6323#0" />
-            <element signature="e#6352#6418#0" />
-            <element signature="e#6424#6508#0" />
-            <element signature="e#6516#7211#0" />
-            <element signature="e#6516#7725#0" />
-            <element signature="e#7369#7725#0" />
-            <element signature="e#7624#7662#0" />
-            <element signature="e#7668#7721#0" />
-            <element signature="e#7729#8099#0" />
-            <element signature="e#7729#8478#0" />
-            <element signature="e#8230#8474#0" />
-            <element signature="e#8353#8399#0" />
-            <element signature="e#8405#8468#0" />
-            <element signature="e#8482#9467#0" />
-            <element signature="e#9319#9388#0" />
-            <element signature="e#9394#9463#0" />
-            <element signature="n#!!doc;n#BinomialHeap$#0;n#!!top" />
-            <element signature="e#9590#10352#1" />
-            <element signature="e#9594#10100#0" />
-            <element signature="e#9594#10350#0" />
           </folding>
         </state>
       </provider>
@@ -890,12 +825,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/MinHeap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        <state relative-caret-position="252">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="53" />
           <folding>
-            <element signature="e#546#726#0" />
+            <element signature="n#!!doc;n#MinHeap#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1146">
+          <caret line="211" column="78" selection-start-line="211" selection-start-column="69" selection-end-line="211" selection-end-column="78" />
+          <folding>
+            <element signature="n#!!doc;n#BinomialHeap#0;n#!!top" />
+            <element signature="e#1199#1347#0" />
+            <element signature="e#1410#1561#0" />
+            <element signature="e#1618#1965#0" />
+            <element signature="e#2087#2966#0" />
+            <element signature="e#2780#2966#0" />
+            <element signature="e#2970#3330#0" />
+            <element signature="e#3431#3763#0" />
+            <element signature="e#3431#4017#0" />
+            <element signature="e#4021#4373#0" />
+            <element signature="e#4021#4933#0" />
+            <element signature="e#4444#4763#0" />
+            <element signature="e#4552#4763#0" />
+            <element signature="e#4769#4929#0" />
+            <element signature="e#4937#5267#0" />
+            <element signature="e#5338#5472#0" />
+            <element signature="e#5512#5742#0" />
+            <element signature="e#5518#5689#0" />
+            <element signature="e#5571#5689#0" />
+            <element signature="e#5746#5998#0" />
+            <element signature="e#5746#6512#0" />
+            <element signature="e#6080#6512#0" />
+            <element signature="e#6257#6323#0" />
+            <element signature="e#6352#6418#0" />
+            <element signature="e#6424#6508#0" />
+            <element signature="e#6516#7211#0" />
+            <element signature="e#6516#7725#0" />
+            <element signature="e#7369#7725#0" />
+            <element signature="e#7624#7662#0" />
+            <element signature="e#7668#7721#0" />
+            <element signature="e#7729#8099#0" />
+            <element signature="e#7729#8478#0" />
+            <element signature="e#8230#8474#0" />
+            <element signature="e#8353#8399#0" />
+            <element signature="e#8405#8468#0" />
+            <element signature="e#8482#9467#0" />
+            <element signature="e#9319#9388#0" />
+            <element signature="e#9394#9463#0" />
+            <element signature="n#!!doc;n#BinomialHeap$#0;n#!!top" />
+            <element signature="e#9590#10352#1" />
+            <element signature="e#9594#10100#0" />
+            <element signature="e#9594#10350#0" />
           </folding>
         </state>
       </provider>
@@ -904,6 +890,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
         </state>
       </provider>
     </entry>
