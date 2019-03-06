@@ -6,7 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="BH sistemato" />
+    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StruttureDati_jar/StruttureDati.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StruttureDati_jar/StruttureDati.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap.class" afterDir="false" />
+    </list>
     <list id="b2b9940e-c190-4426-a764-36088e2b4a5d" name="Revert: sistemata scaladoc" comment="">
       <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -26,7 +31,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,39 +45,7 @@
                 <element signature="e#2087#2966#0" />
                 <element signature="e#2780#2966#0" />
                 <element signature="e#2970#3330#0" />
-                <element signature="e#3431#3763#0" />
-                <element signature="e#3431#4017#0" />
-                <element signature="e#4021#4373#0" />
-                <element signature="e#4021#4933#0" />
-                <element signature="e#4444#4763#0" />
-                <element signature="e#4552#4763#0" />
-                <element signature="e#4769#4929#0" />
-                <element signature="e#4937#5267#0" />
-                <element signature="e#5338#5472#0" />
-                <element signature="e#5512#5742#0" />
-                <element signature="e#5518#5689#0" />
-                <element signature="e#5571#5689#0" />
-                <element signature="e#5746#5998#0" />
-                <element signature="e#5746#6512#0" />
-                <element signature="e#6080#6512#0" />
-                <element signature="e#6257#6323#0" />
-                <element signature="e#6352#6418#0" />
-                <element signature="e#6424#6508#0" />
-                <element signature="e#6516#7211#0" />
-                <element signature="e#7624#7662#0" />
-                <element signature="e#7668#7721#0" />
-                <element signature="e#7729#8099#0" />
-                <element signature="e#7729#8478#0" />
-                <element signature="e#8230#8474#0" />
-                <element signature="e#8353#8399#0" />
-                <element signature="e#8405#8468#0" />
-                <element signature="e#8482#9467#0" />
-                <element signature="e#9319#9388#0" />
-                <element signature="e#9394#9463#0" />
                 <element signature="n#!!doc;n#BinomialHeap$#0;n#!!top" />
-                <element signature="e#9590#10352#1" />
-                <element signature="e#9594#10100#0" />
-                <element signature="e#9594#10350#0" />
               </folding>
             </state>
           </provider>
@@ -151,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -232,7 +206,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,13 +385,20 @@
       <option name="project" value="LOCAL" />
       <updated>1551897454638</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="jar sistemato">
+      <created>1551897607270</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1551897607270</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22087745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -514,7 +494,8 @@
     <MESSAGE value="6/3/19" />
     <MESSAGE value="6/3/19 fine --&gt; inizio prove" />
     <MESSAGE value="BH sistemato" />
-    <option name="LAST_COMMIT_MESSAGE" value="BH sistemato" />
+    <MESSAGE value="jar sistemato" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar sistemato" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />

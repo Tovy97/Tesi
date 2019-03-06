@@ -29,10 +29,24 @@ try {
 }
 
 /*----deleteMin----*/
+heap.deleteMin
+heapVuoto.deleteMin
 
 /*----isCorrect----*/
+heap.isCorrect
+heapVuoto.isCorrect
+heap.insert(1).isCorrect
+heapVuoto.insert(5).isCorrect
+heap.merge(heap).isCorrect
+heap.merge(heapVuoto).isCorrect
+heapVuoto.merge(heapVuoto).isCorrect
+heap.deleteMin.isCorrect
+heapVuoto.deleteMin.isCorrect
 
 /*----toList----*/
+heap.toList
+heapVuoto.toList
 
 /*----toString----*/
-
+heap.toString
+heapVuoto.toString
