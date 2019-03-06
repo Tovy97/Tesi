@@ -8,8 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/DequeTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/DequeTest.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/FiniteMapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/FiniteMapTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/LeftistHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/LeftistHeapTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/PairingHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/PairingHeapTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/RedBlackTreeTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/RedBlackTreeTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/SplayHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/SplayHeapTest.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/StackTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/src/main/scala/StackTest.sc" afterDir="false" />
     </list>
     <list id="b2b9940e-c190-4426-a764-36088e2b4a5d" name="Revert: sistemata scaladoc" comment="">
       <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
@@ -34,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="190" column="41" selection-start-line="190" selection-start-column="41" selection-end-line="190" selection-end-column="41" />
+            <state relative-caret-position="292">
+              <caret line="192" column="52" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="52" />
               <folding>
                 <element signature="n#!!doc;n#FiniteMap#0;n#!!top" />
                 <element signature="e#1154#1286#0" />
@@ -57,32 +60,6 @@
                 <element signature="n#!!doc;n#FiniteMap$#0;n#!!top" />
                 <element signature="n#!!doc;n#Node#0;n#!!top" />
                 <element signature="n#!!doc;n#Empty#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="144" column="70" lean-forward="true" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="70" />
-              <folding>
-                <element signature="n#!!doc;n#BinarySearchTree#0;n#!!top" />
-                <element signature="e#814#984#0" />
-                <element signature="e#1023#1111#0" />
-                <element signature="e#1115#1288#0" />
-                <element signature="e#1334#1407#0" />
-                <element signature="e#1411#1859#0" />
-                <element signature="e#1411#2307#0" />
-                <element signature="e#2311#2725#0" />
-                <element signature="e#2311#3131#0" />
-                <element signature="e#3135#3527#0" />
-                <element signature="e#3135#4149#0" />
-                <element signature="e#4596#4752#0" />
-                <element signature="e#4756#5115#0" />
-                <element signature="e#5365#5721#0" />
-                <element signature="e#5365#6151#0" />
               </folding>
             </state>
           </provider>
@@ -161,7 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,12 +203,22 @@
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="STK" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -427,7 +413,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -906,13 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -930,10 +909,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
-          <caret line="144" column="70" lean-forward="true" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="70" />
+          <caret line="144" column="70" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="70" />
           <folding>
             <element signature="n#!!doc;n#BinarySearchTree#0;n#!!top" />
             <element signature="e#814#984#0" />
@@ -956,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="190" column="41" selection-start-line="190" selection-start-column="41" selection-end-line="190" selection-end-column="41" />
+        <state relative-caret-position="292">
+          <caret line="192" column="52" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="52" />
           <folding>
             <element signature="n#!!doc;n#FiniteMap#0;n#!!top" />
             <element signature="e#1154#1286#0" />
