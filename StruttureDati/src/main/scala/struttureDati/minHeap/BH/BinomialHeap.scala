@@ -78,7 +78,11 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     * @throws NoSuchElementException se l'heap binomiale è vuoto.
     */
   @throws(classOf[NoSuchElementException])
-  override def findMin: E = removeMinTree(this)._1.el
+  override def findMin: E = try {
+    removeMinTree(this)._1.el
+  } catch {
+    case _: NoSuchElementException => throw new NoSuchElementException("Empty().findMin")
+  }
 
   /**
     * Elimina l'elemento minore presente nell'heap binomiale.
