@@ -17,10 +17,10 @@ codaVuota.size
 
 /*----head----*/
 coda.head
-try{
+try {
   codaVuota.head
 } catch {
-  case ex : NoSuchElementException => ex.getMessage
+  case ex: NoSuchElementException => ex.getMessage
 }
 
 /*----tail----*/
