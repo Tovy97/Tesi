@@ -30,3 +30,7 @@ codaVuota.tail
 /*----toList----*/
 coda.toList
 codaVuota.toList
+
+/*----toString----*/
+coda.toString
+codaVuota.toString
