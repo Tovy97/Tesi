@@ -84,6 +84,7 @@ sealed trait SplayHeap[E] {
 
   /**
     * Ritorna l'elemento minore presente nello splay-heap.
+    * Se il splay-heap è vuoto viene sollevata un'eccezione.
     * Complessità ammortizzata: O(log(n)).
     *
     * @return l'elemento minore presente nello splay-heap.

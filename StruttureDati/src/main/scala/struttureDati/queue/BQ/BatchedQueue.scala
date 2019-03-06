@@ -42,6 +42,7 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
 
   /**
     * Ritorna l'elemento che si trova in testa alla coda.
+    * Se la coda è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
     * @return l'elemento che si trovava in testa alla coda.

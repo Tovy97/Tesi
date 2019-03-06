@@ -168,7 +168,7 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
 
   /**
     * Ritorna la lista ordinata contenente gli elementi dell'albero binario di ricerca.
-    * Complessità: O(n)
+    * Complessità: O(n) nel caso peggiore
     *
     * @return la lista ordinata contenente gli elementi dell'albero binario di ricerca.
     */

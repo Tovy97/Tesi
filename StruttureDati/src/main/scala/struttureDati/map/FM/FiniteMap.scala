@@ -196,7 +196,8 @@ sealed trait FiniteMap[I, +E] {
   }
 
   /**
-    * Controlla se le 3 proprietà degli alberi binari di ricerca usati per la rappresentazione della mappa sono rispettate.
+    * Controlla se le 3 proprietà degli alberi binari di ricerca usati per la rappresentazione
+    * della mappa sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
     * @return true se le 3 proprietà degli alberi binari di ricerca usati per la rappresentazione della mappa sono rispettate, altrimenti false.

@@ -252,7 +252,7 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
 
   /**
     * Ritorna la lista ordinata contenente gli elementi dell'albero red-black.
-    * Complessità: O(n)
+    * Complessità: O(n) nel caso peggiore
     *
     * @return la lista ordinata contenente gli elementi dell'albero red-black.
     */

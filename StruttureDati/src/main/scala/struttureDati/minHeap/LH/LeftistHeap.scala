@@ -64,6 +64,7 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
 
   /**
     * Unisce gli elementi presenti in due leftist-heap in un unico leftist-heap.
+    * Se l'heap passato come parametro non è un'istanza di LeftistHeap viene sollevata un'eccezione.
     * Complessità: O(log(n)) nel caso peggiore.
     *
     * @param hp  è il leftist-heap da unire
@@ -84,6 +85,7 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
 
   /**
     * Ritorna l'elemento minore presente nel leftist-heap.
+    * Se il leftist-heap è vuoto viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore.
     *
     * @return l'elemento minore presente nel leftist-heap.
@@ -140,7 +142,6 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     * @return la lista contenente gli elementi del leftist-heap secondo la strategia pre-order.
     */
   override final lazy val toList: List[E] = {
-
     def createList(lh: LeftistHeap[E], temp: List[E]): List[E] = lh match {
       case Empty() => temp
       case Node(el, _, sx, dx) => el :: createList(sx, createList(dx, temp))
@@ -172,7 +173,6 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     * @return il leftist-heap risultato dell'unione dei due leftist-heap passati per parametro.
     */
   private final def mrg(lh1: LeftistHeap[E], lh2: LeftistHeap[E])(implicit ord: Ordering[E]): LeftistHeap[E] = {
-
     def makeT(el: E, lh1: LeftistHeap[E], lh2: LeftistHeap[E]): LeftistHeap[E] = {
       if (lh1.rank >= lh2.rank) {
         Node(el, lh2.rank + 1, lh1, lh2)
@@ -192,7 +192,6 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     }
   }
 }
-
 
 /**
   * Companion Object del trait LeftistHeap.

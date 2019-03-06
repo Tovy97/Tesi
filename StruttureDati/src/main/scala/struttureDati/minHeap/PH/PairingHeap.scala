@@ -58,6 +58,7 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
 
   /**
     * Unisce gli elementi presenti in due pairing-heap in un unico pairing-heap.
+    * Se l'heap passato come parametro non è un'istanza di PairingHeap viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
     *
@@ -78,6 +79,7 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
 
   /**
     * Ritorna l'elemento minore presente nel pairing-heap.
+    * Se il pairing-heap è vuoto viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
     *

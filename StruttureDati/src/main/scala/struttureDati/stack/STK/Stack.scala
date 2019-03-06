@@ -19,7 +19,6 @@ final case class Stack[+E](private val stack: List[E]) {
 
   /**
     * Elimina l'elemento che si trova in cima alla pila.
-    * Se la pila è vuota solleva un'eccezione.
     * Complessità: O(1) nel caso peggiore.
     *
     * @return lo stack senza l'elemento che si trovava in cima.
@@ -43,7 +42,7 @@ final case class Stack[+E](private val stack: List[E]) {
 
   /**
     * Ritorna l'elemento che si trova in cima alla pila.
-    * Se la pila è vuota solleva un'eccezione.
+    * Se la pila è vuota viene solleva un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
     * @return l'elemento che si trovava in cima allo stack.

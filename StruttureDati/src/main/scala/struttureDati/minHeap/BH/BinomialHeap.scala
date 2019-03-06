@@ -53,6 +53,7 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
 
   /**
     * Unisce gli elementi presenti in due heap binomiale in un unico heap binomiale.
+    * Se l'heap passato come parametro non è un'istanza di BinomialHeap viene sollevata un'eccezione.
     * Complessità: O(log(n)) nel caso peggiore.
     * Complessità ammortizzata: O(log(n))
     *
@@ -69,6 +70,7 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
 
   /**
     * Ritorna l'elemento minore presente nell'heap binomiale.
+    * Se l'heap binomiale è vuoto viene sollevata un'eccezione.
     * Complessità: O(log(n)) nel caso peggiore.
     * Complessità ammortizzata: O(log(n))
     *
@@ -96,7 +98,8 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
   }
 
   /**
-    * Controlla se le 3 proprietà degli heap binomiali e le proprietà degli alberi binomiali sono rispettate.
+    * Controlla se le 3 proprietà degli heap binomiali e le proprietà degli alberi binomiali sono
+    * rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @return true se le 3 proprietà degli heap binomiali e le proprietà degli alberi binomiali sono rispettate, altrimenti false.
@@ -119,7 +122,7 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
 
   /**
     * Ritorna la lista contenente gli elementi degli alberi presenti nell'heap binomiale,
-    * scorrendo gli alberi secondo il grado in ordine crescente.
+    * scorrendo gli alberi binomiali secondo il grado in ordine crescente.
     *
     * @return la lista contenente gli elementi degli alberi presenti nell'heap binomiale, scorrendo gli alberi secondo il grado in ordine crescente.
     */
@@ -164,6 +167,7 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     * l'elemento minore (e quindi l'albero che ha l'elemento minore in assoluto
     * nell'heap binomiale) e la coppia formata dall'albero binomiale estratto e dal
     * resto dell'heap binomiale.
+    * Se l'heap binomiale è vuoto viene sollevata un'eccezione.
     *
     * @param bh  l'heap binomiale da cui estrarre l'albero con l'elemento minore.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.

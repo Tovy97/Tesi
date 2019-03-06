@@ -42,6 +42,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
 
   /**
     * Ritorna l'elemento che si trova in testa alla coda doppia.
+    * Se la coda doppia è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
     * @return l'elemento che si trovava in testa alla coda doppia.
@@ -97,6 +98,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
 
   /**
     * Ritorna l'elemento che si trova in coda alla coda doppia.
+    * Se la coda doppia è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
     * @return l'elemento che si trovava in coda alla coda doppia.
