@@ -142,3 +142,33 @@ private object BST_Specification extends Properties("BST") {
     }
   }
 }
+
+/*
+private object createBST2 {
+  def swapIfNeeded(l: BinarySearchTree[Int], r: BinarySearchTree[Int]): (BinarySearchTree[Int], BinarySearchTree[Int]) = (l, r) match {
+    case (Node(x, _, _), Node(y, _, _)) if x > y => (r, l)
+    case (_, _) => (l, r)
+  }
+
+  def genValue(left: Tree, right: Tree): Gen[Int] = {
+    try {
+      (left, right) match {
+        case (Node(_, _, _), Node(_, _, _)) => Gen.chooseNum(left.getMin + 1, right.getMax - 1)
+        case (Node(_, _, _), Empty()) => Gen.chooseNum(left.getMin + 1, Int.MaxValue)
+        case (Empty(), Node(_, _, _)) => Gen.chooseNum(Int.MinValue, right.getMax - 1)
+        case (Empty(), Empty()) => Arbitrary.arbitrary[Int]
+      }
+    } catch {
+      case _: Exception => ???
+    }
+  }
+
+  val genNode = for {
+    l0 <- genTree
+    r0 <- genTree
+    (left, right) = swapIfNeeded(l0, r0)
+    v <- genValue(left, right)
+  } yield Node(v, left, right)
+
+  def genTree: Gen[BinarySearchTree[Int]] = Gen.lzy(Gen.oneOf(Gen.const(Empty()), genNode))
+}*/
