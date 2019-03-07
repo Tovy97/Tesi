@@ -159,7 +159,7 @@ private object createBST2 {
         case (Empty(), Empty()) => Arbitrary.arbitrary[Int]
       }
     } catch {
-      case _: Exception => ???
+      case _: Exception => ??? //Se entro qui allora i due sottoalberi non sono compatibili perché i loro elementi si "incrociano"
     }
   }
 
