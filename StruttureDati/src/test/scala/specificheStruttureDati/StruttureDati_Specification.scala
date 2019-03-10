@@ -33,7 +33,15 @@ object StruttureDati_Specification extends Properties("StruttureDati") {
     *
     * @return true se tutte le proprietà di tutte le strutture dati sono verificate, altrimenti false
     */
-  lazy val passed: Boolean = checkProp.forall(x => x._2.passed)
+  lazy val isAllPassed: Boolean = checkProp.forall(x => x._2.passed)
+
+  /**
+    * Ritorna una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un
+    * Result che contiene le informazioni sul test solo per i test non passati.
+    *
+    * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test solo per i test non passati.
+    */
+  lazy val getAllNotPassedTest: Seq[(String, Result)] = checkProp.filter(x => !x._2.passed)
 
   /**
     * Esegue la check su tutte le proprietà struttura dati BH e ritorna una sequenza
