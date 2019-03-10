@@ -92,7 +92,6 @@ private object BQ_Specification extends Properties("BQ") {
     } else {
       bq.tail.size == bq.size - 1
     }
-
   }
 
   /**

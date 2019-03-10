@@ -85,6 +85,5 @@ trait MinHeap[E] {
     * @return la lista contenente gli elementi del MinHeap.
     */
   def toList: List[E]
-
 }
 
