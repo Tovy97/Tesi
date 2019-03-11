@@ -8,10 +8,11 @@ import scala.annotation.tailrec
   * Implementa un collezione di elementi ordinabili che devono essere trasformati in una lista
   * ordinata utilizzando il merge sort.
   * La collezione è organizzata con uno stream di segmenti, dove i segmenti sono una lista
-  * di elementi già ordinati.
+  * di elementi ordinati.
   * La collezione ha la seguente proprietà:
   *
   * 1) nello stream non si cono due segmenti con lo stesso numeri di elementi.
+  * 2) I segmenti sono composti da liste ordinate.
   *
   * Prevede un parametro invariante.
   * Il tipo parametrico deve essere ordinabile.
@@ -75,7 +76,8 @@ final case class BottomUpMergeSort[E](override val size: Int, private val segmen
     *
     * @return true se le proprietà della collezione sono rispettate, altrimenti false.
     */
-  override def isCorrect: Boolean = segments.forall(s => segments.count(x => x.seg.size == s.seg.size) == 1)
+  override def isCorrect: Boolean =
+    segments.forall(s => segments.count(x => x.seg.size == s.seg.size) == 1 && s.seg.sorted == s.seg)
 
   /**
     * Ritorna la stringa che rappresenta la collezione.
