@@ -1,7 +1,9 @@
 package struttureDati.queue
 
 /**
-  * Rappresenta le code che sono strutture dati FIFO.
+  * Rappresenta rappresenta le code che sono un particolare tipo di lista
+  * in cui le operazioni di inserimento, lettura e di cancellazione si compiono
+  * sempre e solo agli estremi (testa e/o coda).
   * Prevede un parametro covariante.
   *
   * @tparam E indica il tipo di elementi contenuti nella coda. È covariante.

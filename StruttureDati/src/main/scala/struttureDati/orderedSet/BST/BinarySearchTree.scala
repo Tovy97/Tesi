@@ -100,7 +100,7 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
   override final def delete(El: E)(implicit ord: Ordering[E]): BinarySearchTree[E] = {
     require(!(ord eq null), "Il tipo deve essere ordinabile")
     this match {
-      case Empty() => Empty()
+      case Empty() => this
       case Node(El, Empty(), Empty()) => Empty()
       case Node(El, sx, Empty()) => sx
       case Node(El, Empty(), dx) => dx
