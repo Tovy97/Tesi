@@ -158,8 +158,9 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementa un collezione di elementi ordinabili che devono essere trasformati in una lista
 ordinata utilizzando il merge sort.
 La collezione è organizzata con uno stream di segmenti, dove i segmenti sono una lista
-di elementi già ordinati.
-La collezione ha la seguente proprietà:</p><p>1) nello stream non si cono due segmenti con lo stesso numeri di elementi.</p><p>Prevede un parametro invariante.
+di elementi ordinati.
+La collezione ha la seguente proprietà:</p><p>1) nello stream non si cono due segmenti con lo stesso numeri di elementi.
+2) I segmenti sono composti da liste ordinate.</p><p>Prevede un parametro invariante.
 Il tipo parametrico deve essere ordinabile.
 La struttura dati è persistente.
 </p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel BottomUpMergeSort. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">size</dt><dd class="cmt"><p>il numero di elementi presenti nella collezione.</p></dd><dt class="param">segments</dt><dd class="cmt"><p>stream contenente gli elementi della collezione organizzati in Segmenti. Non ci sono due segmenti con lo stesso numero di elementi.</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
@@ -168,7 +169,7 @@ La struttura dati è persistente.
       <span class="symbol">classOf[IllegalArgumentException]</span>
     </span>)</span>
               
-        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalArgumentException"><code>IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl><div class="toggleContainer block">
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -233,7 +234,7 @@ La struttura dati è persistente.
         <span class="name">BottomUpMergeSort</span><span class="params">(<span name="size">size: <span class="extype" name="scala.Int">Int</span></span>, <span name="segments">segments: <span class="extype" name="scala.Stream">Stream</span>[<a href="Segment.html" class="extype" name="struttureDati.sortable.BUMS.Segment">Segment</a>[<span class="extype" name="struttureDati.sortable.BUMS.BottomUpMergeSort.E">E</span>]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ord">ord: <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="struttureDati.sortable.BUMS.BottomUpMergeSort.E">E</span>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">size</dt><dd class="cmt"><p>il numero di elementi presenti nella collezione.</p></dd><dt class="param">segments</dt><dd class="cmt"><p>stream contenente gli elementi della collezione organizzati in Segmenti. Non ci sono due segmenti con lo stesso numero di elementi.</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalArgumentException"><code>IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">size</dt><dd class="cmt"><p>il numero di elementi presenti nella collezione.</p></dd><dt class="param">segments</dt><dd class="cmt"><p>stream contenente gli elementi della collezione organizzati in Segmenti. Non ci sono due segmenti con lo stesso numero di elementi.</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
     </li></ol>
             </div>
 
