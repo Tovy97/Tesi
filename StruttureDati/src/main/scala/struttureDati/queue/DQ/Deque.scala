@@ -4,7 +4,7 @@ import struttureDati.queue.Queue
 
 /**
   * Implementa le code doppie, che sono code in cui le operazioni di inserimento,
-  * lettura e cancellazione si compiono sempre e solo in testa o in coda.
+  * lettura e cancellazione si possono compiere su entrambi gli estremi.
   *
   * @param sx è la parte iniziale della coda doppia (testa).
   * @param dx è a parte finale della coda doppia (coda).
@@ -31,7 +31,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
 
   /**
     * Inserisce un elemento in testa alla coda doppia.
-    * Complessità: O(n) nel caso peggiore.
+    * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1)
     *
     * @param el è l'elemento da inserire
@@ -126,7 +126,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
 
   /**
     * Inserisce un elemento in coda alla coda doppia.
-    * Complessità: O(n) nel caso peggiore.
+    * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
     *
     * @param el è l'elemento da inserire
