@@ -49,8 +49,8 @@ sealed trait SplayHeap[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return lo splay-heap ristrutturato secondo la proprietà 6 in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def insert(el: E)(implicit ord: Ordering[E]): SplayHeap[E] = {
@@ -65,8 +65,8 @@ sealed trait SplayHeap[E] {
     *
     * @param sh  è lo splay-heap da unire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return lo splay-heap unione
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def merge(sh: SplayHeap[E])(implicit ord: Ordering[E]): SplayHeap[E] = {
@@ -87,8 +87,8 @@ sealed trait SplayHeap[E] {
     * Se il splay-heap è vuoto viene sollevata un'eccezione.
     * Complessità ammortizzata: O(log(n)).
     *
+    * @throws java.util.NoSuchElementException se lo splay-heap è vuoto.
     * @return l'elemento minore presente nello splay-heap.
-    * @throws NoSuchElementException se lo splay-heap è vuoto.
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -104,8 +104,8 @@ sealed trait SplayHeap[E] {
     * Complessità ammortizzata: O(log(n)).
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return lo splay-heap ristrutturato  secondo la proprietà 6 in cui è stato eliminato l'elemento minore.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def deleteMin(implicit ord: Ordering[E]): SplayHeap[E] = {
@@ -122,8 +122,8 @@ sealed trait SplayHeap[E] {
     * Controlla se le 6 proprietà degli splay-heap sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 6 proprietà degli splay-heap sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def isCorrect(implicit ord: Ordering[E]): Boolean = {
@@ -214,8 +214,8 @@ object SplayHeap {
     * @param els l'elenco degli elementi da inserire nel splay-heap
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato lo splay-heap.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return lo splay-heap contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): SplayHeap[E] = {

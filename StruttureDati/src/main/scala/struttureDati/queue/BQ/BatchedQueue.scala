@@ -45,8 +45,8 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
     * Se la coda è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se la coda è vuota.
     * @return l'elemento che si trovava in testa alla coda.
-    * @throws NoSuchElementException se la coda è vuota.
     */
   @throws(classOf[NoSuchElementException])
   override def head: E = sx match {

@@ -56,8 +56,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero red-black in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def insert(El: E)(implicit ord: Ordering[E]): RedBlackTree[E] = {
@@ -83,8 +83,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da cercare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se El è contenuto nell'albero red-black, altrimenti false
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @tailrec
   @throws(classOf[IllegalArgumentException])
@@ -107,8 +107,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da eliminare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero red-black in cui è stato eliminato l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def delete(El: E)(implicit ord: Ordering[E]): RedBlackTree[E] = {
@@ -164,7 +164,7 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
       } else {
         delRight(a, e, b)
       }
-      case Empty() => Empty()
+      case Empty() => rbt
     }
 
     del(this) match {
@@ -178,8 +178,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     * Se l'albero red-black è vuoto viene sollevata un'eccezione.
     * Complessità: O(log(n)) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
     * @return l'elemento minore presente nell'albero red-black.
-    * @throws NoSuchElementException se l'albero red-black è vuoto
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -194,8 +194,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     * Se l'albero red-black è vuoto viene sollevata un'eccezione.
     * Complessità: O(log(n)) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
     * @return l'elemento maggiore presente nell'albero red-black.
-    * @throws NoSuchElementException se l'albero red-black è vuoto
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -209,8 +209,8 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
     * Controlla se le 6 proprietà degli alberi red-black sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 6 proprietà degli alberi red-black sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def isCorrect(implicit ord: Ordering[E]): Boolean = {
@@ -282,7 +282,7 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
 
   /**
     * Bilancia l'albero red-black, al fine di garantire che la proprietà 4 sia
-    * sempre rispettata. Se l'albero non viola la regola 4, allora non subisce modifiche.
+    * sempre rispettata. Se l'albero non viola la proprietà 4, allora non subisce modifiche.
     *
     * @param col  è il colore della radice del sottoalbero red-black che si sta bilanciando
     * @param el   è l'elemento della radice del sottoalbero red-black che si sta bilanciando
@@ -312,8 +312,8 @@ object RedBlackTree {
     * @param els l'elenco degli elementi da inserire nell'abero red-black.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato l'albero red-black.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero red-black contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): RedBlackTree[E] = {

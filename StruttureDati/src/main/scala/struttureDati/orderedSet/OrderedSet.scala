@@ -28,8 +28,8 @@ trait OrderedSet[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'insieme in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def insert(el: E)(implicit ord: Ordering[E]): OrderedSet[E]
@@ -39,8 +39,8 @@ trait OrderedSet[E] {
     *
     * @param el  è l'elemento da cercare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se El è contenuto nell'insieme, altrimenti false
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def isMember(el: E)(implicit ord: Ordering[E]): Boolean
@@ -50,8 +50,8 @@ trait OrderedSet[E] {
     *
     * @param el  è l'elemento da eliminare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'insieme in cui è stato eliminato l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def delete(el: E)(implicit ord: Ordering[E]): OrderedSet[E]
@@ -60,8 +60,8 @@ trait OrderedSet[E] {
     * Ritorna l'elemento minore presente nell'insieme.
     * Se l'insieme è vuoto viene sollevata un'eccezione.
     *
+    * @throws java.util.NoSuchElementException se l'insieme è vuoto.
     * @return l'elemento minore presente nell'insieme.
-    * @throws NoSuchElementException se l'insieme è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   def getMin: E
@@ -70,8 +70,8 @@ trait OrderedSet[E] {
     * Ritorna l'elemento maggiore presente nell'insieme.
     * Se l'insieme è vuoto viene sollevata un'eccezione.
     *
+    * @throws java.util.NoSuchElementException se l'insieme è vuoto.
     * @return l'elemento maggiore presente nell'insieme.
-    * @throws NoSuchElementException se l'insieme è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   def getMax: E
@@ -80,8 +80,8 @@ trait OrderedSet[E] {
     * Controlla se le proprietà dell'implementazione dell'OrderedSet sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le proprietà dell'implementazione dell'OrderedSet sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def isCorrect(implicit ord: Ordering[E]): Boolean

@@ -19,7 +19,7 @@ import scala.annotation.tailrec
   * @param trees è l'iniseme di alberi binomiali
   * @param ord   è la classe contenente il criterio di ordinamento del tipo parametrico.
   * @tparam E indica il tipo di elementi contenuti nel BinomialHeap. Deve essere ordinabile ed è invariante.
-  * @throws IllegalArgumentException se il parametro ord è null
+  * @throws java.lang.IllegalArgumentException se il parametro ord è null
   */
 @throws(classOf[IllegalArgumentException])
 final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(implicit ord: Ordering[E]) extends MinHeap[E] {
@@ -58,8 +58,8 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     *
     * @param hp  è l'heap binomiale da unire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se l'heap hp passato come parametro non è un heap binomiale
     * @return l'heap binomiale unione
-    * @throws IllegalArgumentException se l'heap hp passato come parametro non è un heap binomiale
     */
   @throws(classOf[IllegalArgumentException])
   override def merge(hp: MinHeap[E])(implicit ord: Ordering[E]): BinomialHeap[E] = hp match {
@@ -73,8 +73,8 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     * Complessità: O(log(n)) nel caso peggiore.
     * Complessità ammortizzata: O(log(n))
     *
+    * @throws java.util.NoSuchElementException se l'heap binomiale è vuoto.
     * @return l'elemento minore presente nell'heap binomiale.
-    * @throws NoSuchElementException se l'heap binomiale è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   override def findMin: E = try {
@@ -174,8 +174,8 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     *
     * @param bh  l'heap binomiale da cui estrarre l'albero con l'elemento minore.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.util.NoSuchElementException se l'heap binomiale è vuoto.
     * @return la coppia formata dall'albero binomiale estratto e dal resto dell'heap binomiale.
-    * @throws NoSuchElementException se l'heap binomiale è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   private def removeMinTree(bh: BinomialHeap[E])(implicit ord: Ordering[E]): (BinomialTree[E], BinomialHeap[E]) = bh match {
@@ -217,8 +217,8 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
     * @param bt1 il primo albero binomiale
     * @param bt2 il secondo albero binomiale
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se i due alberi binomiali hanno gradi diversi.
     * @return l'albero binomiale risultante dall'unione dei due alberi binomiali passati per parametro.
-    * @throws IllegalArgumentException se i due alberi binomiali hanno gradi diversi.
     */
   @throws(classOf[IllegalArgumentException])
   private def mergeTree(bt1: BinomialTree[E], bt2: BinomialTree[E])(implicit ord: Ordering[E]): BinomialTree[E] = {
@@ -242,8 +242,8 @@ object BinomialHeap {
     * @param els l'elenco degli elementi da inserire nell'heap binomiale
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato l'heap binomiale.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'heap binomiale contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): BinomialHeap[E] = {

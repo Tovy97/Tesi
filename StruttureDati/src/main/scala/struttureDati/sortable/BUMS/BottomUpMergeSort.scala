@@ -21,8 +21,8 @@ import scala.annotation.tailrec
   * @param size     il numero di elementi presenti nella collezione.
   * @param segments stream contenente gli elementi della collezione organizzati in Segmenti. Non ci sono due segmenti con lo stesso numero di elementi.
   * @param ord      è la classe contenente il criterio di ordinamento del tipo parametrico.
+  * @throws java.lang.IllegalArgumentException se il parametro ord è null
   * @tparam E indica il tipo di elementi contenuti nel BottomUpMergeSort. Deve essere ordinabile ed è invariante.
-  * @throws IllegalArgumentException se il parametro ord è null
   */
 @throws(classOf[IllegalArgumentException])
 final case class BottomUpMergeSort[E](override val size: Int, private val segments: Stream[Segment[E]])(implicit ord: Ordering[E]) extends Sortable[E] {
@@ -124,8 +124,8 @@ object BottomUpMergeSort {
     * @param els l'elenco degli elementi da inserire nella collezione.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato la collezione.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la collezione contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): BottomUpMergeSort[E] = {

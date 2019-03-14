@@ -37,8 +37,8 @@ trait Queue[+E] {
     * Ritorna l'elemento che si trova in testa alla coda.
     * Se la coda è vuota viene sollevata un'eccezione.
     *
+    * @throws java.util.NoSuchElementException se la coda è vuota.
     * @return l'elemento che si trovava in testa alla coda.
-    * @throws NoSuchElementException se la coda è vuota.
     */
   @throws(classOf[NoSuchElementException])
   def head: E

@@ -30,8 +30,8 @@ trait Sortable[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la collezione in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def add(el: E)(implicit ord: Ordering[E]): Sortable[E]
@@ -40,8 +40,8 @@ trait Sortable[E] {
     * Ordina la collezione e restituisce la lista ordinata con gli elementi della collezione.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la lista ordinata con gli elementi della collezione.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def sort(implicit ord: Ordering[E]): List[E]

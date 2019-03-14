@@ -46,8 +46,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero binario di ricerca in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def insert(El: E)(implicit ord: Ordering[E]): BinarySearchTree[E] = {
@@ -69,8 +69,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da cercare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se El è contenuto nell'albero binario di ricerca, altrimenti false
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @tailrec
   @throws(classOf[IllegalArgumentException])
@@ -93,8 +93,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     *
     * @param El  è l'elemento da eliminare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero binario di ricerca in cui è stato eliminato l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def delete(El: E)(implicit ord: Ordering[E]): BinarySearchTree[E] = {
@@ -120,8 +120,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
     * Complessità: O(n) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
     * @return l'elemento minore presente nell'albero di ricerca binario.
-    * @throws NoSuchElementException se l'albero binario di ricerca è vuoto
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -136,8 +136,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
     * Complessità: O(n) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
     * @return l'elemento maggiore presente nell'albero di ricerca binario.
-    * @throws NoSuchElementException se l'albero binario di ricerca è vuoto
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -151,8 +151,8 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     * Controlla se le 3 proprietà degli alberi binari di ricerca sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 3 proprietà degli alberi binari di ricerca sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def isCorrect(implicit ord: Ordering[E]): Boolean = {
@@ -207,8 +207,8 @@ object BinarySearchTree {
     * @param els l'elenco degli elementi da inserire nell'abero binario di ricerca.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato l'albero binario di ricerca.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'albero binario di ricerca contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): BinarySearchTree[E] = {

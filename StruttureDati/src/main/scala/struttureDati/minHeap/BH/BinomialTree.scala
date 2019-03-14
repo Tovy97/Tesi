@@ -15,7 +15,7 @@ import scala.annotation.tailrec
   * @param rank     è il grado dell'albero binomiale
   * @param children è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali
   * @tparam E indica il tipo di elementi contenuti nel BinomialTree. Deve essere ordinabile ed è invariante.
-  * @throws IllegalArgumentException se il parametro ord è null
+  * @throws java.lang.IllegalArgumentException se il parametro ord è null
   */
 @throws(classOf[IllegalArgumentException])
 final case class BinomialTree[E](el: E, rank: Int, children: List[BinomialTree[E]])(implicit ord: Ordering[E]) {

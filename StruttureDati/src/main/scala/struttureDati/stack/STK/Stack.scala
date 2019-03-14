@@ -45,8 +45,8 @@ final case class Stack[+E](private val stack: List[E]) {
     * Se la pila è vuota viene solleva un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se non ci sono elementi nella pila
     * @return l'elemento che si trovava in cima allo stack.
-    * @throws NoSuchElementException se non ci sono elementi nella pila
     */
   @throws(classOf[NoSuchElementException])
   def top: E = stack match {

@@ -50,8 +50,8 @@ sealed trait FiniteMap[I, +E] {
     * @param el  è il valore da inserire.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
     * @tparam T è il tipo parametrico con cui viene parametrizzato il valore della mappa.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la mappa con la coppia chiave-valore inserita.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def insert[T >: E](Ind: I, el: T)(implicit ord: Ordering[I]): FiniteMap[I, T] = {
@@ -75,8 +75,8 @@ sealed trait FiniteMap[I, +E] {
     * @param coppia è la coppia chiave-valore da inserire.
     * @param ord    è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
     * @tparam T è il tipo parametrico con cui viene parametrizzato il valore della mappa.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la mappa con la coppia chiave-valore inserita.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def insert[T >: E](coppia: (I, T))(implicit ord: Ordering[I]): FiniteMap[I, T] = {
@@ -90,8 +90,8 @@ sealed trait FiniteMap[I, +E] {
     *
     * @param Ind è la chiave da cercare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se la chiave Ind è usata nella mappa, altrimenti false
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @tailrec
   @throws(classOf[IllegalArgumentException])
@@ -114,8 +114,8 @@ sealed trait FiniteMap[I, +E] {
     *
     * @param Ind è la chiave della coppia da eliminare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la mappa in cui è stata eliminata la coppia chiave-valore
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def delete(Ind: I)(implicit ord: Ordering[I]): FiniteMap[I, E] = {
@@ -143,9 +143,9 @@ sealed trait FiniteMap[I, +E] {
     *
     * @param Ind è la chiave associata al valore da cercare
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
+    * @throws java.util.NoSuchElementException   se la chiave cercata non è presenta nella mappa
     * @return il valore associato alla chiave Ind.
-    * @throws IllegalArgumentException se il parametro ord è null
-    * @throws NoSuchElementException   se la chiave cercata non è presenta nella mappa
     */
   @tailrec
   @throws(classOf[IllegalArgumentException])
@@ -168,8 +168,8 @@ sealed trait FiniteMap[I, +E] {
     * Se la mappa è vuota viene sollevata un'eccezione.
     * Complessità: O(n) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se la mappa è vuota
     * @return la coppia chiave-valore con la chiave maggior
-    * @throws NoSuchElementException se la mappa è vuota
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -184,8 +184,8 @@ sealed trait FiniteMap[I, +E] {
     * Se la mappa è vuota viene sollevata un'eccezione.
     * Complessità: O(n) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se la mappa è vuota
     * @return la coppia chiave-valore con la chiave minore
-    * @throws NoSuchElementException se la mappa è vuota
     */
   @tailrec
   @throws(classOf[NoSuchElementException])
@@ -200,8 +200,8 @@ sealed trait FiniteMap[I, +E] {
     * della mappa sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 3 proprietà degli alberi binari di ricerca usati per la rappresentazione della mappa sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def isCorrect(implicit ord: Ordering[I]): Boolean = {
@@ -258,8 +258,8 @@ object FiniteMap {
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico per la chiave.
     * @tparam I è il tipo parametrico per la chiave con cui viene parametrizzata la mappa.
     * @tparam E è il tipo parametrico per il valore con cui viene parametrizzata la mappa.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return la mappa contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[I, E](els: (I, E)*)(implicit ord: Ordering[I]): FiniteMap[I, E] = {

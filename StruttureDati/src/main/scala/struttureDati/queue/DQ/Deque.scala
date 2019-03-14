@@ -45,8 +45,8 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     * Se la coda doppia è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
     * @return l'elemento che si trovava in testa alla coda doppia.
-    * @throws NoSuchElementException se la coda doppia è vuota.
     */
   @throws(classOf[NoSuchElementException])
   override def head: E = (sx, dx) match {
@@ -101,8 +101,8 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     * Se la coda doppia è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
     *
+    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
     * @return l'elemento che si trovava in coda alla coda doppia.
-    * @throws NoSuchElementException se la coda doppia è vuota.
     */
   @throws(classOf[NoSuchElementException])
   def last: E = (sx, dx) match {

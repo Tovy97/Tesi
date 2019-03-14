@@ -32,8 +32,8 @@ trait MinHeap[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'heap in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def insert(el: E)(implicit ord: Ordering[E]): MinHeap[E]
@@ -43,8 +43,9 @@ trait MinHeap[E] {
     *
     * @param hp  è l'heap da unire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
+    * @throws java.lang.IllegalArgumentException se l'heap hp passato come parametro non è compatibile
     * @return l'heap unione
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def merge(hp: MinHeap[E])(implicit ord: Ordering[E]): MinHeap[E]
@@ -53,8 +54,8 @@ trait MinHeap[E] {
     * Ritorna l'elemento minore presente nell'heap.
     * Se l'heap è vuoto viene sollevata un'eccezione.
     *
+    * @throws java.util.NoSuchElementException se l'heap è vuoto.
     * @return l'elemento minore presente nell'heap.
-    * @throws NoSuchElementException se l'heap è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   def findMin: E
@@ -63,8 +64,8 @@ trait MinHeap[E] {
     * Elimina l'elemento minore presente nell'heap.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return l'heap in cui è stato eliminato l'elemento minore.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def deleteMin(implicit ord: Ordering[E]): MinHeap[E]
@@ -73,8 +74,8 @@ trait MinHeap[E] {
     * Controlla se le proprietà dell'implementazione del MinHeap sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le proprietà dell'implementazione del MinHeap sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   def isCorrect(implicit ord: Ordering[E]): Boolean

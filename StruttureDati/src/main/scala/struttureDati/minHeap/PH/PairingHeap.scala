@@ -47,8 +47,8 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il pairing-heap in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def insert(el: E)(implicit ord: Ordering[E]): PairingHeap[E] = {
@@ -64,9 +64,9 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     *
     * @param hp  è il pairing-heap da unire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
+    * @throws java.lang.IllegalArgumentException se l'heap hp passato come parametro non è un pairing-heap
     * @return il pairing-heap unione
-    * @throws IllegalArgumentException se il parametro ord è null
-    * @throws IllegalArgumentException se l'heap hp passato come parametro non è un pairing-heap
     */
   @throws(classOf[IllegalArgumentException])
   override final def merge(hp: MinHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = {
@@ -84,7 +84,7 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     * Complessità ammortizzata: O(1).
     *
     * @return l'elemento minore presente nel pairing-heap.
-    * @throws NoSuchElementException se il pairing-heap è vuoto.
+    * @throws java.util.NoSuchElementException se il pairing-heap è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   override final def findMin: E = this match {
@@ -103,8 +103,8 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     * Complessità ammortizzata: O(log(n)).
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il pairing-heap in cui è stato eliminato l'elemento minore.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def deleteMin(implicit ord: Ordering[E]): PairingHeap[E] = {
@@ -126,8 +126,8 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     * Controlla se le 2 proprietà degli pairing-heap sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 2 proprietà degli pairing-heap sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def isCorrect(implicit ord: Ordering[E]): Boolean = {
@@ -212,8 +212,8 @@ object PairingHeap {
     * @param els l'elenco degli elementi da inserire nel pairing-heap.
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato il pairing-heap.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il pairing-heap contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): PairingHeap[E] = {

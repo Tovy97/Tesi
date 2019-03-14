@@ -34,8 +34,8 @@ object Segment {
     * @param els l'elenco degli elementi da inserire nel segmento
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato il segmento.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il segmento contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): Segment[E] = {

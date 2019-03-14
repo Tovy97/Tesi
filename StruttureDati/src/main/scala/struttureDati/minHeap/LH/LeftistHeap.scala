@@ -53,8 +53,8 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     *
     * @param el  è l'elemento da inserire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il leftist-heap in cui è stato inserito l'elemento
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def insert(el: E)(implicit ord: Ordering[E]): LeftistHeap[E] = {
@@ -69,9 +69,9 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     *
     * @param hp  è il leftist-heap da unire
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
+    * @throws java.lang.IllegalArgumentException se l'heap hp passato come parametro non è un leftist-heap
     * @return il leftist-heap unione
-    * @throws IllegalArgumentException se il parametro ord è null
-    * @throws IllegalArgumentException se l'heap hp passato come parametro non è un leftist-heap
     */
   @throws(classOf[IllegalArgumentException])
   override final def merge(hp: MinHeap[E])(implicit ord: Ordering[E]): LeftistHeap[E] = {
@@ -88,8 +88,8 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     * Se il leftist-heap è vuoto viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore.
     *
+    * @throws java.util.NoSuchElementException se il leftist-heap è vuoto.
     * @return l'elemento minore presente nel leftist-heap.
-    * @throws NoSuchElementException se il leftist-heap è vuoto.
     */
   @throws(classOf[NoSuchElementException])
   override final def findMin: E = this match {
@@ -102,8 +102,8 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     * Complessità: O(log(n)) nel caso peggiore.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il leftist-heap in cui è stato eliminato l'elemento minore.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def deleteMin(implicit ord: Ordering[E]): LeftistHeap[E] = {
@@ -118,8 +118,8 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
     * Controlla se le 2 proprietà degli leftist-heap sono rispettate.
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return true se le 2 proprietà degli leftist-heap sono rispettate, altrimenti false.
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   override final def isCorrect(implicit ord: Ordering[E]): Boolean = {
@@ -204,8 +204,8 @@ object LeftistHeap {
     * @param els l'elenco degli elementi da inserire nel leftist-heap
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @tparam E è il tipo parametrico con cui viene parametrizzato il leftist-heap.
+    * @throws java.lang.IllegalArgumentException se il parametro ord è null
     * @return il leftist-heap contenente gli elementi passati come parametro
-    * @throws IllegalArgumentException se il parametro ord è null
     */
   @throws(classOf[IllegalArgumentException])
   final def apply[E](els: E*)(implicit ord: Ordering[E]): LeftistHeap[E] = {
