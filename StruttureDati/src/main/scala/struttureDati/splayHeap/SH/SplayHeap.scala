@@ -45,6 +45,7 @@ sealed trait SplayHeap[E] {
 
   /**
     * Inserisce un elemento nel splay-heap e ristruttura l'albero secondo la proprietà 6.
+    * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(log(n)).
     *
     * @param el  è l'elemento da inserire
@@ -61,6 +62,7 @@ sealed trait SplayHeap[E] {
 
   /**
     * Unisce gli elementi presenti in due splay-heap in un unico splay-heap.
+    * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(n).
     *
     * @param sh  è lo splay-heap da unire
@@ -85,6 +87,7 @@ sealed trait SplayHeap[E] {
   /**
     * Ritorna l'elemento minore presente nello splay-heap.
     * Se il splay-heap è vuoto viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(log(n)).
     *
     * @throws java.util.NoSuchElementException se lo splay-heap è vuoto.
@@ -101,6 +104,7 @@ sealed trait SplayHeap[E] {
   /**
     * Elimina l'elemento minore presente nello splay-heap e ristruttura l'albero
     * secondo la proprietà 6.
+    * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(log(n)).
     *
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
