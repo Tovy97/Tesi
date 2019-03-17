@@ -11,6 +11,8 @@ import scala.annotation.tailrec
   * rendendo un albero il figlio più a sinistra dell'altro (ovvero collegati assieme in modo che la
   * radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'altro).
   *
+  * Quindi un albero binomiale di grado R ha esattamente 2 elevato R elementi.
+  *
   * @param el       è l'elemento contenuto nella radice dell'albero binomiale.
   * @param rank     è il grado dell'albero binomiale
   * @param children è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali
@@ -48,7 +50,7 @@ final case class BinomialTree[E](el: E, rank: Int, children: List[BinomialTree[E
         }
       }
 
-      isRankCorrect(1) && c.forall(x => x.isCorrect) && c.forall(x => ord.lteq(el, x.el))
+      isRankCorrect(1) && c.forall(x => x.isCorrect) && c.forall(x => ord.lteq(el, x.el)) && size == Math.pow(2, rank)
   }
 
   /**
