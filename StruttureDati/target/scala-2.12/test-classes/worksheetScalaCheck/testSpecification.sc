@@ -1,5 +1,6 @@
 import specificheStruttureDati.StruttureDati_Specification
 import struttureDati.queue.DQ.Deque
+import struttureDati.sortable.BUMS.BottomUpMergeSort
 
 StruttureDati_Specification.isAllPassed
 StruttureDati_Specification.getAllNotPassedTest

@@ -1,6 +1,5 @@
 import specificheStruttureDati.StruttureDati_Specification
 import struttureDati.queue.DQ.Deque
-import struttureDati.sortable.BUMS.BottomUpMergeSort
 
 StruttureDati_Specification.isAllPassed
 StruttureDati_Specification.getAllNotPassedTest
@@ -16,6 +15,3 @@ coda2 == coda3
 coda.toString
 coda2.toString
 coda3.toString
-
-val a: BottomUpMergeSort[Int] = BottomUpMergeSort(2,0,9,6,7,5,8,4,1,3)
-a.sort
