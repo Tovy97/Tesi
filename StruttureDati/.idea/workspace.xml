@@ -6,9 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="jar">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" afterDir="false" />
+    <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/StruttureDati_jar/StruttureDati.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/StruttureDati_jar/StruttureDati.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/test-classes/worksheetScalaCheck/testSpecification.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/test-classes/worksheetScalaCheck/testSpecification.sc" afterDir="false" />
     </list>
     <list id="b2b9940e-c190-4426-a764-36088e2b4a5d" name="Revert: sistemata scaladoc" comment="">
       <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
@@ -33,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="21">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -42,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+            <state relative-caret-position="471">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="n#!!doc;n#BottomUpMergeSort#0;n#!!top" />
                 <element signature="e#1439#1695#0" />
@@ -124,8 +127,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" />
       </list>
     </option>
   </component>
@@ -148,6 +151,24 @@
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="StruttureDati_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
@@ -497,7 +518,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553080150883</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="bums sistemati">
+      <created>1553097354355</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1553097354355</updated>
+    </task>
+    <task id="LOCAL-00034" summary="jar 2">
+      <created>1553097521415</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1553097521415</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -586,8 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5/3/19 ripristino" />
-    <MESSAGE value="jjj" />
     <MESSAGE value="revisione finita" />
     <MESSAGE value="05/03/19 fine" />
     <MESSAGE value="05/03/19 fine 2" />
@@ -611,7 +644,9 @@
     <MESSAGE value="corretti SH" />
     <MESSAGE value="20/3/19 v 2.0" />
     <MESSAGE value="jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="jar" />
+    <MESSAGE value="bums sistemati" />
+    <MESSAGE value="jar 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar 2" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />
@@ -1068,15 +1103,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="21">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
+        <state relative-caret-position="471">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="n#!!doc;n#BottomUpMergeSort#0;n#!!top" />
             <element signature="e#1439#1695#0" />
