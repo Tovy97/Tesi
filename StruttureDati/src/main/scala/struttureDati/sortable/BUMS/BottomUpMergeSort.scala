@@ -61,15 +61,7 @@ final case class BottomUpMergeSort[E](override val size: Int, private val segmen
     * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @return la lista ordinata con gli elementi della collezione.
     */
-  override def sort(implicit ord: Ordering[E]): List[E] = {
-    @tailrec
-    def mergeAll(xs: Segment[E], ys: Stream[Segment[E]]): Segment[E] = (xs, ys) match {
-      case (_, Stream.Empty) => xs
-      case (_, seg +: segs) => mergeAll(merge(xs, seg), segs)
-    }
-
-    mergeAll(Segment(), segments).seg
-  }
+  override def sort(implicit ord: Ordering[E]): List[E] = segments.foldLeft(Segment())((x, y) => merge(x, y)).seg
 
   /**
     * Controlla se le proprietà della collezione sono rispettate, altrimenti false.
