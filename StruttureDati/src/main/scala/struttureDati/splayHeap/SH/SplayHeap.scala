@@ -73,6 +73,7 @@ sealed trait SplayHeap[E] {
   @throws(classOf[IllegalArgumentException])
   final def merge(sh: SplayHeap[E])(implicit ord: Ordering[E]): SplayHeap[E] = {
     require(!(ord eq null), "Il tipo deve essere ordinabile")
+
     def mrg(sh1: SplayHeap[E], sh2: SplayHeap[E]): SplayHeap[E] = sh1 match {
       case Empty() => sh2
       case Node(x, a, b) =>
@@ -178,7 +179,7 @@ sealed trait SplayHeap[E] {
     * @param ord   è la classe contenente il criterio di ordinamento del tipo parametrico.
     * @return la coppia di splay-heap dove il primo contenente solo elementi minori uguali al pivot e il secondo solo quelli maggiori al pivot.
     */
-  private final def partition(pivot: E, sh: SplayHeap[E])(implicit ord: Ordering[E]): (SplayHeap[E], SplayHeap[E]) =  sh match {
+  private final def partition(pivot: E, sh: SplayHeap[E])(implicit ord: Ordering[E]): (SplayHeap[E], SplayHeap[E]) = sh match {
     case Empty() => (Empty(), Empty())
     case Node(x, a, b) => if (ord.lteq(x, pivot)) {
       b match {

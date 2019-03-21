@@ -1,8 +1,8 @@
 package specificheStruttureDati
 
-import org.scalacheck.Test.{Parameters, checkProperties, Result}
-import org.scalacheck.{Arbitrary, Gen, Properties}
 import org.scalacheck.Prop.forAll
+import org.scalacheck.Test.{Parameters, Result, checkProperties}
+import org.scalacheck.{Arbitrary, Gen, Properties}
 import struttureDati.queue.DQ.Deque
 
 /**
@@ -25,6 +25,41 @@ private object DQ_Specification extends Properties("DQ") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Proprietà: ogni BQ creata attraverso il metodo apply del companion object è corretta
+    */
+  property("isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
+    dq.isCorrect
+  }
+
+  /**
+    * Proprietà: l'addRight di un elemento E in una BQ genera una BQ corretta
+    */
+  property("addRight.isCorrect") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
+    dq.addRight(e).isCorrect
+  }
+
+  /**
+    * Proprietà: la tail di un elemento E in una BQ genera una BQ corretta
+    */
+  property("tail.isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
+    dq.tail.isCorrect
+  }
+
+  /**
+    * Proprietà: l'addRight di un elemento E in una BQ genera una BQ corretta
+    */
+  property("addLeft.isCorrect") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
+    dq.addLeft(e).isCorrect
+  }
+
+  /**
+    * Proprietà: la tail di un elemento E in una BQ genera una BQ corretta
+    */
+  property("init.isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
+    dq.init.isCorrect
+  }
 
   /**
     * Proprietà: la addRight aumenta la size della coda di 1

@@ -1,8 +1,8 @@
 package specificheStruttureDati
 
+import org.scalacheck.Prop.forAll
 import org.scalacheck.Test.{Parameters, Result, checkProperties}
 import org.scalacheck.{Arbitrary, Gen, Properties}
-import org.scalacheck.Prop.forAll
 import struttureDati.stack.STK.Stack
 
 /**

@@ -2,9 +2,10 @@ package specificheStruttureDati
 
 
 import java.util.NoSuchElementException
+
+import org.scalacheck.Prop.forAll
 import org.scalacheck.Test.{Parameters, Result, checkProperties}
 import org.scalacheck.{Arbitrary, Gen, Properties}
-import org.scalacheck.Prop.forAll
 import struttureDati.minHeap.PH.PairingHeap
 
 /**

@@ -1,6 +1,7 @@
 package struttureDati.orderedSet.BST
 
 import struttureDati.orderedSet.OrderedSet
+
 import scala.annotation.tailrec
 
 /**

@@ -61,7 +61,7 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
     *
     * @return la coda senza l'elemento che si trovava in testa
     */
-  override def tail: BatchedQueue[E] = sx match {
+  override lazy val tail: BatchedQueue[E] = sx match {
     case Nil => this
     case _ :: t => checkLeft(t, dx)
   }
@@ -72,6 +72,18 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
     * @return la lista contenente gli elementi della coda.
     */
   override lazy val toList: List[E] = sx ++ dx.reverse
+
+  /**
+    * Controlla la seguente proprietà:
+    *
+    * - la prima lista è vuota solo se lo è anche la seconda, ma non viceversa.
+    *
+    * @return true se la proprietà dell'implementazione di BatchedQueue è rispettata, altrimenti false.
+    */
+  override lazy val isCorrect: Boolean = (sx, dx) match {
+    case (Nil, _ :: _) => false
+    case _ => true
+  }
 
   /**
     * Ritorna la stringa che rappresenta la coda.

@@ -1,6 +1,6 @@
 import specificheStruttureDati.StruttureDati_Specification
+import struttureDati.queue.BQ.BatchedQueue
 import struttureDati.queue.DQ.Deque
-import struttureDati.sortable.BUMS.BottomUpMergeSort
 
 StruttureDati_Specification.isAllPassed
 StruttureDati_Specification.getAllNotPassedTest
@@ -16,3 +16,15 @@ coda2 == coda3
 coda.toString
 coda2.toString
 coda3.toString
+
+var codaB1 = BatchedQueue().addRight(1).addRight(2)
+var codaB2 = codaB1.addRight(1).addRight(2).tail.tail
+
+codaB1 == codaB2
+
+codaB1.toString
+codaB2.toString
+
+val test = (BatchedQueue(Nil, 1::Nil)).isCorrect
+val test2 = Deque(Nil, 1::2::Nil).isCorrect
+val test3 = Deque(1::2::Nil,Nil).isCorrect

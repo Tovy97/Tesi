@@ -109,6 +109,7 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   @throws(classOf[IllegalArgumentException])
   override final def deleteMin(implicit ord: Ordering[E]): PairingHeap[E] = {
     require(!(ord eq null), "Il tipo deve essere ordinabile")
+
     def mergePair(l: List[PairingHeap[E]]): PairingHeap[E] = l match {
       case Nil => Empty()
       case h :: Nil => h

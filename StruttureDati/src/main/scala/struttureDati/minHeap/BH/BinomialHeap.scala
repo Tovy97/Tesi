@@ -1,6 +1,7 @@
 package struttureDati.minHeap.BH
 
 import struttureDati.minHeap.MinHeap
+
 import scala.annotation.tailrec
 
 /**

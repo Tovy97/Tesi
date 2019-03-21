@@ -1,8 +1,8 @@
 package specificheStruttureDati
 
+import org.scalacheck.Prop.forAll
 import org.scalacheck.Test.{Parameters, Result, checkProperties}
 import org.scalacheck.{Arbitrary, Gen, Properties}
-import org.scalacheck.Prop.forAll
 import struttureDati.queue.BQ.BatchedQueue
 
 /**
@@ -25,6 +25,27 @@ private object BQ_Specification extends Properties("BQ") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Proprietà: ogni BQ creata attraverso il metodo apply del companion object è corretta
+    */
+  property("isCorrect") = forAll(genQueue) { bq: BatchedQueue[Int] =>
+    bq.isCorrect
+  }
+
+  /**
+    * Proprietà: l'addRight di un elemento E in una BQ genera una BQ corretta
+    */
+  property("addRight.isCorrect") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (bq: BatchedQueue[Int], e: Int) =>
+    bq.addRight(e).isCorrect
+  }
+
+  /**
+    * Proprietà: la tail di un elemento E in una BQ genera una BQ corretta
+    */
+  property("tail.isCorrect") = forAll(genQueue) { bq: BatchedQueue[Int] =>
+    bq.tail.isCorrect
+  }
 
   /**
     * Proprietà: la addRight aumenta la size della coda di 1

@@ -62,7 +62,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     *
     * @return la coda doppia senza l'elemento che si trovava in testa
     */
-  override def tail: Deque[E] = (sx, dx) match {
+  override lazy val tail: Deque[E] = (sx, dx) match {
     case (Nil, Nil) => this
     case (Nil, _ :: _) => Deque(Nil, Nil)
     case (_ :: t, _) => check(t, dx)
@@ -75,6 +75,19 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     * @return la lista contenente gli elementi della coda doppia.
     */
   override lazy val toList: List[E] = sx ++ dx.reverse
+
+  /**
+    * Controlla la seguente proprietà:
+    *
+    * - nessuna delle due liste deve essere vuota se vi sono almeno due elementi nella coda doppia.
+    *
+    * @return true se la proprietà dell'implementazione di Deque è rispettata, altrimenti false.
+    */
+  override lazy val isCorrect: Boolean = (sx, dx) match {
+    case (_ :: _ :: _, Nil) => false
+    case (Nil, _ :: _ :: _) => false
+    case _ => true
+  }
 
   /**
     * Ritorna la stringa che rappresenta la coda doppia.
@@ -118,7 +131,7 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     *
     * @return la coda doppia senza l'elemento che si trovava in coda.
     */
-  def init: Deque[E] = (sx, dx) match {
+  lazy val init: Deque[E] = (sx, dx) match {
     case (Nil, Nil) => this
     case (_ :: _, Nil) => Deque(Nil, Nil)
     case (_, _ :: t) => check(sx, t)

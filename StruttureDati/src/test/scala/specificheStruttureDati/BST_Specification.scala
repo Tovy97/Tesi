@@ -1,8 +1,8 @@
 package specificheStruttureDati
 
-import org.scalacheck.Test.{Parameters, checkProperties, Result}
-import org.scalacheck.{Arbitrary, Gen, Properties}
 import org.scalacheck.Prop.forAll
+import org.scalacheck.Test.{Parameters, Result, checkProperties}
+import org.scalacheck.{Arbitrary, Gen, Properties}
 import struttureDati.orderedSet.BST.BinarySearchTree
 
 /**

@@ -56,4 +56,11 @@ trait Queue[+E] {
     * @return la lista contenente gli elementi della coda.
     */
   def toList: List[E]
+
+  /**
+    * Controlla se le proprietà dell'implementazione della Queue sono rispettate.
+    *
+    * @return true se le proprietà dell'implementazione della Queue sono rispettate, altrimenti false.
+    */
+  def isCorrect: Boolean
 }
