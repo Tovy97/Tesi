@@ -11,13 +11,6 @@ import struttureDati.queue.BQ.BatchedQueue
 private object BQ_Specification extends Properties("BQ") {
 
   /**
-    * Genera BQ attraverso il metodo apply del Companion Object
-    */
-  private val genQueue: Gen[BatchedQueue[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield BatchedQueue(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati BQ e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -25,6 +18,13 @@ private object BQ_Specification extends Properties("BQ") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera BQ attraverso il metodo apply del Companion Object
+    */
+  private val genQueue: Gen[BatchedQueue[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield BatchedQueue(list: _*)
 
   /**
     * Proprietà: ogni BQ creata attraverso il metodo apply del companion object è corretta

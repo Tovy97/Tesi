@@ -11,13 +11,6 @@ import struttureDati.orderedSet.RBT.RedBlackTree
 private object RBT_Specification extends Properties("RBT") {
 
   /**
-    * Genera BST attraverso il metodo apply del Companion Object
-    */
-  private val genTree: Gen[RedBlackTree[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield RedBlackTree(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati RBT e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -25,6 +18,13 @@ private object RBT_Specification extends Properties("RBT") {
     * @return una sequenza di coppie da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera BST attraverso il metodo apply del Companion Object
+    */
+  private val genTree: Gen[RedBlackTree[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield RedBlackTree(list: _*)
 
   /**
     * Proprietà: ogni RBT creato attraverso il metodo apply del companion object è corretto

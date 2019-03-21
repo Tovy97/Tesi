@@ -18,6 +18,23 @@ final case class Stack[+E](private val stack: List[E]) {
   lazy val size: Int = stack.size
 
   /**
+    * Controlla se è presente almeno un elemento nello stack.
+    *
+    * @return true se la pila è vuota, altrimenti false
+    */
+  lazy val isEmpty: Boolean = stack match {
+    case Nil => true
+    case _ :: _ => false
+  }
+
+  /**
+    * Ritorna la lista contenente gli elementi dello stack.
+    *
+    * @return la lista contenente gli elementi dello stack.
+    */
+  lazy val toList: List[E] = stack
+
+  /**
     * Elimina l'elemento che si trova in cima alla pila.
     * Complessità: O(1) nel caso peggiore.
     *
@@ -53,23 +70,6 @@ final case class Stack[+E](private val stack: List[E]) {
     case Nil => throw new NoSuchElementException("Empty.top")
     case h :: _ => h
   }
-
-  /**
-    * Controlla se è presente almeno un elemento nello stack.
-    *
-    * @return true se la pila è vuota, altrimenti false
-    */
-  lazy val isEmpty: Boolean = stack match {
-    case Nil => true
-    case _ :: _ => false
-  }
-
-  /**
-    * Ritorna la lista contenente gli elementi dello stack.
-    *
-    * @return la lista contenente gli elementi dello stack.
-    */
-  lazy val toList: List[E] = stack
 
   /**
     * Ritorna la stringa che rappresenta la pila.

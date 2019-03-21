@@ -44,6 +44,34 @@ sealed trait SplayHeap[E] {
   }
 
   /**
+    * Ritorna la lista ordinata contenente gli elementi dello splay-heap.
+    *
+    * @return la lista ordinata contenente gli elementi dello splay-heap.
+    */
+  final lazy val toList: List[E] = {
+    def createList(rbt: SplayHeap[E], temp: List[E]): List[E] = rbt match {
+      case Empty() => temp
+      case Node(el, sx, dx) => createList(sx, el :: createList(dx, temp))
+    }
+
+    createList(this, Nil)
+  }
+
+  /**
+    * Ritorna la stringa che rappresenta lo splay-heap.
+    *
+    * @return la stringa che rappresenta lo splay-heap.
+    */
+  override final lazy val toString: String = {
+    def treeToString(sh: SplayHeap[E]): String = sh match {
+      case Empty() => "."
+      case Node(el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
+    }
+
+    "SplayHeap(" + treeToString(this) + ")"
+  }
+
+  /**
     * Inserisce un elemento nel splay-heap e ristruttura l'albero secondo la proprietà 6.
     * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(log(n)).
@@ -139,34 +167,6 @@ sealed trait SplayHeap[E] {
     }
 
     check(this)
-  }
-
-  /**
-    * Ritorna la lista ordinata contenente gli elementi dello splay-heap.
-    *
-    * @return la lista ordinata contenente gli elementi dello splay-heap.
-    */
-  final lazy val toList: List[E] = {
-    def createList(rbt: SplayHeap[E], temp: List[E]): List[E] = rbt match {
-      case Empty() => temp
-      case Node(el, sx, dx) => createList(sx, el :: createList(dx, temp))
-    }
-
-    createList(this, Nil)
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta lo splay-heap.
-    *
-    * @return la stringa che rappresenta lo splay-heap.
-    */
-  override final lazy val toString: String = {
-    def treeToString(sh: SplayHeap[E]): String = sh match {
-      case Empty() => "."
-      case Node(el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
-    }
-
-    "SplayHeap(" + treeToString(this) + ")"
   }
 
   /**

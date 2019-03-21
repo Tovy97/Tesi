@@ -14,13 +14,6 @@ import struttureDati.minHeap.PH.PairingHeap
 private object PH_Specification extends Properties("PH") {
 
   /**
-    * Genera PH attraverso il metodo apply del Companion Object
-    */
-  private val genHeap: Gen[PairingHeap[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield PairingHeap(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati PH e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -28,6 +21,13 @@ private object PH_Specification extends Properties("PH") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera PH attraverso il metodo apply del Companion Object
+    */
+  private val genHeap: Gen[PairingHeap[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield PairingHeap(list: _*)
 
   /**
     * Proprietà: ogni PH creato attraverso il metodo apply del companion object è corretto

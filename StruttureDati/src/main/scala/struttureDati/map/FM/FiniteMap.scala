@@ -42,6 +42,20 @@ sealed trait FiniteMap[I, +E] {
   }
 
   /**
+    * Ritorna la stringa che rappresenta la mappa.
+    *
+    * @return la stringa che rappresenta la mappa.
+    */
+  override final def toString: String = {
+    def treeToString(fm: FiniteMap[I, E]): String = fm match {
+      case Empty() => "."
+      case Node(ind, el, sx, dx) => "(" + treeToString(sx) + "[" + ind + "]->[" + el + "]" + treeToString(dx) + ")"
+    }
+
+    "FiniteMap(" + treeToString(this) + ")"
+  }
+
+  /**
     * Inserisce una coppia chiave-valore nella mappa.
     * Se è già associato un valore a quella chiave, esso viene sostituito con il nuovo valore.
     * Complessità: O(n) nel caso peggiore
@@ -227,20 +241,6 @@ sealed trait FiniteMap[I, +E] {
     }
 
     createList(this, Nil)
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta la mappa.
-    *
-    * @return la stringa che rappresenta la mappa.
-    */
-  override final def toString: String = {
-    def treeToString(fm: FiniteMap[I, E]): String = fm match {
-      case Empty() => "."
-      case Node(ind, el, sx, dx) => "(" + treeToString(sx) + "[" + ind + "]->[" + el + "]" + treeToString(dx) + ")"
-    }
-
-    "FiniteMap(" + treeToString(this) + ")"
   }
 }
 

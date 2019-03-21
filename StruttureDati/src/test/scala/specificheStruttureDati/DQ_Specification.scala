@@ -11,13 +11,6 @@ import struttureDati.queue.DQ.Deque
 private object DQ_Specification extends Properties("DQ") {
 
   /**
-    * Genera DQ attraverso il metodo apply del Companion Object
-    */
-  private lazy val genQueue: Gen[Deque[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield Deque(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati DQ e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -25,6 +18,13 @@ private object DQ_Specification extends Properties("DQ") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera DQ attraverso il metodo apply del Companion Object
+    */
+  private lazy val genQueue: Gen[Deque[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield Deque(list: _*)
 
   /**
     * Proprietà: ogni DQ creata attraverso il metodo apply del companion object è corretta

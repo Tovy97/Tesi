@@ -34,30 +34,6 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
   }
 
   /**
-    * Inserisce un elemento in coda.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @param el è l'elemento da inserire
-    * @tparam T indica il tipo di elementi contenuti nella nuova coda.
-    * @return la coda con il nuovo elemento inserito
-    */
-  override def addRight[T >: E](el: T): BatchedQueue[T] = checkLeft(sx, el :: dx)
-
-  /**
-    * Ritorna l'elemento che si trova in testa alla coda.
-    * Se la coda è vuota viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la coda è vuota.
-    * @return l'elemento che si trovava in testa alla coda.
-    */
-  @throws(classOf[NoSuchElementException])
-  override def head: E = sx match {
-    case Nil => throw new NoSuchElementException("Empty.head")
-    case h :: _ => h
-  }
-
-  /**
     * Elimina l'elemento che si trova in testa alla coda.
     * Complessità: O(n) nel caso peggiore
     * Complessità ammortizzata: O(1)
@@ -89,6 +65,46 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
   }
 
   /**
+    * Inserisce un elemento in coda.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @param el è l'elemento da inserire
+    * @tparam T indica il tipo di elementi contenuti nella nuova coda.
+    * @return la coda con il nuovo elemento inserito
+    */
+  override def addRight[T >: E](el: T): BatchedQueue[T] = checkLeft(sx, el :: dx)
+
+  /**
+    * Bilancia la coda spostando il contenuto della lista di destra in quella di
+    * sinistra nel caso in cui quest'ultima fosse vuota.
+    * Prima dello spostamento della lista destra in quella sinistra, la
+    * lista di destra viene rovesciata (reverse).
+    *
+    * @param sinistra la lista sinistra (di testa) della coda
+    * @param destra   la lista destra (di coda) della coda
+    * @tparam T indica il tipo di elementi contenuti nella nuova coda.
+    * @return la nuova coda bilanciata
+    */
+  private def checkLeft[T >: E](sinistra: List[T], destra: List[T]): BatchedQueue[T] = (sinistra, destra) match {
+    case (Nil, r) => BatchedQueue(r.reverse, Nil)
+    case _ => BatchedQueue(sinistra, destra)
+  }
+
+  /**
+    * Ritorna l'elemento che si trova in testa alla coda.
+    * Se la coda è vuota viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la coda è vuota.
+    * @return l'elemento che si trovava in testa alla coda.
+    */
+  @throws(classOf[NoSuchElementException])
+  override def head: E = sx match {
+    case Nil => throw new NoSuchElementException("Empty.head")
+    case h :: _ => h
+  }
+
+  /**
     * Ritorna la stringa che rappresenta la coda.
     *
     * @return la stringa che rappresenta la coda.
@@ -106,22 +122,6 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
       case (_ :: _, Nil) => "BatchedQueue(" + listToString(sx) + ")"
       case _ => "BatchedQueue(" + listToString(sx) + ", " + listToString(dx.reverse) + ")"
     }
-  }
-
-  /**
-    * Bilancia la coda spostando il contenuto della lista di destra in quella di
-    * sinistra nel caso in cui quest'ultima fosse vuota.
-    * Prima dello spostamento della lista destra in quella sinistra, la
-    * lista di destra viene rovesciata (reverse).
-    *
-    * @param sinistra la lista sinistra (di testa) della coda
-    * @param destra   la lista destra (di coda) della coda
-    * @tparam T indica il tipo di elementi contenuti nella nuova coda.
-    * @return la nuova coda bilanciata
-    */
-  private def checkLeft[T >: E](sinistra: List[T], destra: List[T]): BatchedQueue[T] = (sinistra, destra) match {
-    case (Nil, r) => BatchedQueue(r.reverse, Nil)
-    case _ => BatchedQueue(sinistra, destra)
   }
 }
 

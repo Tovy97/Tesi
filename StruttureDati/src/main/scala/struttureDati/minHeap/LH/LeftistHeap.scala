@@ -20,14 +20,6 @@ import struttureDati.minHeap.MinHeap
 sealed trait LeftistHeap[E] extends MinHeap[E] {
 
   /**
-    * Questo campo indica il grado del nodo, dove per grado di un nodo si intente
-    * la lunghezza del percorso più a destra dal nodo stesso verso un nodo vuoto.
-    *
-    * @return il grado del nodo.
-    */
-  protected def rank: Int
-
-  /**
     * Ritorna il numero di elementi presenti nel leftist-heap.
     *
     * @return il numero di elementi presenti nel leftist-heap.
@@ -45,6 +37,34 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
   override final lazy val isEmpty: Boolean = this match {
     case Empty() => true
     case Node(_, _, _, _) => false
+  }
+
+  /**
+    * Ritorna la lista contenente gli elementi del leftist-heap secondo la strategia pre-order.
+    *
+    * @return la lista contenente gli elementi del leftist-heap secondo la strategia pre-order.
+    */
+  override final lazy val toList: List[E] = {
+    def createList(lh: LeftistHeap[E], temp: List[E]): List[E] = lh match {
+      case Empty() => temp
+      case Node(el, _, sx, dx) => el :: createList(sx, createList(dx, temp))
+    }
+
+    createList(this, Nil)
+  }
+
+  /**
+    * Ritorna la stringa che rappresenta il leftist-heap.
+    *
+    * @return la stringa che rappresenta l'leftist-heap.
+    */
+  override final lazy val toString: String = {
+    def treeToString(lh: LeftistHeap[E]): String = lh match {
+      case Empty() => "."
+      case Node(el, _, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
+    }
+
+    "LeftistHeap(" + treeToString(this) + ")"
   }
 
   /**
@@ -137,32 +157,12 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
   }
 
   /**
-    * Ritorna la lista contenente gli elementi del leftist-heap secondo la strategia pre-order.
+    * Questo campo indica il grado del nodo, dove per grado di un nodo si intente
+    * la lunghezza del percorso più a destra dal nodo stesso verso un nodo vuoto.
     *
-    * @return la lista contenente gli elementi del leftist-heap secondo la strategia pre-order.
+    * @return il grado del nodo.
     */
-  override final lazy val toList: List[E] = {
-    def createList(lh: LeftistHeap[E], temp: List[E]): List[E] = lh match {
-      case Empty() => temp
-      case Node(el, _, sx, dx) => el :: createList(sx, createList(dx, temp))
-    }
-
-    createList(this, Nil)
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta il leftist-heap.
-    *
-    * @return la stringa che rappresenta l'leftist-heap.
-    */
-  override final lazy val toString: String = {
-    def treeToString(lh: LeftistHeap[E]): String = lh match {
-      case Empty() => "."
-      case Node(el, _, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
-    }
-
-    "LeftistHeap(" + treeToString(this) + ")"
-  }
+  protected def rank: Int
 
   /**
     * Implementa l'unione tra due leftist-heap.

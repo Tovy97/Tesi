@@ -13,13 +13,6 @@ import struttureDati.minHeap.BH.BinomialHeap
 private object BH_Specification extends Properties("BH") {
 
   /**
-    * Genera BH attraverso il metodo apply del Companion Object
-    */
-  private val genHeap: Gen[BinomialHeap[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield BinomialHeap(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati BH e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -27,6 +20,13 @@ private object BH_Specification extends Properties("BH") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera BH attraverso il metodo apply del Companion Object
+    */
+  private val genHeap: Gen[BinomialHeap[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield BinomialHeap(list: _*)
 
   /**
     * Proprietà: ogni BH creato attraverso il metodo apply del companion object è corretto

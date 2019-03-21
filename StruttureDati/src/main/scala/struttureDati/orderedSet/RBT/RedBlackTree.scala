@@ -24,13 +24,6 @@ import scala.annotation.tailrec
 sealed trait RedBlackTree[E] extends OrderedSet[E] {
 
   /**
-    * Rappresenta il colore del nodo.
-    *
-    * @return il colore del nodo
-    */
-  protected def col: Color
-
-  /**
     * Ritorna il numero di elementi presenti nell'albero red-black.
     *
     * @return il numero di elementi presenti nell'albero red-black.
@@ -48,6 +41,36 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
   override final lazy val isEmpty: Boolean = this match {
     case Empty() => true
     case Node(_, _, _, _) => false
+  }
+
+  /**
+    * Ritorna la lista ordinata contenente gli elementi dell'albero red-black.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @return la lista ordinata contenente gli elementi dell'albero red-black.
+    */
+  override final lazy val toList: List[E] = {
+    def createList(rbt: RedBlackTree[E], temp: List[E]): List[E] = rbt match {
+      case Empty() => temp
+      case Node(_, el, sx, dx) => createList(sx, el :: createList(dx, temp))
+    }
+
+    createList(this, Nil)
+  }
+
+  /**
+    * Ritorna la stringa che rappresenta l'albero red-black.
+    *
+    * @return la stringa che rappresenta l'albero red-black.
+    */
+  override final lazy val toString: String = {
+    def treeToString(rbt: RedBlackTree[E]): String = rbt match {
+      case Empty() => "."
+      case Node(Red, el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
+      case Node(Black, el, sx, dx) => "[" + treeToString(sx) + el + treeToString(dx) + "]"
+    }
+
+    "RedBlackTree(" + treeToString(this) + ")"
   }
 
   /**
@@ -76,6 +99,26 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
 
     val temp = ins(this)
     Node(Black, temp.el, temp.sx, temp.dx)
+  }
+
+  /**
+    * Bilancia l'albero red-black, al fine di garantire che la proprietà 4 sia
+    * sempre rispettata. Se l'albero non viola la proprietà 4, allora non subisce modifiche.
+    *
+    * @param col  è il colore della radice del sottoalbero red-black che si sta bilanciando
+    * @param el   è l'elemento della radice del sottoalbero red-black che si sta bilanciando
+    * @param rbt1 è il sottoalbero sinistro della radice del sottoalbero red-black che si sta bilanciando
+    * @param rbt2 è il sottoalbero destro della radice del sottoalbero red-black che si sta bilanciando
+    * @return l'albero red-black bilanciato.
+    */
+  private final def balance(col: Color, el: E, rbt1: RedBlackTree[E], rbt2: RedBlackTree[E]): Node[E] = {
+    (col, el, rbt1, rbt2) match {
+      case (Black, z, Node(Red, y, Node(Red, x, a, b), c), d) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
+      case (Black, z, Node(Red, x, a, Node(Red, y, b, c)), d) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
+      case (Black, x, a, Node(Red, y, b, Node(Red, z, c, d))) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
+      case (Black, x, a, Node(Red, z, Node(Red, y, b, c), d)) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
+      case _ => Node(col, el, rbt1, rbt2)
+    }
   }
 
   /**
@@ -252,54 +295,11 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
   }
 
   /**
-    * Ritorna la lista ordinata contenente gli elementi dell'albero red-black.
-    * Complessità: O(n) nel caso peggiore
+    * Rappresenta il colore del nodo.
     *
-    * @return la lista ordinata contenente gli elementi dell'albero red-black.
+    * @return il colore del nodo
     */
-  override final lazy val toList: List[E] = {
-    def createList(rbt: RedBlackTree[E], temp: List[E]): List[E] = rbt match {
-      case Empty() => temp
-      case Node(_, el, sx, dx) => createList(sx, el :: createList(dx, temp))
-    }
-
-    createList(this, Nil)
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta l'albero red-black.
-    *
-    * @return la stringa che rappresenta l'albero red-black.
-    */
-  override final lazy val toString: String = {
-    def treeToString(rbt: RedBlackTree[E]): String = rbt match {
-      case Empty() => "."
-      case Node(Red, el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
-      case Node(Black, el, sx, dx) => "[" + treeToString(sx) + el + treeToString(dx) + "]"
-    }
-
-    "RedBlackTree(" + treeToString(this) + ")"
-  }
-
-  /**
-    * Bilancia l'albero red-black, al fine di garantire che la proprietà 4 sia
-    * sempre rispettata. Se l'albero non viola la proprietà 4, allora non subisce modifiche.
-    *
-    * @param col  è il colore della radice del sottoalbero red-black che si sta bilanciando
-    * @param el   è l'elemento della radice del sottoalbero red-black che si sta bilanciando
-    * @param rbt1 è il sottoalbero sinistro della radice del sottoalbero red-black che si sta bilanciando
-    * @param rbt2 è il sottoalbero destro della radice del sottoalbero red-black che si sta bilanciando
-    * @return l'albero red-black bilanciato.
-    */
-  private final def balance(col: Color, el: E, rbt1: RedBlackTree[E], rbt2: RedBlackTree[E]): Node[E] = {
-    (col, el, rbt1, rbt2) match {
-      case (Black, z, Node(Red, y, Node(Red, x, a, b), c), d) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
-      case (Black, z, Node(Red, x, a, Node(Red, y, b, c)), d) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
-      case (Black, x, a, Node(Red, y, b, Node(Red, z, c, d))) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
-      case (Black, x, a, Node(Red, z, Node(Red, y, b, c), d)) => Node(Red, y, Node(Black, x, a, b), Node(Black, z, c, d))
-      case _ => Node(col, el, rbt1, rbt2)
-    }
-  }
+  protected def col: Color
 }
 
 /**

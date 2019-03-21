@@ -41,6 +41,44 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   }
 
   /**
+    * Ritorna la lista contenente gli elementi del pairing-heap scorrendo i figli di un nodo da
+    * sinistra a destra e aggiungendo in testa il nodo stesso.
+    *
+    * @return la lista contenente gli elementi del pairing-heap scorrendo i figli di un nodo da sinistra a destra e aggiungendo in testa il nodo stesso.
+    */
+  override final lazy val toList: List[E] = {
+
+    def treeToList(t: List[PairingHeap[E]]): List[E] = t match {
+      case Nil => Nil
+      case _ => t.flatMap(x => x.toList)
+    }
+
+    this match {
+      case Empty() => Nil
+      case Node(el, trees) => el :: treeToList(trees)
+    }
+  }
+
+  /**
+    * Ritorna la stringa che rappresenta il pairing-heap.
+    *
+    * @return la stringa che rappresenta il pairing-heap.
+    */
+  override final lazy val toString: String = {
+    def listToString(l: List[PairingHeap[E]]): String = l match {
+      case Nil => ""
+      case h :: Nil => h.toString
+      case h :: t => h + ", " + listToString(t)
+    }
+
+    this match {
+      case Empty() => "PairingHeap()"
+      case Node(e, Nil) => "PairingHeap(" + e + ")"
+      case Node(e, t) => "PairingHeap(" + e + ", (" + listToString(t) + "))"
+    }
+  }
+
+  /**
     * Inserisce un elemento nel pairing-heap.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
@@ -74,6 +112,24 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     hp match {
       case lh: PairingHeap[E] => mrg(lh, this)
       case _ => throw new IllegalArgumentException("Impossibile eseguire il merge tra un PairingHeap e un altro tipo di Heap")
+    }
+  }
+
+  /**
+    * Implementa l'unione tra due pairing-heap.
+    *
+    * @param hp1 il primo pairing-heap
+    * @param hp2 il secondo pairing-heap
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
+    */
+  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
+    case (h, Empty()) => h
+    case (Empty(), h) => h
+    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
+      Node(x, hp2 :: hs1)
+    } else {
+      Node(y, hp1 :: hs2)
     }
   }
 
@@ -141,62 +197,6 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     this match {
       case Empty() => true
       case Node(el, trees) => trees.forall(x => checkEl(el, x) && x.isCorrect)
-    }
-  }
-
-  /**
-    * Ritorna la lista contenente gli elementi del pairing-heap scorrendo i figli di un nodo da
-    * sinistra a destra e aggiungendo in testa il nodo stesso.
-    *
-    * @return la lista contenente gli elementi del pairing-heap scorrendo i figli di un nodo da sinistra a destra e aggiungendo in testa il nodo stesso.
-    */
-  override final lazy val toList: List[E] = {
-
-    def treeToList(t: List[PairingHeap[E]]): List[E] = t match {
-      case Nil => Nil
-      case _ => t.flatMap(x => x.toList)
-    }
-
-    this match {
-      case Empty() => Nil
-      case Node(el, trees) => el :: treeToList(trees)
-    }
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta il pairing-heap.
-    *
-    * @return la stringa che rappresenta il pairing-heap.
-    */
-  override final lazy val toString: String = {
-    def listToString(l: List[PairingHeap[E]]): String = l match {
-      case Nil => ""
-      case h :: Nil => h.toString
-      case h :: t => h + ", " + listToString(t)
-    }
-
-    this match {
-      case Empty() => "PairingHeap()"
-      case Node(e, Nil) => "PairingHeap(" + e + ")"
-      case Node(e, t) => "PairingHeap(" + e + ", (" + listToString(t) + "))"
-    }
-  }
-
-  /**
-    * Implementa l'unione tra due pairing-heap.
-    *
-    * @param hp1 il primo pairing-heap
-    * @param hp2 il secondo pairing-heap
-    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
-    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
-    */
-  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
-    case (h, Empty()) => h
-    case (Empty(), h) => h
-    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
-      Node(x, hp2 :: hs1)
-    } else {
-      Node(y, hp1 :: hs2)
     }
   }
 }

@@ -8,13 +8,6 @@ import struttureDati.sortable.BUMS.BottomUpMergeSort
 private object BUMS_Specification extends Properties("BUMS") {
 
   /**
-    * Genera BUMS attraverso il metodo apply del Companion Object
-    */
-  private val gen: Gen[BottomUpMergeSort[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield BottomUpMergeSort(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati BUMS e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -22,6 +15,13 @@ private object BUMS_Specification extends Properties("BUMS") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera BUMS attraverso il metodo apply del Companion Object
+    */
+  private val gen: Gen[BottomUpMergeSort[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield BottomUpMergeSort(list: _*)
 
   /**
     * Proprietà: ogni BUMS creato attraverso il metodo apply del companion object è corretto

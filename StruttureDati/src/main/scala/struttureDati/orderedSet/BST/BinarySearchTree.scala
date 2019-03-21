@@ -41,6 +41,35 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
   }
 
   /**
+    * Ritorna la lista ordinata contenente gli elementi dell'albero binario di ricerca.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @return la lista ordinata contenente gli elementi dell'albero binario di ricerca.
+    */
+  override final lazy val toList: List[E] = {
+    def createList(rbt: BinarySearchTree[E], temp: List[E]): List[E] = rbt match {
+      case Empty() => temp
+      case Node(el, sx, dx) => createList(sx, el :: createList(dx, temp))
+    }
+
+    createList(this, Nil)
+  }
+
+  /**
+    * Ritorna la stringa che rappresenta l'albero binario di ricerca.
+    *
+    * @return la stringa che rappresenta l'albero binario di ricerca.
+    */
+  override final lazy val toString: String = {
+    def treeToString(bst: BinarySearchTree[E]): String = bst match {
+      case Empty() => "."
+      case Node(el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
+    }
+
+    "BinarySearchTree(" + treeToString(this) + ")"
+  }
+
+  /**
     * Inserisce un elemento nell'albero binario di ricerca.
     * Se l'elemento è già presente, non viene aggiunto.
     * Complessità: O(n) nel caso peggiore
@@ -165,35 +194,6 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
     }
 
     check(this)
-  }
-
-  /**
-    * Ritorna la lista ordinata contenente gli elementi dell'albero binario di ricerca.
-    * Complessità: O(n) nel caso peggiore
-    *
-    * @return la lista ordinata contenente gli elementi dell'albero binario di ricerca.
-    */
-  override final lazy val toList: List[E] = {
-    def createList(rbt: BinarySearchTree[E], temp: List[E]): List[E] = rbt match {
-      case Empty() => temp
-      case Node(el, sx, dx) => createList(sx, el :: createList(dx, temp))
-    }
-
-    createList(this, Nil)
-  }
-
-  /**
-    * Ritorna la stringa che rappresenta l'albero binario di ricerca.
-    *
-    * @return la stringa che rappresenta l'albero binario di ricerca.
-    */
-  override final lazy val toString: String = {
-    def treeToString(bst: BinarySearchTree[E]): String = bst match {
-      case Empty() => "."
-      case Node(el, sx, dx) => "(" + treeToString(sx) + el + treeToString(dx) + ")"
-    }
-
-    "BinarySearchTree(" + treeToString(this) + ")"
   }
 }
 

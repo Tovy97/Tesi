@@ -11,13 +11,6 @@ import struttureDati.orderedSet.BST.BinarySearchTree
 private object BST_Specification extends Properties("BST") {
 
   /**
-    * Genera BST attraverso il metodo apply del Companion Object
-    */
-  private val genTree: Gen[BinarySearchTree[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield BinarySearchTree(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati BST e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -25,6 +18,13 @@ private object BST_Specification extends Properties("BST") {
     * @return una sequenza di coppie da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera BST attraverso il metodo apply del Companion Object
+    */
+  private val genTree: Gen[BinarySearchTree[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield BinarySearchTree(list: _*)
 
   /**
     * Proprietà: ogni BST creato attraverso il metodo apply del companion object è corretto

@@ -44,6 +44,29 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
   override lazy val isEmpty: Boolean = trees.isEmpty
 
   /**
+    * Ritorna la lista contenente gli elementi degli alberi presenti nell'heap binomiale,
+    * scorrendo gli alberi binomiali secondo il grado in ordine crescente.
+    *
+    * @return la lista contenente gli elementi degli alberi presenti nell'heap binomiale, scorrendo gli alberi secondo il grado in ordine crescente.
+    */
+  override lazy val toList: List[E] = trees.flatMap(x => x.toList)
+
+  /**
+    * Ritorna la stringa che rappresenta l'heap binomiale.
+    *
+    * @return la stringa che rappresenta l'heap binomiale.
+    */
+  override lazy val toString: String = {
+    def listToString(l: List[BinomialTree[E]]): String = l match {
+      case Nil => ""
+      case h :: Nil => h.toString
+      case h :: t => h + ", " + listToString(t)
+    }
+
+    "BinomialHeap(" + listToString(trees) + ")"
+  }
+
+  /**
     * Inserisce un elemento nell'heap binomiale.
     * Complessità: O(log(n)) nel caso peggiore.
     * Complessità ammortizzata: O(1)
@@ -125,29 +148,6 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
       case h :: Nil => h.isCorrect
       case h1 :: h2 :: t => checkRank(h1, h2, t) && trees.forall(x => x.isCorrect)
     }
-  }
-
-  /**
-    * Ritorna la lista contenente gli elementi degli alberi presenti nell'heap binomiale,
-    * scorrendo gli alberi binomiali secondo il grado in ordine crescente.
-    *
-    * @return la lista contenente gli elementi degli alberi presenti nell'heap binomiale, scorrendo gli alberi secondo il grado in ordine crescente.
-    */
-  override lazy val toList: List[E] = trees.flatMap(x => x.toList)
-
-  /**
-    * Ritorna la stringa che rappresenta l'heap binomiale.
-    *
-    * @return la stringa che rappresenta l'heap binomiale.
-    */
-  override lazy val toString: String = {
-    def listToString(l: List[BinomialTree[E]]): String = l match {
-      case Nil => ""
-      case h :: Nil => h.toString
-      case h :: t => h + ", " + listToString(t)
-    }
-
-    "BinomialHeap(" + listToString(trees) + ")"
   }
 
   /**

@@ -32,39 +32,11 @@ final case class BottomUpMergeSort[E](override val size: Int, private val segmen
   require(isCorrect, "La collezione create non è corretta")
 
   /**
-    * Inserisce un elemento nella collezione.
-    *
-    * @param el  è l'elemento da inserire
-    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
-    * @return la collezione in cui è stato inserito l'elemento
-    */
-  override def add(el: E)(implicit ord: Ordering[E]): BottomUpMergeSort[E] = {
-    @tailrec
-    def addSeg(seg: Segment[E], segs: Stream[Segment[E]], size: Int): Stream[Segment[E]] = {
-      if (size % 2 == 0) {
-        seg +: segs
-      } else {
-        addSeg(merge(seg, segs.head), segs.tail, size / 2)
-      }
-    }
-
-    BottomUpMergeSort(size + 1, addSeg(Segment(el), segments, size))
-  }
-
-  /**
     * Controlla se è presente almeno un elemento nella collezione.
     *
     * @return true se la collezione è vuota, altrimenti false
     */
   override lazy val isEmpty: Boolean = size == 0
-
-  /**
-    * Ordina la collezione e restituisce la lista ordinata con gli elementi della collezione.
-    *
-    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
-    * @return la lista ordinata con gli elementi della collezione.
-    */
-  override def sort(implicit ord: Ordering[E]): List[E] = segments.foldLeft(Segment())((x, y) => merge(x, y)).seg
 
   /**
     * Controlla se le proprietà della collezione sono rispettate, altrimenti false.
@@ -88,6 +60,34 @@ final case class BottomUpMergeSort[E](override val size: Int, private val segmen
 
     "BottomUpMergeSort(" + streamToString(segments) + ")"
   }
+
+  /**
+    * Inserisce un elemento nella collezione.
+    *
+    * @param el  è l'elemento da inserire
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @return la collezione in cui è stato inserito l'elemento
+    */
+  override def add(el: E)(implicit ord: Ordering[E]): BottomUpMergeSort[E] = {
+    @tailrec
+    def addSeg(seg: Segment[E], segs: Stream[Segment[E]], size: Int): Stream[Segment[E]] = {
+      if (size % 2 == 0) {
+        seg +: segs
+      } else {
+        addSeg(merge(seg, segs.head), segs.tail, size / 2)
+      }
+    }
+
+    BottomUpMergeSort(size + 1, addSeg(Segment(el), segments, size))
+  }
+
+  /**
+    * Ordina la collezione e restituisce la lista ordinata con gli elementi della collezione.
+    *
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @return la lista ordinata con gli elementi della collezione.
+    */
+  override def sort(implicit ord: Ordering[E]): List[E] = segments.foldLeft(Segment())((x, y) => merge(x, y)).seg
 
   /**
     * Unisce due segmenti.

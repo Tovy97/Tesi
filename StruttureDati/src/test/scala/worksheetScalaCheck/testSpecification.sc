@@ -6,7 +6,7 @@ StruttureDati_Specification.isAllPassed
 StruttureDati_Specification.getAllNotPassedTest
 
 val coda = Deque(2 :: Nil, 4 :: 3 :: Nil)
-val coda2 = Deque(2 :: 3 :: Nil, 4:: Nil)
+val coda2 = Deque(2 :: 3 :: Nil, 4 :: Nil)
 
 coda == coda2
 

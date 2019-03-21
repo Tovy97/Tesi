@@ -11,6 +11,15 @@ import struttureDati.map.FM.FiniteMap
 private object FM_Specification extends Properties("FM") {
 
   /**
+    * Esegue la check su tutte le proprietà struttura dati FM e ritorna una sequenza
+    * di coppie formate da una stringa con il nome della proprietà testata e da un Result
+    * che contiene le informazioni sul test.
+    *
+    * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
+    */
+  lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
     * Genera coppie di interi
     */
   private val genTuple: Gen[(Int, Int)] = for {
@@ -24,15 +33,6 @@ private object FM_Specification extends Properties("FM") {
   private val genMap: Gen[FiniteMap[Int, Int]] = for {
     list <- Gen.listOf[(Int, Int)](genTuple)
   } yield FiniteMap(list: _*)
-
-  /**
-    * Esegue la check su tutte le proprietà struttura dati FM e ritorna una sequenza
-    * di coppie formate da una stringa con il nome della proprietà testata e da un Result
-    * che contiene le informazioni sul test.
-    *
-    * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
-    */
-  lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
 
   /**
     * Proprietà: ogni FM creata attraverso il metodo apply del companion object è corretta

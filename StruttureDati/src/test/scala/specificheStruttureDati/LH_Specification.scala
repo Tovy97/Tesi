@@ -13,13 +13,6 @@ import struttureDati.minHeap.LH.LeftistHeap
 private object LH_Specification extends Properties("LH") {
 
   /**
-    * Genera LH attraverso il metodo apply del Companion Object
-    */
-  private val genHeap: Gen[LeftistHeap[Int]] = for {
-    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
-  } yield LeftistHeap(list: _*)
-
-  /**
     * Esegue la check su tutte le proprietà struttura dati LH e ritorna una sequenza
     * di coppie formate da una stringa con il nome della proprietà testata e da un Result
     * che contiene le informazioni sul test.
@@ -27,6 +20,13 @@ private object LH_Specification extends Properties("LH") {
     * @return una sequenza di coppie formate da una stringa con il nome della proprietà testata e da un Result che contiene le informazioni sul test.
     */
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
+
+  /**
+    * Genera LH attraverso il metodo apply del Companion Object
+    */
+  private val genHeap: Gen[LeftistHeap[Int]] = for {
+    list <- Gen.listOf[Int](Arbitrary.arbitrary[Int])
+  } yield LeftistHeap(list: _*)
 
   /**
     * Proprietà: ogni LH creato attraverso il metodo apply del companion object è corretto
