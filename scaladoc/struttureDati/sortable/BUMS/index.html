@@ -218,7 +218,12 @@ La struttura dati è persistente.
       <span class="symbol">classOf[IllegalArgumentException]</span>
     </span>)</span>
               
-        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la collezione create non è corretta</p></span></dd></dl></div>
     </li><li name="struttureDati.sortable.BUMS.Segment" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Segment[E]extendsProductwithSerializable"></a><a id="Segment[E]:Segment[E]"></a>
       <span class="permalink">
@@ -231,11 +236,17 @@ La struttura dati è persistente.
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Implementa una lista ordinata di elementi." href="Segment.html"><span class="name">Segment</span></a><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="Implementa una lista ordinata di elementi." href="Segment.html"><span class="name">Segment</span></a><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ord">ord: <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       <p class="shortcomment cmt">Implementa una lista ordinata di elementi.</p><div class="fullcomment"><div class="comment cmt"><p>Implementa una lista ordinata di elementi.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il segmento creato non è corretto</p></span></dd></dl></div>
     </li></ol>
             </div>
 

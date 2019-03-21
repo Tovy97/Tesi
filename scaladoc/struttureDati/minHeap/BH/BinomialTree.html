@@ -155,14 +155,19 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementa gli alberi binomiali che sono alberi n-ari definiti induttivamente sul grado come segue:</p><p>base: un albero binomiale di grado 0 è un nodo con un elemento e senza figli.</p><p>induzione: un albero binomiale di grado R+1 è formato collegando due alberi binomiali di grado R,
 rendendo un albero il figlio più a sinistra dell'altro (ovvero collegati assieme in modo che la
-radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'altro).
+radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'altro).</p><p>Quindi un albero binomiale di grado R ha esattamente 2 elevato R elementi.
 </p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel BinomialTree. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">el</dt><dd class="cmt"><p>è l'elemento contenuto nella radice dell'albero binomiale.</p></dd><dt class="param">rank</dt><dd class="cmt"><p>è il grado dell'albero binomiale</p></dd><dt class="param">children</dt><dd class="cmt"><p>è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[IllegalArgumentException]</span>
     </span>)</span>
               
-        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl><div class="toggleContainer block">
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se l'albero binomiale creato non è corretto</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -227,7 +232,7 @@ radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'alt
         <span class="name">BinomialTree</span><span class="params">(<span name="el">el: <span class="extype" name="struttureDati.minHeap.BH.BinomialTree.E">E</span></span>, <span name="rank">rank: <span class="extype" name="scala.Int">Int</span></span>, <span name="children">children: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="struttureDati.minHeap.BH.BinomialTree">BinomialTree</a>[<span class="extype" name="struttureDati.minHeap.BH.BinomialTree.E">E</span>]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ord">ord: <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="struttureDati.minHeap.BH.BinomialTree.E">E</span>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">el</dt><dd class="cmt"><p>è l'elemento contenuto nella radice dell'albero binomiale.</p></dd><dt class="param">rank</dt><dd class="cmt"><p>è il grado dell'albero binomiale</p></dd><dt class="param">children</dt><dd class="cmt"><p>è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">el</dt><dd class="cmt"><p>è l'elemento contenuto nella radice dell'albero binomiale.</p></dd><dt class="param">rank</dt><dd class="cmt"><p>è il grado dell'albero binomiale</p></dd><dt class="param">children</dt><dd class="cmt"><p>è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se l'albero binomiale creato non è corretto</p></span></dd></dl></div>
     </li></ol>
             </div>
 

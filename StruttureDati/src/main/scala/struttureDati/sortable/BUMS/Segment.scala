@@ -4,6 +4,7 @@ package struttureDati.sortable.BUMS
   * Implementa una lista ordinata di elementi.
   *
   * @param seg la lista di elementi ordinati
+  * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
   * @tparam E indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.
   * @throws java.lang.IllegalArgumentException se il segmento creato non è corretto
   */
@@ -26,6 +27,11 @@ final case class Segment[E](seg: List[E])(implicit ord: Ordering[E]) {
     "Segment(" + listToString(seg) + ")"
   }
 
+  /**
+    * Controlla che gli elementi del segmento siano ordinati
+    *
+    * @return true se gli elementi del segmento sono ordinati, altrimenti false
+    */
   lazy val isCorrect: Boolean = seg.sorted == seg
 }
 

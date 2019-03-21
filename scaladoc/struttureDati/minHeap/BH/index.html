@@ -249,7 +249,12 @@ La struttura dati è persistente.
       <span class="symbol">classOf[IllegalArgumentException]</span>
     </span>)</span>
               
-        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se l'heap binomiale creato non è corretto</p></span></dd></dl></div>
     </li><li name="struttureDati.minHeap.BH.BinomialTree" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="BinomialTree[E]extendsProductwithSerializable"></a><a id="BinomialTree[E]:BinomialTree[E]"></a>
       <span class="permalink">
@@ -267,14 +272,19 @@ La struttura dati è persistente.
       
       <p class="shortcomment cmt">Implementa gli alberi binomiali che sono alberi n-ari definiti induttivamente sul grado come segue:</p><div class="fullcomment"><div class="comment cmt"><p>Implementa gli alberi binomiali che sono alberi n-ari definiti induttivamente sul grado come segue:</p><p>base: un albero binomiale di grado 0 è un nodo con un elemento e senza figli.</p><p>induzione: un albero binomiale di grado R+1 è formato collegando due alberi binomiali di grado R,
 rendendo un albero il figlio più a sinistra dell'altro (ovvero collegati assieme in modo che la
-radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'altro).
+radice di uno dei due alberi binomiali sia figlio sinistro della radice dell'altro).</p><p>Quindi un albero binomiale di grado R ha esattamente 2 elevato R elementi.
 </p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel BinomialTree. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">el</dt><dd class="cmt"><p>è l'elemento contenuto nella radice dell'albero binomiale.</p></dd><dt class="param">rank</dt><dd class="cmt"><p>è il grado dell'albero binomiale</p></dd><dt class="param">children</dt><dd class="cmt"><p>è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[IllegalArgumentException]</span>
     </span>)</span>
               
-        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il parametro ord è null</p></span></dd></dl></div>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se l'albero binomiale creato non è corretto</p></span></dd></dl></div>
     </li></ol>
             </div>
 

@@ -154,7 +154,13 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementa le code FIFO, che sono code in cui le operazioni di inserimento
 si compiono sempre e solo in coda, mentre le operazioni di lettura e cancellazione
 si compiono sempre e solo in testa.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda creata non è corretta</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -219,7 +225,7 @@ si compiono sempre e solo in testa.
         <span class="name">BatchedQueue</span><span class="params">(<span name="sx">sx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.BQ.BatchedQueue.E">E</span>]</span>, <span name="dx">dx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.BQ.BatchedQueue.E">E</span>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda creata non è corretta</p></span></dd></dl></div>
     </li></ol>
             </div>
 
@@ -418,6 +424,23 @@ Complessità: O(1) nel caso peggiore
     </span>)</span>
               
         </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.util.NoSuchElementException"><code>java.util.NoSuchElementException</code></span> se la coda è vuota.</p></span></dd></dl></div>
+    </li><li name="struttureDati.queue.BQ.BatchedQueue#isCorrect" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isCorrect:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../struttureDati/queue/BQ/BatchedQueue.html#isCorrect:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCorrect</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Controlla la seguente proprietà:</p><div class="fullcomment"><div class="comment cmt"><p>Controlla la seguente proprietà:</p><p>- la prima lista è vuota solo se lo è anche la seconda, ma non viceversa.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true se la proprietà dell'implementazione di BatchedQueue è rispettata, altrimenti false.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="struttureDati.queue.BQ.BatchedQueue">BatchedQueue</a> → <a href="../Queue.html" class="extype" name="struttureDati.queue.Queue">Queue</a></dd></dl></div>
     </li><li name="struttureDati.queue.BQ.BatchedQueue#isEmpty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isEmpty:Boolean"></a>
       <span class="permalink">
@@ -547,7 +570,7 @@ Complessità: O(1) nel caso peggiore
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
         <span class="name">tail</span><span class="result">: <a href="" class="extype" name="struttureDati.queue.BQ.BatchedQueue">BatchedQueue</a>[<span class="extype" name="struttureDati.queue.BQ.BatchedQueue.E">E</span>]</span>

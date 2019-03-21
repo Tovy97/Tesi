@@ -325,6 +325,7 @@ La struttura dati è persistente.
       <p class="shortcomment cmt">Elimina l'elemento minore presente nello splay-heap e ristruttura l'albero
 secondo la proprietà 6.</p><div class="fullcomment"><div class="comment cmt"><p>Elimina l'elemento minore presente nello splay-heap e ristruttura l'albero
 secondo la proprietà 6.
+Complessità: O(n) nel caso peggiore.
 Complessità ammortizzata: O(log(n)).
 </p></div><dl class="paramcmts block"><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd><dt>returns</dt><dd class="cmt"><p>lo splay-heap ristrutturato  secondo la proprietà 6 in cui è stato eliminato l'elemento minore.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
@@ -404,6 +405,7 @@ Complessità ammortizzata: O(log(n)).
       
       <p class="shortcomment cmt">Ritorna l'elemento minore presente nello splay-heap.</p><div class="fullcomment"><div class="comment cmt"><p>Ritorna l'elemento minore presente nello splay-heap.
 Se il splay-heap è vuoto viene sollevata un'eccezione.
+Complessità: O(n) nel caso peggiore.
 Complessità ammortizzata: O(log(n)).
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>l'elemento minore presente nello splay-heap.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@tailrec</span><span class="args">()</span>
@@ -468,6 +470,7 @@ Complessità ammortizzata: O(log(n)).
       </span>
       
       <p class="shortcomment cmt">Inserisce un elemento nel splay-heap e ristruttura l'albero secondo la proprietà 6.</p><div class="fullcomment"><div class="comment cmt"><p>Inserisce un elemento nel splay-heap e ristruttura l'albero secondo la proprietà 6.
+Complessità: O(n) nel caso peggiore.
 Complessità ammortizzata: O(log(n)).
 </p></div><dl class="paramcmts block"><dt class="param">el</dt><dd class="cmt"><p>è l'elemento da inserire</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd><dt>returns</dt><dd class="cmt"><p>lo splay-heap ristrutturato secondo la proprietà 6 in cui è stato inserito l'elemento</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
@@ -548,6 +551,7 @@ Complessità ammortizzata: O(log(n)).
       </span>
       
       <p class="shortcomment cmt">Unisce gli elementi presenti in due splay-heap in un unico splay-heap.</p><div class="fullcomment"><div class="comment cmt"><p>Unisce gli elementi presenti in due splay-heap in un unico splay-heap.
+Complessità: O(n) nel caso peggiore.
 Complessità ammortizzata: O(n).
 </p></div><dl class="paramcmts block"><dt class="param">sh</dt><dd class="cmt"><p>è lo splay-heap da unire</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd><dt>returns</dt><dd class="cmt"><p>lo splay-heap unione</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>

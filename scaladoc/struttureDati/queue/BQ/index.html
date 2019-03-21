@@ -220,7 +220,13 @@ si compiono sempre e solo in coda, mentre le operazioni di lettura e cancellazio
 si compiono sempre e solo in testa.</p><div class="fullcomment"><div class="comment cmt"><p>Implementa le code FIFO, che sono code in cui le operazioni di inserimento
 si compiono sempre e solo in coda, mentre le operazioni di lettura e cancellazione
 si compiono sempre e solo in testa.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda (coda), in cui inserire gli elementi nuovi.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda creata non è corretta</p></span></dd></dl></div>
     </li></ol>
             </div>
 

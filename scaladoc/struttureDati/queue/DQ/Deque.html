@@ -119,8 +119,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="struttureDati.queue">queue</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <a class="object" href="Deque$.html" title="Companion Object della classe Deque."></a>
-                        <a class="class" href="" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si compiono sempre e solo in testa o in coda."></a>
-                        <a href="" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si compiono sempre e solo in testa o in coda.">Deque</a>
+                        <a class="class" href="" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si possono compiere su entrambi gli estremi."></a>
+                        <a href="" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si possono compiere su entrambi gli estremi.">Deque</a>
                       </li>
               </ul>
             </div>
@@ -152,8 +152,14 @@
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementa le code doppie, che sono code in cui le operazioni di inserimento,
-lettura e cancellazione si compiono sempre e solo in testa o in coda.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda doppia. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl><div class="toggleContainer block">
+lettura e cancellazione si possono compiere su entrambi gli estremi.
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda doppia. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda doppia creata non è corretta</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -218,7 +224,7 @@ lettura e cancellazione si compiono sempre e solo in testa o in coda.
         <span class="name">Deque</span><span class="params">(<span name="sx">sx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>, <span name="dx">dx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda doppia creata non è corretta</p></span></dd></dl></div>
     </li></ol>
             </div>
 
@@ -293,7 +299,7 @@ lettura e cancellazione si compiono sempre e solo in testa o in coda.
       </span>
       
       <p class="shortcomment cmt">Inserisce un elemento in coda alla coda doppia.</p><div class="fullcomment"><div class="comment cmt"><p>Inserisce un elemento in coda alla coda doppia.
-Complessità: O(n) nel caso peggiore.
+Complessità: O(1) nel caso peggiore.
 Complessità ammortizzata: O(1).
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella nuova coda doppia.</p></dd><dt class="param">el</dt><dd class="cmt"><p>è l'elemento da inserire</p></dd><dt>returns</dt><dd class="cmt"><p>la coda doppia con il nuovo elemento inserito in coda.</p></dd></dl></div>
     </li><li name="struttureDati.queue.DQ.Deque#addRight" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -312,7 +318,7 @@ Complessità ammortizzata: O(1).
       </span>
       
       <p class="shortcomment cmt">Inserisce un elemento in testa alla coda doppia.</p><div class="fullcomment"><div class="comment cmt"><p>Inserisce un elemento in testa alla coda doppia.
-Complessità: O(n) nel caso peggiore.
+Complessità: O(1) nel caso peggiore.
 Complessità ammortizzata: O(1)
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella nuova coda doppia.</p></dd><dt class="param">el</dt><dd class="cmt"><p>è l'elemento da inserire</p></dd><dt>returns</dt><dd class="cmt"><p>la coda doppia con il nuovo elemento inserito in testa.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="struttureDati.queue.DQ.Deque">Deque</a> → <a href="../Queue.html" class="extype" name="struttureDati.queue.Queue">Queue</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -446,7 +452,7 @@ Complessità: O(1) nel caso peggiore
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
         <span class="name">init</span><span class="result">: <a href="" class="extype" name="struttureDati.queue.DQ.Deque">Deque</a>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>
@@ -456,6 +462,23 @@ Complessità: O(1) nel caso peggiore
 Complessità: O(n) nel caso peggiore
 Complessità ammortizzata: O(1)
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>la coda doppia senza l'elemento che si trovava in coda.</p></dd></dl></div>
+    </li><li name="struttureDati.queue.DQ.Deque#isCorrect" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isCorrect:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../struttureDati/queue/DQ/Deque.html#isCorrect:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCorrect</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Controlla la seguente proprietà:</p><div class="fullcomment"><div class="comment cmt"><p>Controlla la seguente proprietà:</p><p>- nessuna delle due liste deve essere vuota se vi sono almeno due elementi nella coda doppia.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true se la proprietà dell'implementazione di Deque è rispettata, altrimenti false.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="struttureDati.queue.DQ.Deque">Deque</a> → <a href="../Queue.html" class="extype" name="struttureDati.queue.Queue">Queue</a></dd></dl></div>
     </li><li name="struttureDati.queue.DQ.Deque#isEmpty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isEmpty:Boolean"></a>
       <span class="permalink">
@@ -610,7 +633,7 @@ Complessità: O(1) nel caso peggiore
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
         <span class="name">tail</span><span class="result">: <a href="" class="extype" name="struttureDati.queue.DQ.Deque">Deque</a>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>

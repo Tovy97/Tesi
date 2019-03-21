@@ -150,13 +150,19 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Segment</span><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Segment</span><span class="tparams">[<span name="E">E</span>]</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ord">ord: <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implementa una lista ordinata di elementi.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.</p></dd><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il segmento creato non è corretto</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
@@ -207,9 +213,9 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="struttureDati.sortable.BUMS.Segment#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(seg:List[E]):struttureDati.sortable.BUMS.Segment[E]"></a><a id="&lt;init&gt;:Segment[E]"></a>
+      <a id="&lt;init&gt;(seg:List[E])(implicitord:Ordering[E]):struttureDati.sortable.BUMS.Segment[E]"></a><a id="&lt;init&gt;:Segment[E]"></a>
       <span class="permalink">
-      <a href="../../../struttureDati/sortable/BUMS/Segment.html#&lt;init&gt;(seg:List[E]):struttureDati.sortable.BUMS.Segment[E]" title="Permalink">
+      <a href="../../../struttureDati/sortable/BUMS/Segment.html#&lt;init&gt;(seg:List[E])(implicitord:Ordering[E]):struttureDati.sortable.BUMS.Segment[E]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -218,10 +224,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Segment</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span>
+        <span class="name">Segment</span><span class="params">(<span name="seg">seg: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ord">ord: <span class="extype" name="scala.Ordering">Ordering</span>[<span class="extype" name="struttureDati.sortable.BUMS.Segment.E">E</span>]</span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">seg</dt><dd class="cmt"><p>la lista di elementi ordinati</p></dd><dt class="param">ord</dt><dd class="cmt"><p>è la classe contenente il criterio di ordinamento del tipo parametrico.</p></dd></dl><dl class="attributes block"> <dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se il segmento creato non è corretto</p></span></dd></dl></div>
     </li></ol>
             </div>
 
@@ -377,6 +383,24 @@
                 <span class="name">@native</span><span class="args">()</span>
               
         </dd></dl></div>
+    </li><li name="struttureDati.sortable.BUMS.Segment#isCorrect" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isCorrect:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../struttureDati/sortable/BUMS/Segment.html#isCorrect:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCorrect</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Controlla che gli elementi del segmento siano ordinati
+</p><div class="fullcomment"><div class="comment cmt"><p>Controlla che gli elementi del segmento siano ordinati
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true se gli elementi del segmento sono ordinati, altrimenti false</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">

@@ -135,8 +135,8 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="struttureDati.queue">queue</a></dd></dl></div>
     </li><li class="current-entities indented3">
                         <a class="object" href="Deque$.html" title="Companion Object della classe Deque."></a>
-                        <a class="class" href="Deque.html" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si compiono sempre e solo in testa o in coda."></a>
-                        <a href="Deque.html" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si compiono sempre e solo in testa o in coda.">Deque</a>
+                        <a class="class" href="Deque.html" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si possono compiere su entrambi gli estremi."></a>
+                        <a href="Deque.html" title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si possono compiere su entrambi gli estremi.">Deque</a>
                       </li>
               </ul>
             </div>
@@ -212,13 +212,19 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si compiono sempre e solo in testa o in coda." href="Deque.html"><span class="name">Deque</span></a><span class="tparams">[<span name="E">+E</span>]</span><span class="params">(<span name="sx">sx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>, <span name="dx">dx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>)</span><span class="result"> extends <a href="../Queue.html" class="extype" name="struttureDati.queue.Queue">Queue</a>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a title="Implementa le code doppie, che sono code in cui le operazioni di inserimento, lettura e cancellazione si possono compiere su entrambi gli estremi." href="Deque.html"><span class="name">Deque</span></a><span class="tparams">[<span name="E">+E</span>]</span><span class="params">(<span name="sx">sx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>, <span name="dx">dx: <span class="extype" name="scala.List">List</span>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>]</span>)</span><span class="result"> extends <a href="../Queue.html" class="extype" name="struttureDati.queue.Queue">Queue</a>[<span class="extype" name="struttureDati.queue.DQ.Deque.E">E</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       
       <p class="shortcomment cmt">Implementa le code doppie, che sono code in cui le operazioni di inserimento,
-lettura e cancellazione si compiono sempre e solo in testa o in coda.</p><div class="fullcomment"><div class="comment cmt"><p>Implementa le code doppie, che sono code in cui le operazioni di inserimento,
-lettura e cancellazione si compiono sempre e solo in testa o in coda.
-</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda doppia. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl></div>
+lettura e cancellazione si possono compiere su entrambi gli estremi.</p><div class="fullcomment"><div class="comment cmt"><p>Implementa le code doppie, che sono code in cui le operazioni di inserimento,
+lettura e cancellazione si possono compiere su entrambi gli estremi.
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>indica il tipo di elementi contenuti nella coda doppia. È covariante.</p></dd><dt class="param">sx</dt><dd class="cmt"><p>è la parte iniziale della coda doppia (testa).</p></dd><dt class="param">dx</dt><dd class="cmt"><p>è a parte finale della coda doppia (coda).</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[IllegalArgumentException]</span>
+    </span>)</span>
+              
+        </dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="java.lang.IllegalArgumentException"><code>java.lang.IllegalArgumentException</code></span> se la coda doppia creata non è corretta</p></span></dd></dl></div>
     </li></ol>
             </div>
 
