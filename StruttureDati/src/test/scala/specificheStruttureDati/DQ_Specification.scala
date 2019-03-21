@@ -27,35 +27,35 @@ private object DQ_Specification extends Properties("DQ") {
   lazy val checkProp: Seq[(String, Result)] = checkProperties(Parameters.default, this)
 
   /**
-    * Proprietà: ogni BQ creata attraverso il metodo apply del companion object è corretta
+    * Proprietà: ogni DQ creata attraverso il metodo apply del companion object è corretta
     */
   property("isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
     dq.isCorrect
   }
 
   /**
-    * Proprietà: l'addRight di un elemento E in una BQ genera una BQ corretta
+    * Proprietà: l'addRight di un elemento E in una DQ genera una DQ corretta
     */
   property("addRight.isCorrect") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
     dq.addRight(e).isCorrect
   }
 
   /**
-    * Proprietà: la tail di un elemento E in una BQ genera una BQ corretta
+    * Proprietà: la tail di un elemento E in una DQ genera una DQ corretta
     */
   property("tail.isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
     dq.tail.isCorrect
   }
 
   /**
-    * Proprietà: l'addRight di un elemento E in una BQ genera una BQ corretta
+    * Proprietà: l'addLeft di un elemento E in una DQ genera una DQ corretta
     */
   property("addLeft.isCorrect") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
     dq.addLeft(e).isCorrect
   }
 
   /**
-    * Proprietà: la tail di un elemento E in una BQ genera una BQ corretta
+    * Proprietà: la init di un elemento E in una DQ genera una DQ corretta
     */
   property("init.isCorrect") = forAll(genQueue) { dq: Deque[Int] =>
     dq.init.isCorrect
