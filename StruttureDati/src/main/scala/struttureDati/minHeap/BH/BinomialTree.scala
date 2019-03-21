@@ -18,10 +18,13 @@ import scala.annotation.tailrec
   * @param children è l'insieme dei figli del nodo radice, che sono a loro volta alberi binomiali
   * @tparam E indica il tipo di elementi contenuti nel BinomialTree. Deve essere ordinabile ed è invariante.
   * @throws java.lang.IllegalArgumentException se il parametro ord è null
+  * @throws java.lang.IllegalArgumentException se l'albero binomiale creato non è corretto
   */
+@throws(classOf[IllegalArgumentException])
 @throws(classOf[IllegalArgumentException])
 final case class BinomialTree[E](el: E, rank: Int, children: List[BinomialTree[E]])(implicit ord: Ordering[E]) {
   require(!(ord eq null), "Il tipo deve essere ordinabile")
+  require(isCorrect, "L'albero binomiale creato non è corretto!")
 
   /**
     * Ritorna il numero di elementi presenti nell'albero binomiale.

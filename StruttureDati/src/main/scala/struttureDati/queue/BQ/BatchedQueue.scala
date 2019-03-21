@@ -10,8 +10,11 @@ import struttureDati.queue.Queue
   * @param sx è la parte iniziale della coda (testa), da cui leggere ed eliminare gli elementi.
   * @param dx è a parte finale della coda (coda), in cui inserire gli elementi nuovi.
   * @tparam E indica il tipo di elementi contenuti nella coda. È covariante.
+  * @throws java.lang.IllegalArgumentException se la coda creata non è corretta
   */
+@throws(classOf[IllegalArgumentException])
 final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[E]) extends Queue[E] {
+  require(isCorrect, "La coda creata non è corretta!")
 
   /**
     * Ritorna il numero di elementi presenti nella coda.

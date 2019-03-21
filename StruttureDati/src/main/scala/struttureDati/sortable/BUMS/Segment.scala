@@ -5,8 +5,12 @@ package struttureDati.sortable.BUMS
   *
   * @param seg la lista di elementi ordinati
   * @tparam E indica il tipo di elementi contenuti nel Segment. Deve essere ordinabile ed è invariante.
+  * @throws java.lang.IllegalArgumentException se il segmento creato non è corretto
   */
-final case class Segment[E](seg: List[E]) {
+@throws(classOf[IllegalArgumentException])
+final case class Segment[E](seg: List[E])(implicit ord: Ordering[E]) {
+  require(isCorrect, "Il segmento creato non è corretto")
+
   /**
     * Ritorna la stringa che rappresenta il segmento.
     *
@@ -21,6 +25,8 @@ final case class Segment[E](seg: List[E]) {
 
     "Segment(" + listToString(seg) + ")"
   }
+
+  lazy val isCorrect: Boolean = seg.sorted == seg
 }
 
 /**

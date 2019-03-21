@@ -21,10 +21,13 @@ import scala.annotation.tailrec
   * @param ord   è la classe contenente il criterio di ordinamento del tipo parametrico.
   * @tparam E indica il tipo di elementi contenuti nel BinomialHeap. Deve essere ordinabile ed è invariante.
   * @throws java.lang.IllegalArgumentException se il parametro ord è null
+  * @throws java.lang.IllegalArgumentException se l'heap binomiale creato non è corretto
   */
+@throws(classOf[IllegalArgumentException])
 @throws(classOf[IllegalArgumentException])
 final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(implicit ord: Ordering[E]) extends MinHeap[E] {
   require(!(ord eq null), "Il tipo deve essere ordinabile")
+  require(isCorrect, "L'heap binomiale creato non è corretto!")
 
   /**
     * Ritorna il numero di elementi presenti nell'heap binomiale.

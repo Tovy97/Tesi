@@ -9,8 +9,11 @@ import struttureDati.queue.Queue
   * @param sx è la parte iniziale della coda doppia (testa).
   * @param dx è a parte finale della coda doppia (coda).
   * @tparam E indica il tipo di elementi contenuti nella coda doppia. È covariante.
+  * @throws java.lang.IllegalArgumentException se la coda doppia creata non è corretta
   */
+@throws(classOf[IllegalArgumentException])
 final case class Deque[+E](private val sx: List[E], private val dx: List[E]) extends Queue[E] {
+  require(isCorrect, "La coda doppia creata non è corretta!")
 
   /**
     * Ritorna il numero di elementi presenti nella coda.
