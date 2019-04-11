@@ -4,7 +4,7 @@
 		module="teststrutturedati$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190411191047"
+		publication="20190411191325"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
