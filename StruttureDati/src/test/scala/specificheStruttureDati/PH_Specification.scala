@@ -1,6 +1,5 @@
 package specificheStruttureDati
 
-
 import java.util.NoSuchElementException
 
 import org.scalacheck.Prop.forAll

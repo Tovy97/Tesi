@@ -95,6 +95,24 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   }
 
   /**
+    * Implementa l'unione tra due pairing-heap.
+    *
+    * @param hp1 il primo pairing-heap
+    * @param hp2 il secondo pairing-heap
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
+    */
+  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
+    case (h, Empty()) => h
+    case (Empty(), h) => h
+    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
+      Node(x, hp2 :: hs1)
+    } else {
+      Node(y, hp1 :: hs2)
+    }
+  }
+
+  /**
     * Unisce gli elementi presenti in due pairing-heap in un unico pairing-heap.
     * Se l'heap passato come parametro non è un'istanza di PairingHeap viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore.
@@ -112,24 +130,6 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
     hp match {
       case lh: PairingHeap[E] => mrg(lh, this)
       case _ => throw new IllegalArgumentException("Impossibile eseguire il merge tra un PairingHeap e un altro tipo di Heap")
-    }
-  }
-
-  /**
-    * Implementa l'unione tra due pairing-heap.
-    *
-    * @param hp1 il primo pairing-heap
-    * @param hp2 il secondo pairing-heap
-    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
-    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
-    */
-  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
-    case (h, Empty()) => h
-    case (Empty(), h) => h
-    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
-      Node(x, hp2 :: hs1)
-    } else {
-      Node(y, hp1 :: hs2)
     }
   }
 
