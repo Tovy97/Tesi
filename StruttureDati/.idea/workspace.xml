@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="fine">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/StruttureDati.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/StruttureDati.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.xml" afterDir="false" />
@@ -54,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -141,7 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,18 +154,22 @@
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553166920364" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../scalacheck_2.12-1.14.0.jar!/" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -564,13 +568,20 @@
       <option name="project" value="LOCAL" />
       <updated>1555241400541</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fine">
+      <created>1555241855548</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1555241855548</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.25642964" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.2602118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1397,7 +1408,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1467,7 +1478,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>sbt: org.scala-lang:scala-library:2.12.8:jar</last-edited>
+          <last-edited>scalacheck_2.12-1.14.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
