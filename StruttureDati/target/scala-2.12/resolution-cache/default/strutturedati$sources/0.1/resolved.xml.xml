@@ -4,7 +4,7 @@
 		module="strutturedati$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190411191456"
+		publication="20190414123258"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

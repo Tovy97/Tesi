@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3cbadfb-1e26-4314-8455-a04933331545" name="Default Changelist" comment="fine">
-      <change afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/test.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_8_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/strutturedati$sources/0.1/resolved.xml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-compile-internal.xml" afterDir="false" />
@@ -23,27 +26,6 @@
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-test-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/modules/TestStruttureDati.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/modules/TestStruttureDati.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/scala_compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/.history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
     </list>
     <list id="b2b9940e-c190-4426-a764-36088e2b4a5d" name="Revert: sistemata scaladoc" comment="">
       <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
@@ -58,18 +40,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="StruttureDati" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/test.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="441">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -91,6 +80,8 @@
       <find>insertTree</find>
       <find>tail</find>
       <find>BQ</find>
+      <find>val</find>
+      <find>lazy val</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/queue/Queue.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/ffff.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/Segment.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" />
@@ -123,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/queue/DQ/Deque.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BQ_Specification.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" />
@@ -138,6 +127,9 @@
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/test.sc" />
       </list>
     </option>
   </component>
@@ -153,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -163,20 +156,80 @@
             </path>
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="SH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="STK" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="worksheetScalaCheck" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553166920364" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../scalacheck_2.12-1.14.0.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -554,20 +607,27 @@
       <option name="project" value="LOCAL" />
       <updated>1555002623140</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="fine">
+      <created>1555002970140</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1555002970140</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.24886535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.24886535" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
@@ -687,517 +747,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/Color.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/Sortable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc;n#Sortable#0;n#!!top" />
-            <element signature="e#369#511#0" />
-            <element signature="e#531#676#0" />
-            <element signature="e#703#1025#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/OrderedSet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="86" column="51" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="86" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!doc;n#OrderedSet#0;n#!!top" />
-            <element signature="e#317#451#0" />
-            <element signature="e#471#608#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/d.sc" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/Queue.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#BinomialHeap#0;n#!!top" />
-            <element signature="e#1405#1553#0" />
-            <element signature="e#1616#1767#0" />
-            <element signature="e#1823#2153#0" />
-            <element signature="e#2223#2357#0" />
-            <element signature="e#2397#2627#0" />
-            <element signature="e#2403#2574#0" />
-            <element signature="e#2456#2574#0" />
-            <element signature="e#2631#2978#0" />
-            <element signature="e#3100#3674#0" />
-            <element signature="e#3100#3989#0" />
-            <element signature="e#3803#3989#0" />
-            <element signature="e#3993#4363#0" />
-            <element signature="e#3993#4576#0" />
-            <element signature="e#4580#4912#0" />
-            <element signature="e#4580#5166#0" />
-            <element signature="e#5170#5522#0" />
-            <element signature="e#5170#6082#0" />
-            <element signature="e#5593#5912#0" />
-            <element signature="e#5701#5912#0" />
-            <element signature="e#5918#6078#0" />
-            <element signature="e#6086#6338#0" />
-            <element signature="e#6086#6852#0" />
-            <element signature="e#6420#6852#0" />
-            <element signature="e#6580#6854#0" />
-            <element signature="e#6597#6663#0" />
-            <element signature="e#6692#6758#0" />
-            <element signature="e#6764#6848#0" />
-            <element signature="e#6856#7561#0" />
-            <element signature="e#6856#8075#0" />
-            <element signature="e#7719#8075#0" />
-            <element signature="e#7898#8077#0" />
-            <element signature="e#7974#8012#0" />
-            <element signature="e#8018#8071#0" />
-            <element signature="e#8079#8449#0" />
-            <element signature="e#8079#8828#0" />
-            <element signature="e#8580#8824#0" />
-            <element signature="e#8687#8824#0" />
-            <element signature="e#8703#8749#0" />
-            <element signature="e#8755#8818#0" />
-            <element signature="e#8832#9374#0" />
-            <element signature="e#8832#9827#0" />
-            <element signature="e#9679#9748#0" />
-            <element signature="e#9754#9823#0" />
-            <element signature="n#!!doc;n#BinomialHeap$#0;n#!!top" />
-            <element signature="e#9950#10722#1" />
-            <element signature="e#9954#10470#0" />
-            <element signature="e#9954#10720#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc;n#BinomialTree#0;n#!!top" />
-            <element signature="e#1480#1632#0" />
-            <element signature="e#1656#1742#0" />
-            <element signature="e#1746#1933#0" />
-            <element signature="e#1966#2378#0" />
-            <element signature="e#2062#2374#0" />
-            <element signature="e#2062#2254#0" />
-            <element signature="e#2146#2214#0" />
-            <element signature="e#2220#2246#0" />
-            <element signature="e#2382#2721#0" />
-            <element signature="e#2751#2924#0" />
-            <element signature="e#2758#2888#0" />
-            <element signature="e#2810#2888#0" />
-            <element signature="e#2928#3066#0" />
-            <element signature="e#3106#3437#0" />
-            <element signature="e#3112#3283#0" />
-            <element signature="e#3165#3283#0" />
-            <element signature="e#3289#3433#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#LeftistHeap#0;n#!!top" />
-            <element signature="e#807#949#0" />
-            <element signature="e#988#1079#0" />
-            <element signature="e#1082#1229#0" />
-            <element signature="e#1275#1351#0" />
-            <element signature="e#1354#1562#0" />
-            <element signature="e#1607#1825#0" />
-            <element signature="e#1613#1794#0" />
-            <element signature="e#1674#1794#0" />
-            <element signature="e#1828#1959#0" />
-            <element signature="e#2005#2238#0" />
-            <element signature="e#2011#2187#0" />
-            <element signature="e#2058#2187#0" />
-            <element signature="e#2242#2624#0" />
-            <element signature="e#2242#2858#0" />
-            <element signature="e#2862#3461#0" />
-            <element signature="e#2862#3858#0" />
-            <element signature="e#3664#3854#0" />
-            <element signature="e#3862#4177#0" />
-            <element signature="e#3862#4372#0" />
-            <element signature="e#4255#4372#0" />
-            <element signature="e#4376#4738#0" />
-            <element signature="e#4376#5022#0" />
-            <element signature="e#4928#5018#0" />
-            <element signature="e#5026#5368#0" />
-            <element signature="e#5026#5982#0" />
-            <element signature="e#5552#5978#0" />
-            <element signature="e#5626#5972#0" />
-            <element signature="e#5626#5972#1" />
-            <element signature="e#5986#6199#0" />
-            <element signature="e#6229#6560#0" />
-            <element signature="e#6229#7169#0" />
-            <element signature="e#6678#6901#0" />
-            <element signature="e#6789#6839#0" />
-            <element signature="e#6845#6895#0" />
-            <element signature="e#6907#7165#0" />
-            <element signature="e#7043#7159#0" />
-            <element signature="e#7061#7107#0" />
-            <element signature="e#7113#7159#0" />
-            <element signature="n#!!doc;n#LeftistHeap$#0;n#!!top" />
-            <element signature="e#7288#8104#1" />
-            <element signature="e#7292#7801#0" />
-            <element signature="e#7292#8102#0" />
-            <element signature="e#8008#8029#0" />
-            <element signature="e#8035#8098#0" />
-            <element signature="n#!!doc;n#Node#0;n#!!top" />
-            <element signature="n#!!doc;n#Empty#0;n#!!top" />
-            <element signature="e#8880#8912#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="60" column="2" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#PairingHeap#0;n#!!top" />
-            <element signature="e#918#1060#0" />
-            <element signature="e#1099#1187#0" />
-            <element signature="e#1191#1337#0" />
-            <element signature="e#1383#1453#0" />
-            <element signature="e#1456#1784#0" />
-            <element signature="e#1829#2073#0" />
-            <element signature="e#1836#1965#0" />
-            <element signature="e#1887#1965#0" />
-            <element signature="e#1971#2069#0" />
-            <element signature="e#2076#2208#0" />
-            <element signature="e#2254#2625#0" />
-            <element signature="e#2260#2430#0" />
-            <element signature="e#2312#2430#0" />
-            <element signature="e#2436#2621#0" />
-            <element signature="e#2629#3044#0" />
-            <element signature="e#2629#3266#0" />
-            <element signature="e#3270#3902#0" />
-            <element signature="e#3270#4298#0" />
-            <element signature="e#4104#4294#0" />
-            <element signature="e#4302#4631#0" />
-            <element signature="e#4302#4953#0" />
-            <element signature="e#4743#4953#0" />
-            <element signature="e#4857#4949#0" />
-            <element signature="e#4877#4910#0" />
-            <element signature="e#4916#4949#0" />
-            <element signature="e#4957#5310#0" />
-            <element signature="e#4957#5499#0" />
-            <element signature="e#5388#5499#0" />
-            <element signature="e#5503#6169#0" />
-            <element signature="e#5503#6637#0" />
-            <element signature="e#6360#6544#0" />
-            <element signature="e#6417#6544#0" />
-            <element signature="e#6550#6633#0" />
-            <element signature="e#6641#6983#0" />
-            <element signature="e#6641#7434#0" />
-            <element signature="e#7167#7300#0" />
-            <element signature="e#7216#7300#0" />
-            <element signature="e#7306#7430#0" />
-            <element signature="n#!!doc;n#PairingHeap$#0;n#!!top" />
-            <element signature="e#7553#8369#1" />
-            <element signature="e#7557#8067#0" />
-            <element signature="e#7557#8367#0" />
-            <element signature="e#8273#8294#0" />
-            <element signature="e#8300#8363#0" />
-            <element signature="n#!!doc;n#Node#0;n#!!top" />
-            <element signature="n#!!doc;n#Empty#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#RedBlackTree#0;n#!!top" />
-            <element signature="e#949#1101#0" />
-            <element signature="e#1140#1231#0" />
-            <element signature="e#1234#1389#0" />
-            <element signature="e#1435#1511#0" />
-            <element signature="e#1514#1730#0" />
-            <element signature="e#1775#1996#0" />
-            <element signature="e#1781#1965#0" />
-            <element signature="e#1844#1965#0" />
-            <element signature="e#1999#2137#0" />
-            <element signature="e#2183#2513#0" />
-            <element signature="e#2189#2461#0" />
-            <element signature="e#2238#2461#0" />
-            <element signature="e#2517#2962#0" />
-            <element signature="e#2517#3544#0" />
-            <element signature="e#3158#3471#0" />
-            <element signature="e#3199#3471#0" />
-            <element signature="e#3352#3465#0" />
-            <element signature="e#3371#3415#0" />
-            <element signature="e#3421#3465#0" />
-            <element signature="e#3548#4176#0" />
-            <element signature="e#3548#4856#0" />
-            <element signature="e#4287#4852#0" />
-            <element signature="e#4860#5271#0" />
-            <element signature="e#4860#5679#0" />
-            <element signature="e#5471#5675#0" />
-            <element signature="e#5580#5669#0" />
-            <element signature="e#5599#5631#0" />
-            <element signature="e#5637#5669#0" />
-            <element signature="e#5683#6072#0" />
-            <element signature="e#5683#8839#0" />
-            <element signature="e#6268#6746#0" />
-            <element signature="e#6351#6746#0" />
-            <element signature="e#6752#7231#0" />
-            <element signature="e#6836#7231#0" />
-            <element signature="e#7237#7428#0" />
-            <element signature="e#7315#7428#0" />
-            <element signature="e#7434#7623#0" />
-            <element signature="e#7511#7623#0" />
-            <element signature="e#7629#8452#0" />
-            <element signature="e#7704#8452#0" />
-            <element signature="e#7846#8043#0" />
-            <element signature="e#7874#8043#0" />
-            <element signature="e#8111#8312#0" />
-            <element signature="e#8139#8312#0" />
-            <element signature="e#8458#8720#0" />
-            <element signature="e#8507#8720#0" />
-            <element signature="e#8594#8688#0" />
-            <element signature="e#8613#8647#0" />
-            <element signature="e#8653#8688#0" />
-            <element signature="e#8726#8835#0" />
-            <element signature="e#8843#9177#0" />
-            <element signature="e#8843#9427#0" />
-            <element signature="e#9265#9427#0" />
-            <element signature="e#9431#9769#0" />
-            <element signature="e#9431#10021#0" />
-            <element signature="e#9857#10021#0" />
-            <element signature="e#10025#10375#0" />
-            <element signature="e#10025#11894#0" />
-            <element signature="e#10559#10798#0" />
-            <element signature="e#10607#10798#0" />
-            <element signature="e#10804#11344#0" />
-            <element signature="e#10850#11344#0" />
-            <element signature="e#10924#11272#0" />
-            <element signature="e#10924#11272#1" />
-            <element signature="e#11350#11806#0" />
-            <element signature="e#11405#11806#0" />
-            <element signature="e#11492#11800#0" />
-            <element signature="e#11624#11761#0" />
-            <element signature="e#11636#11751#0" />
-            <element signature="e#11767#11800#0" />
-            <element signature="e#11898#11985#0" />
-            <element signature="n#!!doc;n#RedBlackTree$#0;n#!!top" />
-            <element signature="e#12137#12969#1" />
-            <element signature="e#12141#12665#0" />
-            <element signature="e#12141#12967#0" />
-            <element signature="e#12872#12893#0" />
-            <element signature="e#12899#12963#0" />
-            <element signature="n#!!doc;n#Node#0;n#!!top" />
-            <element signature="n#!!doc;n#Empty#0;n#!!top" />
-            <element signature="e#13779#13909#0" />
-            <element signature="e#13783#13873#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#BatchedQueue#0;n#!!top" />
-            <element signature="e#828#958#0" />
-            <element signature="e#1012#1145#0" />
-            <element signature="e#1185#1253#0" />
-            <element signature="e#1256#1472#0" />
-            <element signature="e#1517#1588#0" />
-            <element signature="e#1591#1757#0" />
-            <element signature="e#1815#2060#0" />
-            <element signature="e#2102#2173#0" />
-            <element signature="e#2177#2437#0" />
-            <element signature="e#2523#3030#0" />
-            <element signature="e#2523#3243#0" />
-            <element signature="e#3118#3243#0" />
-            <element signature="e#3247#3545#0" />
-            <element signature="e#3247#3712#0" />
-            <element signature="e#3614#3712#0" />
-            <element signature="e#3716#3832#0" />
-            <element signature="e#3716#4341#0" />
-            <element signature="e#3873#4030#0" />
-            <element signature="e#3912#4030#0" />
-            <element signature="e#4036#4337#0" />
-            <element signature="n#!!doc;n#BatchedQueue$#0;n#!!top" />
-            <element signature="e#4457#4888#1" />
-            <element signature="e#4461#4773#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/DQ/Deque.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#Deque#0;n#!!top" />
-            <element signature="e#727#857#0" />
-            <element signature="e#911#1058#0" />
-            <element signature="e#1098#1166#0" />
-            <element signature="e#1169#1399#0" />
-            <element signature="e#1437#1564#0" />
-            <element signature="e#1567#1753#0" />
-            <element signature="e#1811#2069#0" />
-            <element signature="e#2111#2224#0" />
-            <element signature="e#2227#2456#0" />
-            <element signature="e#2485#2612#0" />
-            <element signature="e#2616#2956#0" />
-            <element signature="e#3031#3547#0" />
-            <element signature="e#3031#3916#0" />
-            <element signature="e#3624#3916#0" />
-            <element signature="e#3688#3760#0" />
-            <element signature="e#3798#3874#0" />
-            <element signature="e#3920#4246#0" />
-            <element signature="e#3920#4459#0" />
-            <element signature="e#4315#4459#0" />
-            <element signature="e#4463#4593#0" />
-            <element signature="e#4463#5074#0" />
-            <element signature="e#4634#4791#0" />
-            <element signature="e#4673#4791#0" />
-            <element signature="e#4797#5070#0" />
-            <element signature="e#5078#5402#0" />
-            <element signature="e#5078#5606#0" />
-            <element signature="e#5462#5606#0" />
-            <element signature="e#5610#5949#0" />
-            <element signature="n#!!doc;n#Deque$#0;n#!!top" />
-            <element signature="e#6119#6570#1" />
-            <element signature="e#6123#6469#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#BottomUpMergeSort#0;n#!!top" />
-            <element signature="e#1628#1773#0" />
-            <element signature="e#1825#2012#0" />
-            <element signature="e#2148#2276#0" />
-            <element signature="e#2316#2581#0" />
-            <element signature="e#2322#2518#0" />
-            <element signature="e#2377#2518#0" />
-            <element signature="e#2585#2841#0" />
-            <element signature="e#2585#3235#0" />
-            <element signature="e#2925#3161#0" />
-            <element signature="e#3052#3081#0" />
-            <element signature="e#3087#3155#0" />
-            <element signature="e#3239#3505#0" />
-            <element signature="e#3623#3909#0" />
-            <element signature="e#3623#4313#0" />
-            <element signature="e#4007#4313#0" />
-            <element signature="e#4155#4309#0" />
-            <element signature="e#4175#4239#0" />
-            <element signature="e#4245#4309#0" />
-            <element signature="n#!!doc;n#BottomUpMergeSort$#0;n#!!top" />
-            <element signature="e#4441#5221#1" />
-            <element signature="e#4445#4950#0" />
-            <element signature="e#4445#5219#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/Segment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#Segment#0;n#!!top" />
-            <element signature="e#592#716#0" />
-            <element signature="e#756#965#0" />
-            <element signature="e#762#919#0" />
-            <element signature="e#801#919#0" />
-            <element signature="e#969#1126#0" />
-            <element signature="n#!!doc;n#Segment$#0;n#!!top" />
-            <element signature="e#1292#2031#1" />
-            <element signature="e#1296#1789#0" />
-            <element signature="e#1296#2029#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#SplayHeap#0;n#!!top" />
-            <element signature="e#1186#1314#0" />
-            <element signature="e#1344#1432#0" />
-            <element signature="e#1436#1579#0" />
-            <element signature="e#1616#1689#0" />
-            <element signature="e#1692#1856#0" />
-            <element signature="e#1892#2107#0" />
-            <element signature="e#1898#2076#0" />
-            <element signature="e#1958#2076#0" />
-            <element signature="e#2110#2238#0" />
-            <element signature="e#2284#2510#0" />
-            <element signature="e#2290#2461#0" />
-            <element signature="e#2335#2461#0" />
-            <element signature="e#2514#3013#0" />
-            <element signature="e#2514#3251#0" />
-            <element signature="e#3255#3671#0" />
-            <element signature="e#3255#4102#0" />
-            <element signature="e#3865#4079#0" />
-            <element signature="e#3927#4079#0" />
-            <element signature="e#4001#4073#0" />
-            <element signature="e#4106#4460#0" />
-            <element signature="e#4106#4696#0" />
-            <element signature="e#4540#4696#0" />
-            <element signature="e#4700#5188#0" />
-            <element signature="e#4700#5588#0" />
-            <element signature="e#5367#5584#0" />
-            <element signature="e#5592#5930#0" />
-            <element signature="e#5592#6348#0" />
-            <element signature="e#6105#6327#0" />
-            <element signature="e#6145#6327#0" />
-            <element signature="e#6352#6950#0" />
-            <element signature="e#6352#7878#0" />
-            <element signature="e#7068#7878#0" />
-            <element signature="e#7144#7874#0" />
-            <element signature="e#7168#7518#0" />
-            <element signature="e#7176#7512#0" />
-            <element signature="e#7256#7504#0" />
-            <element signature="e#7280#7389#0" />
-            <element signature="e#7395#7504#0" />
-            <element signature="e#7524#7874#0" />
-            <element signature="e#7532#7868#0" />
-            <element signature="e#7612#7860#0" />
-            <element signature="e#7636#7745#0" />
-            <element signature="e#7751#7860#0" />
-            <element signature="n#!!doc;n#SplayHeap$#0;n#!!top" />
-            <element signature="e#7991#8794#1" />
-            <element signature="e#7995#8496#0" />
-            <element signature="e#7995#8792#0" />
-            <element signature="e#8700#8721#0" />
-            <element signature="e#8727#8788#0" />
-            <element signature="n#!!doc;n#Node#0;n#!!top" />
-            <element signature="n#!!doc;n#Empty#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,35 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#Stack#0;n#!!top" />
-            <element signature="e#380#508#0" />
-            <element signature="e#545#679#0" />
-            <element signature="e#710#773#0" />
-            <element signature="e#776#912#0" />
-            <element signature="e#951#1131#0" />
-            <element signature="e#951#1220#0" />
-            <element signature="e#1154#1220#0" />
-            <element signature="e#1224#1505#0" />
-            <element signature="e#1224#1572#0" />
-            <element signature="e#1576#1886#0" />
-            <element signature="e#1576#2045#0" />
-            <element signature="e#1945#2045#0" />
-            <element signature="e#2049#2165#0" />
-            <element signature="e#2049#2409#0" />
-            <element signature="e#2206#2363#0" />
-            <element signature="e#2245#2363#0" />
-            <element signature="n#!!doc;n#Stack$#0;n#!!top" />
-            <element signature="e#2512#2901#1" />
-            <element signature="e#2516#2835#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/DQ_Specification.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1355,65 +880,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="84">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding>
-            <element signature="n#!!doc;n#BinarySearchTree#0;n#!!top" />
-            <element signature="e#815#985#0" />
-            <element signature="e#1024#1112#0" />
-            <element signature="e#1116#1289#0" />
-            <element signature="e#1335#1408#0" />
-            <element signature="e#1412#1646#0" />
-            <element signature="e#1691#1913#0" />
-            <element signature="e#1697#1882#0" />
-            <element signature="e#1764#1882#0" />
-            <element signature="e#1917#2073#0" />
-            <element signature="e#2119#2361#0" />
-            <element signature="e#2125#2305#0" />
-            <element signature="e#2178#2305#0" />
-            <element signature="e#2365#2823#0" />
-            <element signature="e#2365#3271#0" />
-            <element signature="e#3022#3267#0" />
-            <element signature="e#3167#3211#0" />
-            <element signature="e#3217#3261#0" />
-            <element signature="e#3275#3699#0" />
-            <element signature="e#3275#4105#0" />
-            <element signature="e#3899#4101#0" />
-            <element signature="e#4023#4056#0" />
-            <element signature="e#4062#4095#0" />
-            <element signature="e#4109#4511#0" />
-            <element signature="e#4109#5130#0" />
-            <element signature="e#4710#5126#0" />
-            <element signature="e#5026#5070#0" />
-            <element signature="e#5076#5120#0" />
-            <element signature="e#5134#5499#0" />
-            <element signature="e#5134#5743#0" />
-            <element signature="e#5587#5743#0" />
-            <element signature="e#5747#6116#0" />
-            <element signature="e#5747#6362#0" />
-            <element signature="e#6204#6362#0" />
-            <element signature="e#6366#6732#0" />
-            <element signature="e#6366#7162#0" />
-            <element signature="e#6916#7141#0" />
-            <element signature="e#6963#7141#0" />
-            <element signature="n#!!doc;n#BinarySearchTree$#0;n#!!top" />
-            <element signature="e#7303#8179#1" />
-            <element signature="e#7307#7867#0" />
-            <element signature="e#7307#8177#0" />
-            <element signature="e#8078#8099#0" />
-            <element signature="e#8105#8173#0" />
-            <element signature="n#!!doc;n#Node#0;n#!!top" />
-            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+            <element signature="n#!!doc;n#BH_Specification$#0;n#!!top" />
+            <element signature="e#419#805#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/a.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/Color.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/OrderedSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc;n#OrderedSet#0;n#!!top" />
+            <element signature="e#317#451#0" />
+            <element signature="e#471#608#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="236" column="11" selection-start-line="236" selection-start-column="11" selection-end-line="236" selection-end-column="11" />
+        <state relative-caret-position="-44">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc;n#FiniteMap#0;n#!!top" />
             <element signature="e#1154#1286#0" />
@@ -1471,21 +978,489 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="125">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <element signature="n#!!doc;n#BH_Specification$#0;n#!!top" />
-            <element signature="e#419#805#0" />
+            <element signature="n#!!doc;n#BinomialTree#0;n#!!top" />
+            <element signature="e#1480#1632#0" />
+            <element signature="e#1656#1742#0" />
+            <element signature="e#1746#1933#0" />
+            <element signature="e#1966#2378#0" />
+            <element signature="e#2062#2254#0" />
+            <element signature="e#2146#2214#0" />
+            <element signature="e#2220#2246#0" />
+            <element signature="e#2382#2721#0" />
+            <element signature="e#2751#2924#0" />
+            <element signature="e#2758#2888#0" />
+            <element signature="e#2810#2888#0" />
+            <element signature="e#2928#3066#0" />
+            <element signature="e#3106#3437#0" />
+            <element signature="e#3112#3283#0" />
+            <element signature="e#3165#3283#0" />
+            <element signature="e#3289#3433#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="-1722">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc;n#LeftistHeap#0;n#!!top" />
+            <element signature="e#807#949#0" />
+            <element signature="e#988#1079#0" />
+            <element signature="n#!!doc;n#LeftistHeap$#0;n#!!top" />
+            <element signature="n#!!doc;n#Node#0;n#!!top" />
+            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="164" column="17" lean-forward="true" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc;n#PairingHeap#0;n#!!top" />
+            <element signature="e#918#1060#0" />
+            <element signature="e#1099#1187#0" />
+            <element signature="e#1191#1337#0" />
+            <element signature="e#1383#1453#0" />
+            <element signature="n#!!doc;n#PairingHeap$#0;n#!!top" />
+            <element signature="n#!!doc;n#Node#0;n#!!top" />
+            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="128" column="19" selection-start-line="128" selection-start-column="19" selection-end-line="128" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc;n#BinarySearchTree#0;n#!!top" />
+            <element signature="e#815#985#0" />
+            <element signature="e#1024#1112#0" />
+            <element signature="e#1116#1289#0" />
+            <element signature="e#1335#1408#0" />
+            <element signature="e#1412#1646#0" />
+            <element signature="e#1691#1913#0" />
+            <element signature="e#1697#1882#0" />
+            <element signature="e#1764#1882#0" />
+            <element signature="e#1917#2073#0" />
+            <element signature="e#2119#2361#0" />
+            <element signature="e#2125#2305#0" />
+            <element signature="e#2178#2305#0" />
+            <element signature="e#2365#2823#0" />
+            <element signature="e#2365#3271#0" />
+            <element signature="e#3022#3267#0" />
+            <element signature="e#3167#3211#0" />
+            <element signature="e#3217#3261#0" />
+            <element signature="e#3275#3699#0" />
+            <element signature="e#3275#4105#0" />
+            <element signature="e#3899#4101#0" />
+            <element signature="e#4023#4056#0" />
+            <element signature="e#4062#4095#0" />
+            <element signature="e#4109#4511#0" />
+            <element signature="e#4109#5130#0" />
+            <element signature="e#4710#5126#0" />
+            <element signature="e#5026#5070#0" />
+            <element signature="e#5076#5120#0" />
+            <element signature="e#5134#5499#0" />
+            <element signature="e#5134#5743#0" />
+            <element signature="e#5587#5743#0" />
+            <element signature="e#5747#6116#0" />
+            <element signature="e#5747#6362#0" />
+            <element signature="e#6204#6362#0" />
+            <element signature="e#6366#6732#0" />
+            <element signature="e#6366#7162#0" />
+            <element signature="e#6916#7141#0" />
+            <element signature="e#6963#7141#0" />
+            <element signature="n#!!doc;n#BinarySearchTree$#0;n#!!top" />
+            <element signature="e#7303#8179#1" />
+            <element signature="e#7307#7867#0" />
+            <element signature="e#7307#8177#0" />
+            <element signature="e#8078#8099#0" />
+            <element signature="e#8105#8173#0" />
+            <element signature="n#!!doc;n#Node#0;n#!!top" />
+            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="156" column="11" selection-start-line="156" selection-start-column="11" selection-end-line="156" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc;n#RedBlackTree#0;n#!!top" />
+            <element signature="e#949#1101#0" />
+            <element signature="e#1140#1231#0" />
+            <element signature="e#1235#1390#0" />
+            <element signature="e#1436#1512#0" />
+            <element signature="e#1516#1732#0" />
+            <element signature="e#1777#1998#0" />
+            <element signature="e#1783#1967#0" />
+            <element signature="e#1846#1967#0" />
+            <element signature="e#2002#2140#0" />
+            <element signature="e#2186#2516#0" />
+            <element signature="e#2192#2464#0" />
+            <element signature="e#2241#2464#0" />
+            <element signature="e#2520#2965#0" />
+            <element signature="e#2520#3547#0" />
+            <element signature="e#3161#3474#0" />
+            <element signature="e#3202#3474#0" />
+            <element signature="e#3374#3418#0" />
+            <element signature="e#3424#3468#0" />
+            <element signature="e#3551#4179#0" />
+            <element signature="e#3551#4859#0" />
+            <element signature="e#4290#4855#0" />
+            <element signature="e#4863#5274#0" />
+            <element signature="e#4863#5682#0" />
+            <element signature="e#5474#5678#0" />
+            <element signature="e#5602#5634#0" />
+            <element signature="e#5640#5672#0" />
+            <element signature="e#5686#6075#0" />
+            <element signature="e#5686#8842#0" />
+            <element signature="e#6271#6749#0" />
+            <element signature="e#6354#6749#0" />
+            <element signature="e#6755#7234#0" />
+            <element signature="e#6839#7234#0" />
+            <element signature="e#7240#7431#0" />
+            <element signature="e#7318#7431#0" />
+            <element signature="e#7437#7626#0" />
+            <element signature="e#7514#7626#0" />
+            <element signature="e#7632#8455#0" />
+            <element signature="e#7707#8455#0" />
+            <element signature="e#7877#8046#0" />
+            <element signature="e#8142#8315#0" />
+            <element signature="e#8461#8723#0" />
+            <element signature="e#8510#8723#0" />
+            <element signature="e#8616#8650#0" />
+            <element signature="e#8656#8691#0" />
+            <element signature="e#8729#8838#0" />
+            <element signature="e#8846#9180#0" />
+            <element signature="e#8846#9430#0" />
+            <element signature="e#9268#9430#0" />
+            <element signature="e#9434#9772#0" />
+            <element signature="e#9434#10024#0" />
+            <element signature="e#9860#10024#0" />
+            <element signature="e#10028#10378#0" />
+            <element signature="e#10028#11897#0" />
+            <element signature="e#10562#10801#0" />
+            <element signature="e#10610#10801#0" />
+            <element signature="e#10807#11347#0" />
+            <element signature="e#10853#11347#0" />
+            <element signature="e#10927#11275#1" />
+            <element signature="e#11353#11809#0" />
+            <element signature="e#11408#11809#0" />
+            <element signature="e#11627#11764#0" />
+            <element signature="e#11639#11754#0" />
+            <element signature="e#11770#11803#0" />
+            <element signature="e#11901#11988#0" />
+            <element signature="n#!!doc;n#RedBlackTree$#0;n#!!top" />
+            <element signature="e#12140#12972#1" />
+            <element signature="e#12144#12668#0" />
+            <element signature="e#12144#12970#0" />
+            <element signature="e#12875#12896#0" />
+            <element signature="e#12902#12966#0" />
+            <element signature="n#!!doc;n#Node#0;n#!!top" />
+            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+            <element signature="e#13782#13912#0" />
+            <element signature="e#13786#13876#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/DQ/Deque.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc;n#Deque#0;n#!!top" />
+            <element signature="e#727#857#0" />
+            <element signature="e#911#1058#0" />
+            <element signature="e#1098#1166#0" />
+            <element signature="e#1170#1400#0" />
+            <element signature="e#1438#1565#0" />
+            <element signature="e#1569#1755#0" />
+            <element signature="e#1814#2072#0" />
+            <element signature="e#2114#2227#0" />
+            <element signature="e#2231#2460#0" />
+            <element signature="e#2489#2616#0" />
+            <element signature="e#2620#2960#0" />
+            <element signature="e#3035#3551#0" />
+            <element signature="e#3035#3920#0" />
+            <element signature="e#3628#3920#0" />
+            <element signature="e#3924#4250#0" />
+            <element signature="e#3924#4463#0" />
+            <element signature="e#4319#4463#0" />
+            <element signature="e#4467#4597#0" />
+            <element signature="e#4467#5078#0" />
+            <element signature="e#4638#4795#0" />
+            <element signature="e#4677#4795#0" />
+            <element signature="e#4801#5074#0" />
+            <element signature="e#5082#5406#0" />
+            <element signature="e#5082#5610#0" />
+            <element signature="e#5466#5610#0" />
+            <element signature="e#5614#5953#0" />
+            <element signature="n#!!doc;n#Deque$#0;n#!!top" />
+            <element signature="e#6123#6574#1" />
+            <element signature="e#6127#6473#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#!!doc;n#BatchedQueue#0;n#!!top" />
+            <element signature="e#828#958#0" />
+            <element signature="e#1012#1145#0" />
+            <element signature="e#1185#1253#0" />
+            <element signature="e#1257#1473#0" />
+            <element signature="e#1518#1589#0" />
+            <element signature="e#1593#1759#0" />
+            <element signature="e#1818#2063#0" />
+            <element signature="e#2105#2176#0" />
+            <element signature="e#2180#2440#0" />
+            <element signature="e#2526#3033#0" />
+            <element signature="e#2526#3246#0" />
+            <element signature="e#3121#3246#0" />
+            <element signature="e#3250#3548#0" />
+            <element signature="e#3250#3715#0" />
+            <element signature="e#3617#3715#0" />
+            <element signature="e#3719#3835#0" />
+            <element signature="e#3719#4344#0" />
+            <element signature="e#3876#4033#0" />
+            <element signature="e#3915#4033#0" />
+            <element signature="e#4039#4340#0" />
+            <element signature="n#!!doc;n#BatchedQueue$#0;n#!!top" />
+            <element signature="e#4460#4891#1" />
+            <element signature="e#4464#4776#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/BottomUpMergeSort.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#1628#1773#0" />
+            <element signature="e#1826#2013#0" />
+            <element signature="e#2150#2278#0" />
+            <element signature="e#2318#2583#0" />
+            <element signature="e#2324#2520#0" />
+            <element signature="e#2379#2520#0" />
+            <element signature="e#2587#2843#0" />
+            <element signature="e#2587#3237#0" />
+            <element signature="e#2927#3163#0" />
+            <element signature="e#3054#3083#0" />
+            <element signature="e#3089#3157#0" />
+            <element signature="e#3241#3507#0" />
+            <element signature="e#3625#3911#0" />
+            <element signature="e#3625#4315#0" />
+            <element signature="e#4009#4315#0" />
+            <element signature="e#4177#4241#0" />
+            <element signature="e#4247#4311#0" />
+            <element signature="n#!!doc;n#BottomUpMergeSort$#0;n#!!top" />
+            <element signature="e#4443#5223#1" />
+            <element signature="e#4447#4952#0" />
+            <element signature="e#4447#5221#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/Sortable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#Sortable#0;n#!!top" />
+            <element signature="e#369#511#0" />
+            <element signature="e#531#676#0" />
+            <element signature="e#703#1035#0" />
+            <element signature="e#1141#1483#0" />
+            <element signature="e#1579#1748#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/sortable/BUMS/Segment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc;n#Segment#0;n#!!top" />
+            <element signature="e#592#716#0" />
+            <element signature="e#756#965#0" />
+            <element signature="e#762#919#0" />
+            <element signature="e#801#919#0" />
+            <element signature="e#969#1126#0" />
+            <element signature="n#!!doc;n#Segment$#0;n#!!top" />
+            <element signature="e#1292#2031#1" />
+            <element signature="e#1296#1789#0" />
+            <element signature="e#1296#2029#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="n#!!doc;n#SplayHeap#0;n#!!top" />
+            <element signature="e#1186#1314#0" />
+            <element signature="e#1344#1432#0" />
+            <element signature="e#1436#1579#0" />
+            <element signature="e#1616#1689#0" />
+            <element signature="e#1693#1857#0" />
+            <element signature="e#1893#2108#0" />
+            <element signature="e#1899#2077#0" />
+            <element signature="e#1959#2077#0" />
+            <element signature="e#2112#2240#0" />
+            <element signature="e#2286#2512#0" />
+            <element signature="e#2292#2463#0" />
+            <element signature="e#2337#2463#0" />
+            <element signature="e#2516#3015#0" />
+            <element signature="e#2516#3253#0" />
+            <element signature="e#3257#3673#0" />
+            <element signature="e#3257#4104#0" />
+            <element signature="e#3867#4081#0" />
+            <element signature="e#3929#4081#0" />
+            <element signature="e#4108#4462#0" />
+            <element signature="e#4108#4698#0" />
+            <element signature="e#4542#4698#0" />
+            <element signature="e#4702#5190#0" />
+            <element signature="e#4702#5590#0" />
+            <element signature="e#5369#5586#0" />
+            <element signature="e#5594#5932#0" />
+            <element signature="e#5594#6350#0" />
+            <element signature="e#6107#6329#0" />
+            <element signature="e#6147#6329#0" />
+            <element signature="e#6354#6952#0" />
+            <element signature="e#6354#7880#0" />
+            <element signature="e#7070#7880#0" />
+            <element signature="e#7170#7520#0" />
+            <element signature="e#7178#7514#0" />
+            <element signature="e#7282#7391#0" />
+            <element signature="e#7397#7506#0" />
+            <element signature="e#7526#7876#0" />
+            <element signature="e#7534#7870#0" />
+            <element signature="e#7638#7747#0" />
+            <element signature="e#7753#7862#0" />
+            <element signature="n#!!doc;n#SplayHeap$#0;n#!!top" />
+            <element signature="e#7993#8796#1" />
+            <element signature="e#7997#8498#0" />
+            <element signature="e#7997#8794#0" />
+            <element signature="e#8702#8723#0" />
+            <element signature="e#8729#8790#0" />
+            <element signature="n#!!doc;n#Node#0;n#!!top" />
+            <element signature="n#!!doc;n#Empty#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc;n#Stack#0;n#!!top" />
+            <element signature="e#380#508#0" />
+            <element signature="e#546#680#0" />
+            <element signature="e#711#774#0" />
+            <element signature="e#778#914#0" />
+            <element signature="e#953#1133#0" />
+            <element signature="e#1226#1507#0" />
+            <element signature="e#1226#1574#0" />
+            <element signature="e#1578#1888#0" />
+            <element signature="e#1947#2047#0" />
+            <element signature="e#2051#2167#0" />
+            <element signature="e#2051#2411#0" />
+            <element signature="e#2208#2365#0" />
+            <element signature="e#2247#2365#0" />
+            <element signature="n#!!doc;n#Stack$#0;n#!!top" />
+            <element signature="e#2514#2903#1" />
+            <element signature="e#2518#2837#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="120" column="14" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc;n#BinomialHeap#0;n#!!top" />
+            <element signature="e#1405#1553#0" />
+            <element signature="e#1616#1767#0" />
+            <element signature="e#1824#2154#0" />
+            <element signature="e#2225#2359#0" />
+            <element signature="e#2399#2629#0" />
+            <element signature="e#2405#2576#0" />
+            <element signature="e#2458#2576#0" />
+            <element signature="e#2633#2980#0" />
+            <element signature="e#3102#3676#0" />
+            <element signature="e#3102#3991#0" />
+            <element signature="e#3805#3991#0" />
+            <element signature="e#3995#4365#0" />
+            <element signature="e#3995#4578#0" />
+            <element signature="e#4582#4914#0" />
+            <element signature="e#5172#5524#0" />
+            <element signature="e#5172#6084#0" />
+            <element signature="e#5595#5914#0" />
+            <element signature="e#5703#5914#0" />
+            <element signature="e#5920#6080#0" />
+            <element signature="e#6088#6340#0" />
+            <element signature="e#6088#6854#0" />
+            <element signature="e#6422#6854#0" />
+            <element signature="e#6576#6850#0" />
+            <element signature="e#6599#6665#0" />
+            <element signature="e#6694#6760#0" />
+            <element signature="e#6766#6850#0" />
+            <element signature="e#6858#7563#0" />
+            <element signature="e#6858#8077#0" />
+            <element signature="e#7721#8077#0" />
+            <element signature="e#7894#8073#0" />
+            <element signature="e#7976#8014#0" />
+            <element signature="e#8020#8073#0" />
+            <element signature="e#8081#8451#0" />
+            <element signature="e#8081#8830#0" />
+            <element signature="e#8582#8826#0" />
+            <element signature="e#8683#8820#0" />
+            <element signature="e#8705#8751#0" />
+            <element signature="e#8757#8820#0" />
+            <element signature="e#8834#9376#0" />
+            <element signature="e#8834#9829#0" />
+            <element signature="e#9681#9750#0" />
+            <element signature="e#9756#9825#0" />
+            <element signature="n#!!doc;n#BinomialHeap$#0;n#!!top" />
+            <element signature="e#9952#10724#1" />
+            <element signature="e#9956#10472#0" />
+            <element signature="e#9956#10722#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/a.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/test.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1500,7 +1475,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

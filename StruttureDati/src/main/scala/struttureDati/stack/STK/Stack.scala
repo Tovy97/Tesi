@@ -40,7 +40,7 @@ final case class Stack[+E](private val stack: List[E]) {
     *
     * @return lo stack senza l'elemento che si trovava in cima.
     */
-  def pop: Stack[E] = stack match {
+  lazy val pop: Stack[E] = stack match {
     case Nil => this
     case _ :: t => Stack(t)
   }
