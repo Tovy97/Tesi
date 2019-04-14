@@ -4,10 +4,6 @@
     <root id="archive" name="StruttureDati.jar">
       <element id="module-output" name="StruttureDati-build" />
       <element id="module-output" name="StruttureDati" />
-      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.6.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.6-sources.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/lib/jline.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/lib/scala-compiler.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/lib/scala-library.jar" path-in-jar="/" />
@@ -93,7 +89,10 @@
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/zinc-ivy-integration_2.12-1.2.5.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/zinc-persist_2.12-1.2.5.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/zinc_2.12-1.2.5.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../../../scalacheck_2.12-1.14.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.6-sources.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
