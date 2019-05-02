@@ -123,6 +123,17 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
       case _ => "BatchedQueue(" + listToString(sx) + ", " + listToString(dx.reverse) + ")"
     }
   }
+
+  /**
+    * Controlla se due code sono uguali (contengono gli stessi elementi nello stesso ordine)
+    *
+    * @param that la coda da confrontare
+    * @return true se due code sono uguali, altrimenti false
+    */
+  override def equals(that: Any): Boolean = that match {
+    case that: BatchedQueue[E] => toList == that.toList
+    case _ => super.equals(that)
+  }
 }
 
 /**

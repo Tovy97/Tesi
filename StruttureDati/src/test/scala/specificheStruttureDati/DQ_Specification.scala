@@ -81,10 +81,10 @@ private object DQ_Specification extends Properties("DQ") {
     */
   property("addLeft.init") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
     if (dq.isEmpty) {
-      dq.addLeft(e).init.toList == dq.toList
+      dq.addLeft(e).init == dq
     } else {
       if (dq.toList.exists(x => x != e)) {
-        dq.addLeft(e).init.toList != dq.toList
+        dq.addLeft(e).init != dq
       } else {
         true
       }
@@ -95,14 +95,14 @@ private object DQ_Specification extends Properties("DQ") {
     * Proprietà: la addLeft di un elemento E seguita dalla tail non varia la coda.
     */
   property("addLeft.tail") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
-    dq.addLeft(e).tail.toList == dq.toList
+    dq.addLeft(e).tail == dq
   }
 
   /**
     * Proprietà: la addRight di un elemento E seguita dalla init non varia la coda.
     */
   property("addRight.init") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
-    dq.addRight(e).init.toList == dq.toList
+    dq.addRight(e).init == dq
   }
 
   /**
@@ -111,10 +111,10 @@ private object DQ_Specification extends Properties("DQ") {
     */
   property("addRight.tail") = forAll(genQueue, Arbitrary.arbitrary[Int]) { (dq: Deque[Int], e: Int) =>
     if (dq.isEmpty) {
-      dq.addRight(e).tail.toList == dq.toList
+      dq.addRight(e).tail == dq
     } else {
       if (dq.toList.exists(x => x != e)) {
-        dq.addRight(e).tail.toList != dq.toList
+        dq.addRight(e).tail != dq
       } else {
         true
       }
@@ -169,13 +169,13 @@ private object DQ_Specification extends Properties("DQ") {
 
   /**
     * Proprietà: la tail seguita dalla addRight dell'elemento tolto varia la coda, a meno che
-    * la coda non sia composta un solo elemento ripetuto 1 o più volte. Se la head (usata per ottenere
+    * la coda non sia composta da un solo elemento ripetuto 1 o più volte. Se la head (usata per ottenere
     * l’elemento tolto dalla tail) solleva un'eccezione, allora la coda è vuota.
     */
   property("tail.addRight") = forAll(genQueue) { dq: Deque[Int] =>
     try {
       if (dq.toList.exists(x => x != dq.head)) {
-        dq.tail.addRight(dq.head).toList != dq.toList
+        dq.tail.addRight(dq.head) != dq
       } else {
         true
       }
@@ -186,13 +186,13 @@ private object DQ_Specification extends Properties("DQ") {
 
   /**
     * Proprietà: la init seguita dalla addLeft dell'elemento tolto varia la coda, a meno che
-    * la coda non sia composta un solo elemento ripetuto 1 o più volte. Se la last (usata per ottenere
+    * la coda non sia composta da un solo elemento ripetuto 1 o più volte. Se la last (usata per ottenere
     * l’elemento tolto dalla init) solleva un'eccezione, allora la coda è vuota.
     */
   property("init.addLeft") = forAll(genQueue) { dq: Deque[Int] =>
     try {
       if (dq.toList.exists(x => x != dq.last)) {
-        dq.init.addLeft(dq.last).toList != dq.toList
+        dq.init.addLeft(dq.last) != dq
       } else {
         true
       }
@@ -207,7 +207,7 @@ private object DQ_Specification extends Properties("DQ") {
     */
   property("init.addRight") = forAll(genQueue) { dq: Deque[Int] =>
     try {
-      dq.init.addRight(dq.last).toList == dq.toList
+      dq.init.addRight(dq.last) == dq
     } catch {
       case _: NoSuchElementException => dq.isEmpty
     }
@@ -219,7 +219,7 @@ private object DQ_Specification extends Properties("DQ") {
     */
   property("tail.addLeft") = forAll(genQueue) { dq: Deque[Int] =>
     try {
-      dq.tail.addLeft(dq.head).toList == dq.toList
+      dq.tail.addLeft(dq.head) == dq
     } catch {
       case _: NoSuchElementException => dq.isEmpty
     }

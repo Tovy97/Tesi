@@ -88,7 +88,7 @@ private object BQ_Specification extends Properties("BQ") {
 
   /**
     * Proprietà: la tail seguita dalla addRight dell'elemento tolto varia la coda, a meno che
-    * la coda non sia composta un solo elemento ripetuto 1 o più volte. Se la head
+    * la coda non sia composta da un solo elemento ripetuto 1 o più volte. Se la head
     * solleva un'eccezione, allora la coda è vuota.
     */
   property("tail.addRight") = forAll(genQueue) { bq: BatchedQueue[Int] =>

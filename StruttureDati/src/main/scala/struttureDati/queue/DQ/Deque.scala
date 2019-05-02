@@ -147,6 +147,17 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
   }
 
   /**
+    * Controlla se due code doppie sono uguali (contengono gli stessi elementi nello stesso ordine)
+    *
+    * @param that la coda doppia da confrontare
+    * @return true se due code doppie sono uguali, altrimenti false
+    */
+  override def equals(that: Any): Boolean = that match {
+    case that: Deque[E] => toList == that.toList
+    case _ => super.equals(that)
+  }
+
+  /**
     * Ritorna l'elemento che si trova in coda alla coda doppia.
     * Se la coda doppia è vuota viene sollevata un'eccezione.
     * Complessità: O(1) nel caso peggiore
