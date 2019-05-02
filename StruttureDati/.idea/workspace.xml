@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8ffe2d4-6ccf-43d8-9a4f-7225efdaede3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/map/FM/FiniteMap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/BH/BinomialTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/queue/DQ/Deque.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/queue/DQ/Deque.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BQ_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BQ_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BUMS_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BUMS_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/DQ_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/DQ_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/LH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/LH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/PH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/PH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/SH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/SH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/STK_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/STK_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/StruttureDati_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/StruttureDati_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" afterDir="false" />
-    </list>
+    <list default="true" id="d8ffe2d4-6ccf-43d8-9a4f-7225efdaede3" name="Default Changelist" comment="fine" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -131,53 +107,7 @@
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-              <item name="DQ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="SH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="struttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="STK" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556804270297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fine">
+      <created>1556804425150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556804425150</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fine">
+      <created>1556804571504</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556804571504</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
