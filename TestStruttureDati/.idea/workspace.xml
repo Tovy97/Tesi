@@ -2,148 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44ca1c9a-81d0-4a1a-9e83-cb4b1bebc4a5" name="Default Changelist" comment="fine">
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$485dc4e52dd33984462b$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$485dc4e52dd33984462b.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$485dc4e52dd33984462b.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$8852d62eb65e9a8deb23$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$8852d62eb65e9a8deb23.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$8852d62eb65e9a8deb23.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$b764a3d43dbd7e8307d6$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$b764a3d43dbd7e8307d6.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$b764a3d43dbd7e8307d6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$cd86fb41351bd15886e7$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$cd86fb41351bd15886e7.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/project/target/config-classes/$cd86fb41351bd15886e7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/FiniteMap$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/FiniteMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/map/FM/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialTree$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/BH/BinomialTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/LeftistHeap$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/LeftistHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/LH/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/MinHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/PairingHeap$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/minHeap/PH/PairingHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/BinarySearchTree$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/BinarySearchTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/BST/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/OrderedSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Black$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Black.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Color.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Red$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/Red.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/RedBlackTree$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/orderedSet/RBT/RedBlackTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/queue/BQ/BatchedQueue$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/queue/BQ/BatchedQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/queue/DQ/Deque$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/queue/DQ/Deque.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/queue/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/sortable/BUMS/BottomUpMergeSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/sortable/BUMS/Segment$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/sortable/BUMS/Segment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/sortable/Sortable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/Empty$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/Empty.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/Node$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/SplayHeap$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/splayHeap/SH/SplayHeap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/stack/STK/Stack$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/classes/struttureDati/stack/STK/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/default/strutturedati$sbt_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/default/strutturedati$sbt_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/default/strutturedati$sources_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/default/strutturedati$sources_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sbt_2.12-compile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sbt_2.12-optional.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sbt_2.12-provided.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sbt_2.12-runtime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sbt_2.12-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-compile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-optional.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-provided.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-runtime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/resolution-cache/reports/default-strutturedati$sources_2.12-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/META-INF/StruttureDati.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BH_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BH_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BQ_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BQ_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BST_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BST_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BUMS_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/BUMS_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/DQ_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/DQ_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/FM_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/FM_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/LH_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/LH_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/PH_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/PH_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/RBT_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/RBT_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/SH_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/SH_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/STK_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/STK_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/StruttureDati_Specification$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/scala-2.12/test-classes/specificheStruttureDati/StruttureDati_Specification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StruttureDati/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/BottomUpMergeSortTest.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/out/artifacts/StruttureDati_jar/StruttureDati.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/out/artifacts/StruttureDati_jar/StruttureDati.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/map/FM/FiniteMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/map/FM/FiniteMap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/BH/BinomialHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/LH/LeftistHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/minHeap/PH/PairingHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/BST/BinarySearchTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/orderedSet/RBT/RedBlackTree.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/queue/BQ/BatchedQueue.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/queue/DQ/Deque.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/queue/DQ/Deque.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/stack/STK/Stack.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/stack/STK/Stack.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/LeftistHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/LeftistHeapTest.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/PairingHeapTest.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/PairingHeapTest.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/teststrutturedati$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-teststrutturedati$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -442,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555002846110</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fine">
+      <created>1561544781491</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1561544781491</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -672,6 +538,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../StruttureDati/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4401">
+          <caret line="239" column="84" selection-start-line="239" selection-start-column="84" selection-end-line="239" selection-end-column="84" />
         </state>
       </provider>
     </entry>
