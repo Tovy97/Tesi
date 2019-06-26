@@ -68,6 +68,20 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
   }
 
   /**
+    * Ritorna l'elemento minore presente nel leftist-heap.
+    * Se il leftist-heap è vuoto viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore.
+    *
+    * @throws java.util.NoSuchElementException se il leftist-heap è vuoto.
+    * @return l'elemento minore presente nel leftist-heap.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val findMin: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty.findMin")
+    case Node(x, _, _, _) => x
+  }
+
+  /**
     * Inserisce un elemento nel leftist-heap.
     * Complessità: O(log(n)) nel caso peggiore.
     *
@@ -101,20 +115,6 @@ sealed trait LeftistHeap[E] extends MinHeap[E] {
       case lh: LeftistHeap[E] => mrg(lh, this)
       case _ => throw new IllegalArgumentException("Impossibile eseguire il merge tra un LeftistHeap e un altro tipo di Heap")
     }
-  }
-
-  /**
-    * Ritorna l'elemento minore presente nel leftist-heap.
-    * Se il leftist-heap è vuoto viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore.
-    *
-    * @throws java.util.NoSuchElementException se il leftist-heap è vuoto.
-    * @return l'elemento minore presente nel leftist-heap.
-    */
-  @throws(classOf[NoSuchElementException])
-  override final def findMin: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty.findMin")
-    case Node(x, _, _, _) => x
   }
 
   /**

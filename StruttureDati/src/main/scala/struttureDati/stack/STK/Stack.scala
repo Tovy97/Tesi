@@ -46,6 +46,20 @@ final case class Stack[+E](private val stack: List[E]) {
   }
 
   /**
+    * Ritorna l'elemento che si trova in cima alla pila.
+    * Se la pila è vuota viene solleva un'eccezione.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se non ci sono elementi nella pila
+    * @return l'elemento che si trovava in cima allo stack.
+    */
+  @throws(classOf[NoSuchElementException])
+  lazy val top: E = stack match {
+    case Nil => throw new NoSuchElementException("Empty.top")
+    case h :: _ => h
+  }
+
+  /**
     * Aggiunge un elemento in cima allo stack.
     * Complessità: O(1) nel caso peggiore
     *
@@ -55,20 +69,6 @@ final case class Stack[+E](private val stack: List[E]) {
     */
   def push[T >: E](el: T): Stack[T] = {
     Stack(el :: stack)
-  }
-
-  /**
-    * Ritorna l'elemento che si trova in cima alla pila.
-    * Se la pila è vuota viene solleva un'eccezione.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se non ci sono elementi nella pila
-    * @return l'elemento che si trovava in cima allo stack.
-    */
-  @throws(classOf[NoSuchElementException])
-  def top: E = stack match {
-    case Nil => throw new NoSuchElementException("Empty.top")
-    case h :: _ => h
   }
 
   /**

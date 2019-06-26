@@ -79,6 +79,21 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   }
 
   /**
+    * Ritorna l'elemento minore presente nel pairing-heap.
+    * Se il pairing-heap è vuoto viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore.
+    * Complessità ammortizzata: O(1).
+    *
+    * @return l'elemento minore presente nel pairing-heap.
+    * @throws java.util.NoSuchElementException se il pairing-heap è vuoto.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val findMin: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty.findMin")
+    case Node(e, _) => e
+  }
+
+  /**
     * Inserisce un elemento nel pairing-heap.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
@@ -92,24 +107,6 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   override final def insert(el: E)(implicit ord: Ordering[E]): PairingHeap[E] = {
     require(!(ord eq null), "Il tipo deve essere ordinabile")
     mrg(Node(el, Nil), this)
-  }
-
-  /**
-    * Implementa l'unione tra due pairing-heap.
-    *
-    * @param hp1 il primo pairing-heap
-    * @param hp2 il secondo pairing-heap
-    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
-    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
-    */
-  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
-    case (h, Empty()) => h
-    case (Empty(), h) => h
-    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
-      Node(x, hp2 :: hs1)
-    } else {
-      Node(y, hp1 :: hs2)
-    }
   }
 
   /**
@@ -134,18 +131,21 @@ sealed trait PairingHeap[E] extends MinHeap[E] {
   }
 
   /**
-    * Ritorna l'elemento minore presente nel pairing-heap.
-    * Se il pairing-heap è vuoto viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore.
-    * Complessità ammortizzata: O(1).
+    * Implementa l'unione tra due pairing-heap.
     *
-    * @return l'elemento minore presente nel pairing-heap.
-    * @throws java.util.NoSuchElementException se il pairing-heap è vuoto.
+    * @param hp1 il primo pairing-heap
+    * @param hp2 il secondo pairing-heap
+    * @param ord è la classe contenente il criterio di ordinamento del tipo parametrico.
+    * @return il pairing-heap risultato dell'unione dei due pairing-heap passati per parametro.
     */
-  @throws(classOf[NoSuchElementException])
-  override final def findMin: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty.findMin")
-    case Node(e, _) => e
+  private final def mrg(hp1: PairingHeap[E], hp2: PairingHeap[E])(implicit ord: Ordering[E]): PairingHeap[E] = (hp1, hp2) match {
+    case (h, Empty()) => h
+    case (Empty(), h) => h
+    case (Node(x, hs1), Node(y, hs2)) => if (ord.lteq(x, y)) {
+      Node(x, hp2 :: hs1)
+    } else {
+      Node(y, hp1 :: hs2)
+    }
   }
 
   /**

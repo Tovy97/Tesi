@@ -65,6 +65,20 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
   }
 
   /**
+    * Ritorna l'elemento che si trova in testa alla coda.
+    * Se la coda è vuota viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la coda è vuota.
+    * @return l'elemento che si trovava in testa alla coda.
+    */
+  @throws(classOf[NoSuchElementException])
+  override lazy val head: E = sx match {
+    case Nil => throw new NoSuchElementException("Empty.head")
+    case h :: _ => h
+  }
+
+  /**
     * Inserisce un elemento in coda.
     * Complessità: O(1) nel caso peggiore
     *
@@ -88,20 +102,6 @@ final case class BatchedQueue[+E](private val sx: List[E], private val dx: List[
   private def checkLeft[T >: E](sinistra: List[T], destra: List[T]): BatchedQueue[T] = (sinistra, destra) match {
     case (Nil, r) => BatchedQueue(r.reverse, Nil)
     case _ => BatchedQueue(sinistra, destra)
-  }
-
-  /**
-    * Ritorna l'elemento che si trova in testa alla coda.
-    * Se la coda è vuota viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la coda è vuota.
-    * @return l'elemento che si trovava in testa alla coda.
-    */
-  @throws(classOf[NoSuchElementException])
-  override def head: E = sx match {
-    case Nil => throw new NoSuchElementException("Empty.head")
-    case h :: _ => h
   }
 
   /**

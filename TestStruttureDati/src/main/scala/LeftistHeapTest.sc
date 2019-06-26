@@ -1,6 +1,6 @@
 import struttureDati.minHeap.LH.LeftistHeap
 
-val heap = LeftistHeap(9,0,-5,6,9,10,1,3)
+val heap = LeftistHeap(9, 0, -5, 6, 9, 10, 1, 3)
 val heapVuoto = LeftistHeap[Int]()
 
 /*----size----*/

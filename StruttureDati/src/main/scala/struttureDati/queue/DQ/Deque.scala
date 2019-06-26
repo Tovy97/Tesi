@@ -80,6 +80,36 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
   }
 
   /**
+    * Ritorna l'elemento che si trova in testa alla coda doppia.
+    * Se la coda doppia è vuota viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
+    * @return l'elemento che si trovava in testa alla coda doppia.
+    */
+  @throws(classOf[NoSuchElementException])
+  override lazy val head: E = (sx, dx) match {
+    case (Nil, Nil) => throw new NoSuchElementException("Empty.head")
+    case (Nil, h :: _) => h
+    case (h :: _, _) => h
+  }
+
+  /**
+    * Ritorna l'elemento che si trova in coda alla coda doppia.
+    * Se la coda doppia è vuota viene sollevata un'eccezione.
+    * Complessità: O(1) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
+    * @return l'elemento che si trovava in coda alla coda doppia.
+    */
+  @throws(classOf[NoSuchElementException])
+  lazy val last: E = (sx, dx) match {
+    case (Nil, Nil) => throw new NoSuchElementException("Empty.last")
+    case (h :: _, Nil) => h
+    case (_, h :: _) => h
+  }
+
+  /**
     * Inserisce un elemento in testa alla coda doppia.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1)
@@ -89,42 +119,6 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     * @return la coda doppia con il nuovo elemento inserito in testa.
     */
   override def addRight[T >: E](el: T): Deque[T] = check(sx, el :: dx)
-
-  /**
-    * Bilancia la coda doppia spostando metà del contenuto di una lista in quell'altra,
-    * nel caso in cui la seconda fosse vuota.
-    * Prima dello spostamento di metà di una lista, la metà interessata viene
-    * rovesciata (reverse).
-    *
-    * @param sinistra la lista sinistra (di testa) della coda doppia
-    * @param destra   la lista destra (di coda) della coda doppia
-    * @tparam T indica il tipo di elementi contenuti nella nuova coda doppia.
-    * @return la nuova coda doppia bilanciata.
-    */
-  private def check[T >: E](sinistra: List[T], destra: List[T]): Deque[T] = (sinistra, destra) match {
-    case (Nil, _ :: _ :: _) =>
-      val (r, l) = destra.splitAt(destra.length / 2)
-      Deque(l.reverse, r)
-    case (_ :: _ :: _, Nil) =>
-      val (l, r) = sinistra.splitAt(sinistra.length / 2)
-      Deque(l, r.reverse)
-    case _ => Deque(sinistra, destra)
-  }
-
-  /**
-    * Ritorna l'elemento che si trova in testa alla coda doppia.
-    * Se la coda doppia è vuota viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
-    * @return l'elemento che si trovava in testa alla coda doppia.
-    */
-  @throws(classOf[NoSuchElementException])
-  override def head: E = (sx, dx) match {
-    case (Nil, Nil) => throw new NoSuchElementException("Empty.head")
-    case (Nil, h :: _) => h
-    case (h :: _, _) => h
-  }
 
   /**
     * Ritorna la stringa che rappresenta la coda doppia.
@@ -158,21 +152,6 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
   }
 
   /**
-    * Ritorna l'elemento che si trova in coda alla coda doppia.
-    * Se la coda doppia è vuota viene sollevata un'eccezione.
-    * Complessità: O(1) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la coda doppia è vuota.
-    * @return l'elemento che si trovava in coda alla coda doppia.
-    */
-  @throws(classOf[NoSuchElementException])
-  def last: E = (sx, dx) match {
-    case (Nil, Nil) => throw new NoSuchElementException("Empty.last")
-    case (h :: _, Nil) => h
-    case (_, h :: _) => h
-  }
-
-  /**
     * Inserisce un elemento in coda alla coda doppia.
     * Complessità: O(1) nel caso peggiore.
     * Complessità ammortizzata: O(1).
@@ -182,6 +161,27 @@ final case class Deque[+E](private val sx: List[E], private val dx: List[E]) ext
     * @return la coda doppia con il nuovo elemento inserito in coda.
     */
   def addLeft[T >: E](el: T): Deque[T] = check(el :: sx, dx)
+
+  /**
+    * Bilancia la coda doppia spostando metà del contenuto di una lista in quell'altra,
+    * nel caso in cui la seconda fosse vuota.
+    * Prima dello spostamento di metà di una lista, la metà interessata viene
+    * rovesciata (reverse).
+    *
+    * @param sinistra la lista sinistra (di testa) della coda doppia
+    * @param destra   la lista destra (di coda) della coda doppia
+    * @tparam T indica il tipo di elementi contenuti nella nuova coda doppia.
+    * @return la nuova coda doppia bilanciata.
+    */
+  private def check[T >: E](sinistra: List[T], destra: List[T]): Deque[T] = (sinistra, destra) match {
+    case (Nil, _ :: _ :: _) =>
+      val (r, l) = destra.splitAt(destra.length / 2)
+      Deque(l.reverse, r)
+    case (_ :: _ :: _, Nil) =>
+      val (l, r) = sinistra.splitAt(sinistra.length / 2)
+      Deque(l, r.reverse)
+    case _ => Deque(sinistra, destra)
+  }
 }
 
 /**

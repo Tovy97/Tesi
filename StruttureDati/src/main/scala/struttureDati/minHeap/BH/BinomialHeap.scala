@@ -67,6 +67,22 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
   }
 
   /**
+    * Ritorna l'elemento minore presente nell'heap binomiale.
+    * Se l'heap binomiale è vuoto viene sollevata un'eccezione.
+    * Complessità: O(log(n)) nel caso peggiore.
+    * Complessità ammortizzata: O(log(n))
+    *
+    * @throws java.util.NoSuchElementException se l'heap binomiale è vuoto.
+    * @return l'elemento minore presente nell'heap binomiale.
+    */
+  @throws(classOf[NoSuchElementException])
+  override lazy val findMin: E = try {
+    removeMinTree(this)._1.el
+  } catch {
+    case _: NoSuchElementException => throw new NoSuchElementException("Empty().findMin")
+  }
+
+  /**
     * Inserisce un elemento nell'heap binomiale.
     * Complessità: O(log(n)) nel caso peggiore.
     * Complessità ammortizzata: O(1)
@@ -92,22 +108,6 @@ final case class BinomialHeap[E](private val trees: List[BinomialTree[E]])(impli
   override def merge(hp: MinHeap[E])(implicit ord: Ordering[E]): BinomialHeap[E] = hp match {
     case lh: BinomialHeap[E] => mrg(lh, this)
     case _ => throw new IllegalArgumentException("Impossibile eseguire il merge tra un BinomialHeap e un altro tipo di Heap")
-  }
-
-  /**
-    * Ritorna l'elemento minore presente nell'heap binomiale.
-    * Se l'heap binomiale è vuoto viene sollevata un'eccezione.
-    * Complessità: O(log(n)) nel caso peggiore.
-    * Complessità ammortizzata: O(log(n))
-    *
-    * @throws java.util.NoSuchElementException se l'heap binomiale è vuoto.
-    * @return l'elemento minore presente nell'heap binomiale.
-    */
-  @throws(classOf[NoSuchElementException])
-  override def findMin: E = try {
-    removeMinTree(this)._1.el
-  } catch {
-    case _: NoSuchElementException => throw new NoSuchElementException("Empty().findMin")
   }
 
   /**

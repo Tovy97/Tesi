@@ -70,6 +70,36 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
   }
 
   /**
+    * Ritorna l'elemento minore presente nell'albero binario di ricerca.
+    * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
+    * @return l'elemento minore presente nell'albero di ricerca binario.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val getMin: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty.getMin")
+    case Node(e, Empty(), _) => e
+    case Node(_, sx, _) => sx.getMin
+  }
+
+  /**
+    * Ritorna l'elemento maggiore presente nell'albero binario di ricerca.
+    * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
+    * @return l'elemento maggiore presente nell'albero di ricerca binario.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val getMax: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty().getMax")
+    case Node(e, _, Empty()) => e
+    case Node(_, _, dx) => dx.getMax
+  }
+
+  /**
     * Inserisce un elemento nell'albero binario di ricerca.
     * Se l'elemento è già presente, non viene aggiunto.
     * Complessità: O(n) nel caso peggiore
@@ -143,38 +173,6 @@ sealed trait BinarySearchTree[E] extends OrderedSet[E] {
         Node(e, sx, dx.delete(El))
       }
     }
-  }
-
-  /**
-    * Ritorna l'elemento minore presente nell'albero binario di ricerca.
-    * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
-    * Complessità: O(n) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
-    * @return l'elemento minore presente nell'albero di ricerca binario.
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  override final def getMin: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty.getMin")
-    case Node(e, Empty(), _) => e
-    case Node(_, sx, _) => sx.getMin
-  }
-
-  /**
-    * Ritorna l'elemento maggiore presente nell'albero binario di ricerca.
-    * Se l'albero binario di ricerca è vuoto viene sollevata un'eccezione.
-    * Complessità: O(n) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se l'albero binario di ricerca è vuoto
-    * @return l'elemento maggiore presente nell'albero di ricerca binario.
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  override final def getMax: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty().getMax")
-    case Node(e, _, Empty()) => e
-    case Node(_, _, dx) => dx.getMax
   }
 
   /**

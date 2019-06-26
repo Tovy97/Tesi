@@ -42,6 +42,36 @@ sealed trait FiniteMap[I, +E] {
   }
 
   /**
+    * Ritorna la coppia chiave-valore con la chiave maggiore presente nella mappa.
+    * Se la mappa è vuota viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la mappa è vuota
+    * @return la coppia chiave-valore con la chiave maggior
+    */
+  @throws(classOf[NoSuchElementException])
+  final lazy val getMax: (I, E) = this match {
+    case Empty() => throw new NoSuchElementException("Empty().getMax")
+    case Node(i, e, _, Empty()) => (i, e)
+    case Node(_, _, _, dx) => dx.getMax
+  }
+
+  /**
+    * Ritorna la coppia chiave-valore con la chiave minore presente nella mappa.
+    * Se la mappa è vuota viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se la mappa è vuota
+    * @return la coppia chiave-valore con la chiave minore
+    */
+  @throws(classOf[NoSuchElementException])
+  final lazy val getMin: (I, E) = this match {
+    case Empty() => throw new NoSuchElementException("Empty().getMax")
+    case Node(i, e, Empty(), _) => (i, e)
+    case Node(_, _, sx, _) => sx.getMin
+  }
+
+  /**
     * Ritorna la stringa che rappresenta la mappa.
     *
     * @return la stringa che rappresenta la mappa.
@@ -175,38 +205,6 @@ sealed trait FiniteMap[I, +E] {
         dx.getElement(Ind)
       }
     }
-  }
-
-  /**
-    * Ritorna la coppia chiave-valore con la chiave maggiore presente nella mappa.
-    * Se la mappa è vuota viene sollevata un'eccezione.
-    * Complessità: O(n) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la mappa è vuota
-    * @return la coppia chiave-valore con la chiave maggior
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  final def getMax: (I, E) = this match {
-    case Empty() => throw new NoSuchElementException("Empty().getMax")
-    case Node(i, e, _, Empty()) => (i, e)
-    case Node(_, _, _, dx) => dx.getMax
-  }
-
-  /**
-    * Ritorna la coppia chiave-valore con la chiave minore presente nella mappa.
-    * Se la mappa è vuota viene sollevata un'eccezione.
-    * Complessità: O(n) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se la mappa è vuota
-    * @return la coppia chiave-valore con la chiave minore
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  final def getMin: (I, E) = this match {
-    case Empty() => throw new NoSuchElementException("Empty().getMax")
-    case Node(i, e, Empty(), _) => (i, e)
-    case Node(_, _, sx, _) => sx.getMin
   }
 
   /**

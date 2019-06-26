@@ -1,7 +1,5 @@
 package struttureDati.splayHeap.SH
 
-import scala.annotation.tailrec
-
 /**
   * Implementa gli splay-heap che sono particolari alberi binari di ricerca nei quali:
   *
@@ -72,6 +70,22 @@ sealed trait SplayHeap[E] {
   }
 
   /**
+    * Ritorna l'elemento minore presente nello splay-heap.
+    * Se il splay-heap è vuoto viene sollevata un'eccezione.
+    * Complessità: O(n) nel caso peggiore.
+    * Complessità ammortizzata: O(log(n)).
+    *
+    * @throws java.util.NoSuchElementException se lo splay-heap è vuoto.
+    * @return l'elemento minore presente nello splay-heap.
+    */
+  @throws(classOf[NoSuchElementException])
+  final lazy val findMin: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty.findMin")
+    case Node(e, Empty(), _) => e
+    case Node(_, s, _) => s.findMin
+  }
+
+  /**
     * Inserisce un elemento nel splay-heap e ristruttura l'albero secondo la proprietà 6.
     * Complessità: O(n) nel caso peggiore.
     * Complessità ammortizzata: O(log(n)).
@@ -110,23 +124,6 @@ sealed trait SplayHeap[E] {
     }
 
     mrg(sh, this)
-  }
-
-  /**
-    * Ritorna l'elemento minore presente nello splay-heap.
-    * Se il splay-heap è vuoto viene sollevata un'eccezione.
-    * Complessità: O(n) nel caso peggiore.
-    * Complessità ammortizzata: O(log(n)).
-    *
-    * @throws java.util.NoSuchElementException se lo splay-heap è vuoto.
-    * @return l'elemento minore presente nello splay-heap.
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  final def findMin: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty.findMin")
-    case Node(e, Empty(), _) => e
-    case Node(_, s, _) => s.findMin
   }
 
   /**

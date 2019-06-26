@@ -74,6 +74,36 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
   }
 
   /**
+    * Ritorna l'elemento minore presente nell'albero red-black.
+    * Se l'albero red-black è vuoto viene sollevata un'eccezione.
+    * Complessità: O(log(n)) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
+    * @return l'elemento minore presente nell'albero red-black.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val getMin: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty.getMin")
+    case Node(_, e, Empty(), _) => e
+    case Node(_, _, sx, _) => sx.getMin
+  }
+
+  /**
+    * Ritorna l'elemento maggiore presente nell'albero red-black.
+    * Se l'albero red-black è vuoto viene sollevata un'eccezione.
+    * Complessità: O(log(n)) nel caso peggiore
+    *
+    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
+    * @return l'elemento maggiore presente nell'albero red-black.
+    */
+  @throws(classOf[NoSuchElementException])
+  override final lazy val getMax: E = this match {
+    case Empty() => throw new NoSuchElementException("Empty().getMax")
+    case Node(_, e, _, Empty()) => e
+    case Node(_, _, _, dx) => dx.getMax
+  }
+
+  /**
     * Inserisce un elemento nell'albero red-black.
     * Se l'elemento è già presente, non viene aggiunto.
     * Complessità: O(log(n)) nel caso peggiore
@@ -215,38 +245,6 @@ sealed trait RedBlackTree[E] extends OrderedSet[E] {
       case Empty() => Empty()
       case Node(_, e, sx, dx) => Node(Black, e, sx, dx)
     }
-  }
-
-  /**
-    * Ritorna l'elemento minore presente nell'albero red-black.
-    * Se l'albero red-black è vuoto viene sollevata un'eccezione.
-    * Complessità: O(log(n)) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
-    * @return l'elemento minore presente nell'albero red-black.
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  override final def getMin: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty.getMin")
-    case Node(_, e, Empty(), _) => e
-    case Node(_, _, sx, _) => sx.getMin
-  }
-
-  /**
-    * Ritorna l'elemento maggiore presente nell'albero red-black.
-    * Se l'albero red-black è vuoto viene sollevata un'eccezione.
-    * Complessità: O(log(n)) nel caso peggiore
-    *
-    * @throws java.util.NoSuchElementException se l'albero red-black è vuoto
-    * @return l'elemento maggiore presente nell'albero red-black.
-    */
-  @tailrec
-  @throws(classOf[NoSuchElementException])
-  override final def getMax: E = this match {
-    case Empty() => throw new NoSuchElementException("Empty().getMax")
-    case Node(_, e, _, Empty()) => e
-    case Node(_, _, _, dx) => dx.getMax
   }
 
   /**
