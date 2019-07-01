@@ -397,7 +397,7 @@ Complessità ammortizzata: O(log(n)).
     </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
-        <span class="kind">def</span>
+        <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
         <span class="name">findMin</span><span class="result">: <span class="extype" name="struttureDati.splayHeap.SH.SplayHeap.E">E</span></span>
@@ -408,8 +408,6 @@ Se il splay-heap è vuoto viene sollevata un'eccezione.
 Complessità: O(n) nel caso peggiore.
 Complessità ammortizzata: O(log(n)).
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>l'elemento minore presente nello splay-heap.</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@tailrec</span><span class="args">()</span>
-              
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[NoSuchElementException]</span>
