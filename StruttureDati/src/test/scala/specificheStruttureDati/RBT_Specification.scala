@@ -48,6 +48,21 @@ private object RBT_Specification extends Properties("RBT") {
   }
 
   /**
+    * Proprietà: dopo l'insert di un elemento E in un RBT il metodo isMember con parametro E
+    * ritorna true
+    */
+  property("insert.isMember") = forAll(genTree, Arbitrary.arbitrary[Int]) { (rbt: RedBlackTree[Int], e: Int) =>
+    rbt.insert(e).isMember(e)
+  }
+
+  /**
+    * Proprietà: dopo la delete di un elemento E in un RBT il metodo isMember con parametro E
+    * ritorna false
+    */
+  property("delete.isMember") = forAll(genTree, Arbitrary.arbitrary[Int]) { (rbt: RedBlackTree[Int], e: Int) =>
+    !rbt.delete(e).isMember(e)
+  }
+  /**
     * Proprietà: l'insert di un elemento E in un RBT aumenta di 1 la size del RBT se il RBT non
     * contiene già quell'elemento (ovvero se la isMember ritorna false), altrimenti la lascia
     * invariata.

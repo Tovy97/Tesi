@@ -64,6 +64,30 @@ private object FM_Specification extends Properties("FM") {
   }
 
   /**
+    * Proprietà: dopo l'insert di un elemento E con chiave I in una FM il metodo isKeyUsed
+    * con parametro I ritorna true
+    */
+  property("insert.isKeyUsed") = forAll(genMap, genTuple) { (fm: FiniteMap[Int, Int], e: (Int, Int)) =>
+    fm.insert(e).isKeyUsed(e._1)
+  }
+
+  /**
+    * Proprietà: dopo l'insert di un elemento E con chiave I in una FM il metodo getElement
+    * con parametro I ritorna E
+    */
+  property("insert.getElement") = forAll(genMap, genTuple) { (fm: FiniteMap[Int, Int], e: (Int, Int)) =>
+    fm.insert(e).getElement(e._1) == e._2
+  }
+
+  /**
+    * Proprietà: dopo la delete di una chiave I in una FM il metodo isKeyUsed con parametro I
+    * ritorna false
+    */
+  property("delete.isMember") = forAll(genMap, Arbitrary.arbitrary[Int]) { (fm: FiniteMap[Int, Int], e: Int) =>
+    !fm.delete(e).isKeyUsed(e)
+  }
+
+  /**
     * Proprietà: l'insert di un elemento E con chiave I in una FM aumenta di 1 la size della FM se la FM non
     * contiene già un elemento con quella chiave (ovvero se la isKeyUsed ritorna false), altrimenti la lascia
     * invariata.
