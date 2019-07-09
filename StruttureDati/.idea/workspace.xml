@@ -8,19 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8ffe2d4-6ccf-43d8-9a4f-7225efdaede3" name="Default Changelist" comment="pronta per la pubblicazione - 01/07/19">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BQ_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BQ_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BUMS_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BUMS_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/DQ_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/DQ_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/LH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/LH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/PH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/PH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/SH_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/SH_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/STK_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/STK_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/StruttureDati_Specification.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/StruttureDati_Specification.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TestStruttureDati/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,42 +28,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-              <folding>
-                <element signature="e#33#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
               <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="75" column="6" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -125,10 +82,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/splayHeap/SH/SplayHeap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/struttureDati/stack/STK/Stack.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BH_Specification.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/RBT_Specification.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/specificheStruttureDati/BST_Specification.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc" />
       </list>
     </option>
   </component>
@@ -144,6 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,24 +113,6 @@
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
               <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="StruttureDati_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -186,14 +127,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StruttureDati" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="specificheStruttureDati" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StruttureDati" type="b2602c69:ProjectViewProjectNode" />
@@ -207,8 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561992718229</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pronta per la pubblicazione - 01/07/19">
+      <created>1562005783057</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562005783057</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -394,8 +332,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1026,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/specificheStruttureDati/FM_Specification.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1054,6 +986,13 @@
           <folding>
             <element signature="e#33#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/worksheetScalaCheck/testSpecification.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
